@@ -4,9 +4,12 @@
 
     let navigationState = false;
     theNavigation.subscribe(value => {
-        console.log("theNavigation value:", value);
         navigationState = value;
     });
+
+    const toggleTheNavigation = () => {
+        theNavigation.update((value) => !value);
+    };
 
 </script>
 
@@ -17,12 +20,12 @@
     transition={{duration:1}}
     let:motion
     >
-        <div use:motion class="w-screen h-full bg-[#3a3a3a] absolute top-10 left-0 flex flex-col justify-around items-center pb-28 text-white">
-            <a href="/">Home</a>
-            <a href="/bio">Bio</a>
-            <a href="/schedule">Schedule</a>
-            <a href="/gallery">Gallery</a>
-            <a href="/contacts">Contacts</a>
+        <div use:motion class="w-screen h-full bg-[#3a3a3a] absolute top-10 left-0 flex flex-col justify-around items-center pb-28 text-white" on:click={toggleTheNavigation} on:keydown={toggleTheNavigation}>
+            <a href="/" on:click={toggleTheNavigation}>Home</a>
+            <a href="/bio" on:click={toggleTheNavigation}>Bio</a>
+            <a href="/schedule" on:click={toggleTheNavigation}>Schedule</a>
+            <a href="/gallery" on:click={toggleTheNavigation}>Gallery</a>
+            <a href="/contacts" on:click={toggleTheNavigation}>Contacts</a>
         </div>
     </Motion>
 {/if}

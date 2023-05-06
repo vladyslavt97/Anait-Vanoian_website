@@ -8,7 +8,6 @@
 
     let navigationState = false;
     theNavigation.subscribe(value => {
-        console.log("theNavigation value:", value);
         navigationState = value;
     });
 </script>
