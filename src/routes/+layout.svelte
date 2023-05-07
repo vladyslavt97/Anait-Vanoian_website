@@ -6,6 +6,6 @@
 
 <Header />
 
-<slot class="min-h-screen"/>
+<slot class="min-h-[100vh]"/>
 
 <Footer />
