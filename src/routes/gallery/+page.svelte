@@ -1,4 +1,5 @@
 <script>
+    
   import { Carousel } from 'flowbite-svelte'
   const images = [
     {id: 0, attribution: 'shoes', imgurl: '/cork.jpeg'},
