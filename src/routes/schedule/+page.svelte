@@ -1,5 +1,5 @@
-<div class="flex flex-col items-center gap-5 pb-20">
-    <h1 class="mt-10 font-bold">Some Concerts</h1>
+<div class="flex flex-col items-center gap-5 pb-20 font-sans">
+    <h1 class="mt-20 font-bold">Some Concerts</h1>
     <h2>12.05.2023</h2>
     <h3>New York City</h3>
     <li>Bach Concerto for Two Violins</li>
