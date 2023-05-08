@@ -13,5 +13,5 @@
 <div class="p-10 h-[97vh] flex flex-col justify-center items-center">
     <h1 class="absolute top-20 font-sans font-bold">Gallery</h1>
   <Carousel {images} {showCaptions} {showThumbs} duration={3000}/>
-  <button class="rounded-full px-2 py-1 bg-emerald-200 absolute bottom-20 font-mono">Download images here</button>
+  <button class="rounded-full px-2 py-1 bg-gradient-to-r from-yellow-100 via-yellow-200 to-yellow-300 absolute bottom-20 font-mono">Download images here</button>
 </div>
