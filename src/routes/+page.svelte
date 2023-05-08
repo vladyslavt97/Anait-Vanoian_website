@@ -25,9 +25,9 @@
     transition={{duration:3}}
     let:motion
     >
-    <img use:motion src="/anait.jpeg" alt="phot" class="rounded float-left ml-5 mr-3" width="180px">
+    <img use:motion src="/anait.jpeg" alt="phot" class="rounded float-left ml-5 mr-3 sm:ml-16 lg:ml-44 lg:mr-6" width="180px">
   </Motion>
-  <p class="px-5 font-sans pb-10"> <span class="italic">Anait Vanoian</span> wurde 1991 in Izmail, Ukraine, geboren.
+  <p class="px-5 font-sans pb-10 sm:mx-10 lg:mx-40"> <span class="italic">Anait Vanoian</span> wurde 1991 in Izmail, Ukraine, geboren.
 Mit 6 Jahren nahm sie den ersten Geigenunterricht.
 Von 1998 bis 2005 war sie Schülerin von T. Spodinetz an der Schule für Künste in Kramatorsk, Ukraine.
 Von 2005 bis 2008 besuchte sie bei Professor S. Evdokimov die Spezialmusikschule in Charkiv und von 2008 bis 2012 absolvierte sie an der Nationalen Universität für Künste in Charkiw ein Bachelor-Studium, das sie mit Auszeichnung („rotes Diplom“) abschloss.<br/>

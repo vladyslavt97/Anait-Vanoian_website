@@ -6,6 +6,6 @@
 
 <Header />
 
-<slot class="min-h-[100vh]"/>
+<slot />
 
 <Footer />
