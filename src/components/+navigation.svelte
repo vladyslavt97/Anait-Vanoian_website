@@ -25,6 +25,7 @@
             <!-- <a href="/bio" on:click={toggleTheNavigation}>Bio</a> -->
             <a href="/schedule" on:click={toggleTheNavigation}>Schedule</a>
             <a href="/gallery" on:click={toggleTheNavigation}>Gallery</a>
+            <a href="/videos" on:click={toggleTheNavigation}>Videos</a>
             <a href="/contacts" on:click={toggleTheNavigation}>Contacts</a>
         </div>
     </Motion>
