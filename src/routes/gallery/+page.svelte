@@ -2,14 +2,9 @@
     
   import { Carousel } from 'flowbite-svelte'
   const images = [
-    {id: 0, attribution: 'shoes', imgurl: '/cork.jpeg'},
-    {id: 1, attribution: 'small bag', imgurl: '/london.jpeg'},
-    {id: 2, attribution: 'plants', imgurl: '/anait.jpeg'},
-    {id: 3, attribution: 'watch', imgurl: '/Dublin.webp'},
-    {id: 0, attribution: 'shoes', imgurl: '/facebook.png'},
-    {id: 1, attribution: 'small bag', imgurl: '/youtube.png'},
-    {id: 2, attribution: 'plants', imgurl: '/anait.jpeg'},
-    {id: 3, attribution: 'watch', imgurl: '/instagram.png'}
+    {id: 0, attribution: 'anait', imgurl: '/anait1.jpg'},
+    {id: 1, attribution: 'anait', imgurl: '/anait2.jpg'},
+    {id: 2, attribution: 'plants', imgurl: '/anait.jpeg'}
   ]
     let showThumbs=false
     let showCaptions=false
