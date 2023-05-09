@@ -47,7 +47,7 @@
   Vom 8.- 20.8.2014 spielte sie beim Vilalte Musik-Festival in Corsavy, Frankreich, als erste Geigerin in unterschiedlichen Besetzungen, in Trios, Quartetts und Sextetts.
   2014 und 2015 war sie Stipendiatin des Deutschland-Stipendiums.
   Sie nahm an zahlreichen Meisterkursen teil und spielte dort mit führenden Violinisten wie Wladimir Astrachanzew, Aleksej Koshvanets, Natalja Boyarskaya, Anatoly Bazhenov, Maxim Rusanow und Thomas Brandis, später auch mit Markus Placci und Burghard Maiß, außerdem beim Masterkurs mit dem „Aizuri Quartett“ aus Amerika und mit dem ersten Violinisten, Martin Funda, des „Armida Quartetts“ Berlin.
-  Ab August 2015 ist sie die erste Geigerin des D.U.R.Quartetts in Bremen.
+  Ab August 2015 ist sie die erste Geigerin des D.U.R.Quartetts in Bremen.<br/><br/>
   Anait und ihre Kollegen von des D.U.R. Quartett haben Instrumente von des berühmten italienischen Geigenbauers Alessandro Ciciliati zu bekommen, der Sprechpartner ist „Violin Assets“.
   Ab Oktober 2019 fängte sie als Stellvertreterin Konzertmasterin bei „Neue Philharmonie“ Berlin an.
   Berufserfahrung:<br/>
