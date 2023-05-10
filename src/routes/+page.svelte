@@ -4,7 +4,7 @@
 
 </script>
 
-<div class="min-h-[98.5vh]">
+<div class="min-h-screen sm:min-h-[98.5vh]">
   <Motion
       initial={{opacity:0}}
       animate={{opacity:1}}
