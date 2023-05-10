@@ -4,14 +4,14 @@
 
 </script>
 
-<div class="">
+<div class="min-h-[98.5vh]">
   <Motion
       initial={{opacity:0}}
       animate={{opacity:1}}
       transition={{duration:2}}
       let:motion
       >
-    <div  use:motion class="flex flex-row justify-around items-center my-4 mt-16">
+    <div  use:motion class="flex flex-row justify-around items-center py-4 pt-16">
         <a href="https://www.youtube.com/@anaitvanoian7094"><img src="./youtube.png" alt="youtube" width="30px"/></a>
         <a href="https://www.facebook.com/anait.vanoyan"><img src="./facebook.png" alt="facebook" width="30px"/></a>
         <a href="https://www.instagram.com/anaitvioline/?igshid=ZGUzMzM3NWJiOQ%3D%3D"><img src="./instagram.png" alt="instagram" width="30px"/></a>
@@ -65,7 +65,7 @@
   </div>
 
 
-  <div class="flex justify-center pb-20">
+  <div class="flex justify-center pb-20 sm:pb-10">
     <a href="/CV_Anait_Vanoian.pdf" download class="flex flex-row items-center gap-4">Download CV 
       <div class="w-10">
         <IoMdCloudDownload />
