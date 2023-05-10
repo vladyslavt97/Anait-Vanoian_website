@@ -1,4 +1,4 @@
-<div class="flex flex-col items-center gap-5 pb-20 font-sans min-h-screen">
+<div class="flex flex-col items-center gap-5 pb-20 font-sans min-h-screen sm:min-h-[98.5vh]">
     <h1 class="mt-20 font-bold">Schedule</h1>
     <div>
         <h2 class="font-bold text-yellow-400">12.05.2023</h2>

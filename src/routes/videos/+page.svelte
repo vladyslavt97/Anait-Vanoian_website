@@ -1,5 +1,5 @@
 
-<div class="min-h-[98.5vh]">
+<div class="sm:min-h-[98.5vh] min-h-screen">
     <h1 class="pt-20 text-center font-sans font-bold">Welcome to Videos</h1>
 
     <div class="flex flex-col justify-center items-center gap-5 pt-10">
