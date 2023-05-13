@@ -20,9 +20,9 @@
     transition={{duration:1}}
     let:motion
     >
-        <div use:motion class="w-screen h-screen bg-[#3a3a3a] absolute top-[3vh] left-0 flex flex-col justify-around items-center pb-28 text-white overflow-hidden " on:click={toggleTheNavigation} on:keydown={toggleTheNavigation}>
-            <a href="/" on:click={toggleTheNavigation}>Home</a>
-            <!-- <a href="/bio" on:click={toggleTheNavigation}>Bio</a> -->
+        <div use:motion class="w-screen h-screen bg-[#3a3a3a] absolute top-[4vh] left-0 flex flex-col justify-around items-center pb-28 text-white overflow-hidden " on:click={toggleTheNavigation} on:keydown={toggleTheNavigation}>
+            <a href="/" on:click={toggleTheNavigation}>Bio</a>
+            <a href="/news" on:click={toggleTheNavigation}>News</a>
             <a href="/schedule" on:click={toggleTheNavigation}>Schedule</a>
             <a href="/gallery" on:click={toggleTheNavigation}>Gallery</a>
             <a href="/videos" on:click={toggleTheNavigation}>Videos</a>
