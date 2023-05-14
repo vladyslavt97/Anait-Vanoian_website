@@ -1,7 +1,18 @@
 <script>
   import { Motion } from "svelte-motion";
   import IoMdCloudDownload from 'svelte-icons/io/IoMdCloudDownload.svelte'
-
+  // let year = "sdf223131";
+  //   let date = "112ds1231231fadf";
+  // async function createNewItem() {
+  //   const response = await fetch('/api/create', {
+  //     method: 'POST',
+  //     body: JSON.stringify({
+  //       year, date
+  //     }),
+  //   });
+  //   const newUser = await response.json();
+  //   console.log(newUser);
+  // }
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh]">
@@ -18,6 +29,7 @@
         <a href="https://soundcloud.com/anaitvanoian/anait-vanoian-m-karminsky-the-jewish-prayer"><img src="./soundcloud.png" alt="instagram" width="55px"/></a>
     </div>
   </Motion>
+  <!-- <button on:click={createNewItem}>Press it</button> -->
   <div>
     <h1 class="text-center my-7">Home page</h1>
     <Motion
