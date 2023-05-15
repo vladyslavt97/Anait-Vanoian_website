@@ -10,13 +10,9 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model User {
+model Schedule {
   id              String @id @default(auto()) @map("_id") @db.ObjectId
-  year String?
   date String?
+  location String?
+  programme String[]
 }
-
-// programme Array
-// link
-// withwhom
-// pastconcert false

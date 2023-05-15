@@ -5,16 +5,13 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 /** @type {import('./$types').RequestHandler} */
-export async function POST({ request }) {
+export async function GET({ request }) {
     
 
     try {
-    const { date, year } = await request.json();
-    const user = await prisma.schedule.create({
-      data: {
-        date
-      },
-    });
+    const user = await prisma.schedule.findMany();
+    console.log(user);
+    
     return json("all good");
   } catch (error) {
     console.error(error);
