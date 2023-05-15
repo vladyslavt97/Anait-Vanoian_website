@@ -8,7 +8,6 @@
         const response = await fetch('/api/getconcerts');
             if (response.ok) {
                 theConcerts = await response.json();
-                console.log('data',theConcerts);
             } else {
                 throw new Error('Failed to fetch data');
             }
@@ -23,7 +22,7 @@
     <h1 class="mt-20 font-bold">Schedule</h1>
     
     {#if theConcerts[0].date === "encrypted"}
-        <p><SyncLoader/></p>
+        <p><SyncLoader color="#ff9500"/></p>
     {:else}
         {#each theConcerts as concert}
             <div>
