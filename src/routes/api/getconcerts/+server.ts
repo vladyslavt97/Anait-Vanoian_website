@@ -12,7 +12,7 @@ export async function GET({ request }) {
     const user = await prisma.schedule.findMany();
     console.log(user);
     
-    return json("all good");
+    return json(user);
   } catch (error) {
     console.error(error);
     return json("all bad");
