@@ -18,8 +18,8 @@
     
 </script>
 
-<div class="flex flex-col items-center gap-5 pb-20 font-sans min-h-screen sm:min-h-[98.5vh]">
-    <h1 class="mt-20 font-bold">Schedule</h1>
+<div class="flex flex-col justify-center absolute left-16 gap-5 pb-20 font-sans min-h-screen sm:min-h-[98.5vh]">
+    <h1 class="mt-20 font-bold text-center absolute top-0">Schedule</h1>
     
     {#if theConcerts[0].date === "encrypted"}
         <p><SyncLoader color="#ff9500"/></p>
