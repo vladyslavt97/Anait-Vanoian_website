@@ -1,46 +1,9 @@
 <script>
     import IoIosMail from 'svelte-icons/io/IoIosMail.svelte'
     import IoIosText from 'svelte-icons/io/IoIosText.svelte'
-    // import emailjs from "@emailjs/browser";
     
     let emailState = '';
     let messageState = '';
-    // let sending = false;
-    // let sent = false;
-
-  // const sendEmail = async () => {
-  //   sending = true;
-  //   console.log(document.getElementById("myForm"));
-  //     emailjs
-  //       .sendForm(
-  //         process.env.YOUR_SERVICE_ID,
-  //         process.env.YOUR_TEMPLATE_ID,
-  //         '#myForm',
-  //         process.env.YOUR_PUBLIC_KEY
-  //       )
-  //       .then(
-  //         (result) => {
-  //           console.log('resultsss', result.text);
-  //           emailState = '';
-  //           messageState = '';
-  //           sending = false;
-  //           sent = true;
-
-  //           setTimeout(() => {
-  //             console.log('Delayed for 2 seconds.');
-  //             sent = false;
-  //           }, 2000);
-  //         },
-  //         (error) => {
-  //           console.log('erorr',error.text);
-  //           console.log(
-  //         process.env.YOUR_SERVICE_ID,
-  //         process.env.YOUR_TEMPLATE_ID,
-  //         process.env.YOUR_PUBLIC_KEY);
-  //         }
-  //       );
-    
-  // };
 
   const sendEmail = () => {
     let mailTo = `mailto:anaitvanoian@gmail.com?subject=Email From Your Website&body=${messageState} (${emailState})`;
