@@ -7,11 +7,10 @@
     let messageSubject = "";
 
     const sendEmail = () => {
+        console.log("the log", emailState, messageState, messageSubject);
         let mailTo = `mailto:anaitvanoian@gmail.com?subject=${messageSubject}&body=${messageState} (${emailState})`;
         window.location.href = mailTo;
-    };
 
-    const clearValues = () => {
         emailState = "";
         messageState = "";
         messageSubject = "";
@@ -61,11 +60,8 @@
             name="user_email"
             bind:value={messageState}
         />
-        <button
-            class="bg-gray-300 rounded-lg mt-2"
-            type="submit"
-            value="Send"
-            on:click={clearValues}>Send</button
+        <button class="bg-gray-300 rounded-lg mt-2" type="submit" value="Send"
+            >Send</button
         >
     </form>
 </div>
