@@ -35,7 +35,7 @@
         <Motion
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ duration: 3, delay: 1 }}
+            transition={{ duration: 3, delay: 0.2 }}
             let:motion
         >
             <img
