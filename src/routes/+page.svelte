@@ -82,6 +82,7 @@
             • Medici International Music Competition, London (3. Preis, 2021)<br
             /><br />
 
+            
             Sie nahm auch an zahlreichen Festivals teil:<br />
             5 Jahre lang war sie Mitglied im Richard-Wagner-Verein in Charkiw. Als
             Stipendiatin hat sie an den Richard-Wagner-Festspielen in Bayreuth teilgenommen,
