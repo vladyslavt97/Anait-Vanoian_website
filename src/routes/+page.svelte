@@ -56,9 +56,10 @@
             in Charkiv und von 2008 bis 2012 absolvierte sie an der Nationalen Universität
             für Künste in Charkiw ein Bachelor-Studium, das sie mit Auszeichnung
             („rotes Diplom“) abschloss.<br /><br />
-            Nach der Übersiedlung nach Deutschland besuchte sie 2013 ein Jahr lang
-            das Brahms-Konservatorium in Hamburg bei Professor T. Mikaelyan.<br
-            /><br />
+
+            Nach der Übersiedlung nach Deutschland besuchte sie 2013 ein Jahr
+            lang das Brahms-Konservatorium in Hamburg bei Professor T.
+            Mikaelyan.<br /><br />
 
             Von 2014 bis 2017 absolvierte sie als Studentin bei Professorin
             Katrin Scholz an der Hochschule für Künste in Bremen ein Master –
@@ -66,23 +67,34 @@
 
             Ab 2017 wird sie die hMtMh (Hochschule für Musik, Theater und
             Medien) in Hannover besuchen und bei Professor Oliver Wille
-            (Kuss-Quartett) studieren. Anait ist Preisträgerin mehrerer
-            Wettbewerbe, u.a.der folgenden:<br />
-            • „Bluebird of Happiness“ in Simferopol, Ukraine (3. Preis, 2002)<br
+            (Kuss-Quartett) studieren.
+            <br /><br />
+            Anait ist Preisträgerin mehrerer Wettbewerbe, u.a.der folgenden:<br
             />
-            • „Silver String Music Competition“ in Kramatorsk (1. Preis, 2004)<br
+            • <span class=" italic">„Bluebird of Happiness“</span> in
+            Simferopol, Ukraine (3. Preis, 2002)<br />
+            • <span class=" italic">„Silver String Music Competition“</span> in
+            Kramatorsk (1. Preis, 2004)<br />
+            •
+            <span class=" italic"
+                >Internationaler Streichquartett Wettbewerb in Radom</span
+            >, Polen (3.Preis, 16.8.2011), zusammen mit dem Nocturnum-Quartett<br
             />
-            • Internationaler Streichquartett Wettbewerb in Radom, Polen (3.Preis,
-            16.8.2011), zusammen mit dem Nocturnum-Quartett<br />
-            • 4. Brigitte-Kempen-Wettbewerb des Fördervereins der Musikhochschule
-            in Aachen für Studierende der HfMT Köln. (2. Preis, 23.11.2017)<br
-            />
-            • XXIII Premio Internazionale di Musica Gaetano Zinetti (92 Punkten von
-            100, 23.09.2018)<br />
-            • Medici International Music Competition, London (3. Preis, 2021)<br
-            /><br />
+            •
+            <span class=" italic"
+                >4. Brigitte-Kempen-Wettbewerb des Fördervereins der
+                Musikhochschule in Aachen</span
+            >
+            für Studierende der HfMT Köln. (2. Preis, 23.11.2017)<br />
+            •
+            <span class=" italic"
+                >XXIII Premio Internazionale di Musica Gaetano Zinetti</span
+            >
+            (92 Punkten von 100, 23.09.2018)<br />
+            •
+            <span class=" italic">Medici International Music Competition</span>,
+            London (3. Preis, 2021)<br /><br />
 
-            
             Sie nahm auch an zahlreichen Festivals teil:<br />
             5 Jahre lang war sie Mitglied im Richard-Wagner-Verein in Charkiw. Als
             Stipendiatin hat sie an den Richard-Wagner-Festspielen in Bayreuth teilgenommen,
