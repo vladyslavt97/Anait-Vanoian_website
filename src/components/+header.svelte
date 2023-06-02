@@ -12,8 +12,13 @@
     class=" w-screen bg-[#3a3a3a] flex flex-row h-10
 justify-between items-center px-3 fixed top-0 z-50"
 >
-    <Navigation />
-    <Burger />
+    <div class="md:hidden">
+        <Navigation />
+        <Burger />
+    </div>
+    <div class="hidden text-white">menu</div>
+    <!-- add navigation for md + -->
+
     <a href="/" on:click={toggleTheNavigation}
         ><h2 class=" text-yellow-100 italic sm:mr-4">
             Anait &nbsp; Vanoian
