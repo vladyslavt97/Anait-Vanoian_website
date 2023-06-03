@@ -8,7 +8,7 @@
 
     const sendEmail = () => {
         console.log("the log", emailState, messageState, messageSubject);
-        let mailTo = `mailto:anaitvanoian@gmail.com?subject=${messageSubject}&body=${messageState} (${emailState})`;
+        let mailTo = `mailto:anait.vanoian@gmail.com?subject=${messageSubject}&body=${messageState} (${emailState})`;
         window.location.href = mailTo;
 
         emailState = "";
