@@ -9,10 +9,10 @@ export async function GET({ request }) {
     
 
     try {
-    const user = await prisma.schedule.findMany();
-    return json(user);
+    const schedule = await prisma.schedule.findMany();
+    return json(schedule);
   } catch (error) {
     console.error(error);
-    return json("all bad");
+    return json("something is wrong");
   }
 }

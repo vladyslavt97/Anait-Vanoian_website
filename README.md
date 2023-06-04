@@ -6,3 +6,7 @@
 4. contact: add subject and name
 
 ## make sure that WM has the respective fucntionality to update the DB
+
+
+## to push new /updated schema
+npx prisma db push

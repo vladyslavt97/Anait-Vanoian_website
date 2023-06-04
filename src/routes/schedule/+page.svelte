@@ -3,7 +3,9 @@
     import { onMount } from "svelte";
     import { Motion } from "svelte-motion";
 
-    let theConcerts = [{ date: "stillLoading", location: "", programme: "" }];
+    let theConcerts = [
+        { date: "stillLoading", location: "", programme: "", url: "" },
+    ];
     onMount(async () => {
         try {
             const response = await fetch("/api/getconcerts");
@@ -45,6 +47,9 @@
                             <li>{programItem}</li>
                         {/each}
                         <br />
+                        {#if concert.url}
+                            <img src={concert.url} alt="poster" />
+                        {/if}
                     </div>
                 </Motion>
             {/each}

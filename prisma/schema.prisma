@@ -15,6 +15,7 @@ model Schedule {
   date      String?
   location  String?
   programme String[]
+  url       String?
 }
 
 model News {
