@@ -2,6 +2,7 @@
     import { SyncLoader } from "svelte-loading-spinners";
     import { onMount } from "svelte";
     import { Motion } from "svelte-motion";
+    import { P } from "flowbite-svelte";
 
     let theConcerts = [
         { date: "stillLoading", location: "", programme: "", url: "" },
@@ -21,16 +22,15 @@
 </script>
 
 <div
-    class="flex flex-col justify-center items-center gap-5 pb-20 font-sans min-h-screen sm:min-h-[98.5vh]"
+    class="flex flex-col justify-center items-center gap-10 pb-10 font-sans min-h-screen sm:min-h-[98.5vh]"
 >
-    <h1 class="mt-20 font-bold text-center absolute top-0">Schedule</h1>
-
     {#if theConcerts[0].date === "stillLoading"}
         <p class="">
             <SyncLoader color="#ff9500" />
         </p>
     {:else}
-        <div class="mt-20">
+        <h1 class="font-bold text-center relative top-20">Schedule</h1>
+        <div class="relative top-16 ml-10">
             {#each theConcerts as concert}
                 <Motion
                     initial={{ opacity: 0 }}
@@ -38,17 +38,26 @@
                     transition={{ duration: 2 }}
                     let:motion
                 >
-                    <div class="mx-auto" use:motion>
+                    <div class="" use:motion>
                         <h2 class="font-bold text-yellow-400">
                             {concert.date}
                         </h2>
                         <h3 class="italic">{concert.location}</h3>
                         {#each concert.programme as programItem}
-                            <li>{programItem}</li>
+                            {#if programItem !== ""}
+                                <li>{programItem}</li>
+                            {:else}
+                                <p />
+                            {/if}
                         {/each}
                         <br />
                         {#if concert.url}
-                            <img src={concert.url} alt="poster" />
+                            <img
+                                src={concert.url}
+                                alt="poster"
+                                class="pr-10 mb-20"
+                                loading="eager"
+                            />
                         {/if}
                     </div>
                 </Motion>
