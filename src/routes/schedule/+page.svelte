@@ -30,7 +30,7 @@
         </p>
     {:else}
         <h1 class="font-bold text-center relative top-20">Schedule</h1>
-        <div class="relative top-16 ml-10">
+        <div class="relative top-16 mx-10">
             {#each theConcerts as concert}
                 <Motion
                     initial={{ opacity: 0 }}
@@ -38,14 +38,17 @@
                     transition={{ duration: 2 }}
                     let:motion
                 >
-                    <div class="" use:motion>
+                    <div
+                        class="rounded-2xl border drop-shadow-lg p-2 mb-5"
+                        use:motion
+                    >
                         <h2 class="font-bold text-yellow-400">
                             {concert.date}
                         </h2>
                         <h3 class="italic">{concert.location}</h3>
                         {#each concert.programme as programItem}
                             {#if programItem !== ""}
-                                <li>{programItem}</li>
+                                <li class="text-sm">{programItem}</li>
                             {:else}
                                 <p />
                             {/if}
@@ -55,13 +58,16 @@
                             <img
                                 src={concert.url}
                                 alt="poster"
-                                class="pr-10 mb-20"
+                                class=""
                                 loading="eager"
                             />
                         {/if}
                     </div>
                 </Motion>
             {/each}
+            <br />
+            <br />
+            <br />
         </div>
     {/if}
 </div>
