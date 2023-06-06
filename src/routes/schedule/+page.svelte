@@ -29,7 +29,16 @@
             <SyncLoader color="#ff9500" />
         </p>
     {:else}
-        <h1 class="font-bold text-center relative top-20">Schedule</h1>
+        <Motion
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 2, delay: 1 }}
+            let:motion
+        >
+            <h1 use:motion class="font-bold text-center relative top-20">
+                Schedule
+            </h1>
+        </Motion>
         <div class="relative top-16 mx-10">
             {#each theConcerts as concert}
                 <Motion
@@ -58,7 +67,7 @@
                             <img
                                 src={concert.url}
                                 alt="poster"
-                                class=""
+                                class="rounded-lg"
                                 loading="eager"
                             />
                         {/if}
