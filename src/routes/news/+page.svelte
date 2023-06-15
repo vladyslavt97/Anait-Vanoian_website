@@ -10,7 +10,7 @@
     <div class="relative rounded-2xl border drop-shadow-lg">
         <h2 class="font-mono text-center">Höcherbuch mit der Musik</h2>
         <!-- svelte-ignore a11y-media-has-caption -->
-        <video src="/demo.mp4" controls class="p-10" />
+        <!-- <video src="/demo.mp4" controls class="p-10" /> -->
     </div>
 
     <div class="relative rounded-2xl border drop-shadow-lg">
