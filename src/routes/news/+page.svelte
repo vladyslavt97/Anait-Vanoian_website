@@ -9,8 +9,11 @@
 
     <div class="relative rounded-2xl border drop-shadow-lg">
         <h2 class="font-mono text-center">Höcherbuch mit der Musik</h2>
-        <!-- svelte-ignore a11y-media-has-caption -->
-        <!-- <video src="/demo.mp4" controls class="p-10" /> -->
+        <img src="/mozart.jpg" alt="подяка" class="p-10" />
+        <a
+            href="dsf"
+            class="text-blue-600 italic underline text-center lowercase">link</a
+        >
     </div>
 
     <div class="relative rounded-2xl border drop-shadow-lg">
