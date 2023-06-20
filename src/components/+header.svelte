@@ -2,6 +2,7 @@
     import { theNavigation } from "../store/store";
     import Burger from "./+burger.svelte";
     import Navigation from "./+navigation.svelte";
+    import NavigationMd from "./+navigationmd.svelte";
 
     const toggleTheNavigation = () => {
         theNavigation.update((value) => false);
@@ -16,8 +17,9 @@ justify-between items-center px-3 fixed top-0 z-50"
         <Navigation />
         <Burger />
     </div>
-    <div class="hidden text-white">menu</div>
-    <!-- add navigation for md + -->
+    <div class="hidden md:block text-white">
+        <NavigationMd />
+    </div>
 
     <a href="/" on:click={toggleTheNavigation}
         ><h2 class=" text-yellow-100 italic sm:mr-4">
