@@ -2,7 +2,6 @@
     import { SyncLoader } from "svelte-loading-spinners";
     import { onMount } from "svelte";
     import { Motion } from "svelte-motion";
-    import { P } from "flowbite-svelte";
 
     let theConcerts = [
         { date: "stillLoading", location: "", programme: "", url: "" },
@@ -19,6 +18,15 @@
             console.error("error", error);
         }
     });
+
+    //
+    let isImageLoaded = 0;
+
+    function handleImageLoad() {
+        isImageLoaded++;
+        console.log(isImageLoaded);
+        console.log(theConcerts.length);
+    }
 </script>
 
 <div
@@ -48,7 +56,7 @@
                     let:motion
                 >
                     <div
-                        class="rounded-2xl border drop-shadow-lg p-2 mb-5"
+                        class="rounded-2xl border drop-shadow-lg p-2 mb-5 flex flex-col items-center"
                         use:motion
                     >
                         <h2 class="font-bold text-yellow-400">
@@ -64,12 +72,19 @@
                         {/each}
                         <br />
                         {#if concert.url}
-                            <img
-                                src={concert.url}
-                                alt="poster"
-                                class="rounded-lg"
-                                loading="eager"
-                            />
+                        <img
+                        src={concert.url}
+                        alt="poster"
+                        class="rounded-lg max-h-96"
+                        loading="eager"
+                        on:load={handleImageLoad}
+                        />
+                        <!-- {#if isImageLoaded === theConcerts.length} -->
+                            <!-- {:else} -->
+                            <!-- <p class="">
+                                    <SyncLoader color="#ff9500" />
+                                </p> -->
+                            <!-- {/if} -->
                         {/if}
                     </div>
                 </Motion>
