@@ -31,7 +31,9 @@
                 transition={{ duration: 1.2 }}
                 let:motion
             >
-                <a use:motion href="/" on:click={toggleTheNavigation}>Bio</a>
+                <a use:motion href="/" on:click={toggleTheNavigation}
+                    >Biography</a
+                >
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}

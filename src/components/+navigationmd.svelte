@@ -11,7 +11,7 @@
         transition={{ duration: 1.2 }}
         let:motion
     >
-        <a use:motion href="/">Bio</a>
+        <a use:motion href="/">Biography</a>
     </Motion>
     <Motion
         initial={{ opacity: 0, x: -20 }}
