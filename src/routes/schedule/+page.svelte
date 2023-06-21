@@ -20,13 +20,26 @@
     });
 
     //
-    let isImageLoaded = 0;
+    // let isImageLoaded = 0;
+    // let count = 0;
 
-    function handleImageLoad() {
-        isImageLoaded++;
-        console.log(isImageLoaded);
-        console.log(theConcerts.length);
-    }
+    // function handleImageLoad() {
+    //     isImageLoaded++;
+    //     setTimeout(() => {
+    //         handleImageLoad2();
+    //     }, 2000);
+    // }
+
+    // function handleImageLoad2() {
+    //     for (let i = 0; i < theConcerts.length; i++) {
+    //         if (count >= theConcerts.length) {
+    //             return;
+    //         } else if (theConcerts[i].url !== "") {
+    //             count++;
+    //         }
+    //     }
+    //     console.log("pups", count, isImageLoaded);
+    // }
 </script>
 
 <div
@@ -72,25 +85,33 @@
                         {/each}
                         <br />
                         {#if concert.url}
-                            <img
+                            <!-- <img
                                 src={concert.url}
                                 alt="poster"
-                                class="rounded-lg max-h-0 opacity-0"
+                                class="h-1 w-1 opacity-0"
                                 loading="eager"
                                 on:load={handleImageLoad}
                             />
                         {/if}
-                        {#if isImageLoaded === theConcerts.length}
-                            <img
-                                src={concert.url}
-                                alt="poster"
-                                class="rounded-lg max-h-96"
-                                loading="eager"
-                            />
-                        {:else}
+                        {#if isImageLoaded === count} -->
+                            <Motion
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ duration: 2 }}
+                                let:motion
+                            >
+                                <img
+                                    use:motion
+                                    src={concert.url}
+                                    alt="poster"
+                                    class="rounded-lg max-h-96"
+                                    loading="eager"
+                                />
+                                <!-- {:else}
                             <p class="">
                                 <SyncLoader color="#ff9500" />
-                            </p>
+                            </p> -->
+                            </Motion>
                         {/if}
                     </div>
                 </Motion>
