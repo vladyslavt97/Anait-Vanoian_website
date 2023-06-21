@@ -72,19 +72,25 @@
                         {/each}
                         <br />
                         {#if concert.url}
-                        <img
-                        src={concert.url}
-                        alt="poster"
-                        class="rounded-lg max-h-96"
-                        loading="eager"
-                        on:load={handleImageLoad}
-                        />
-                        <!-- {#if isImageLoaded === theConcerts.length} -->
-                            <!-- {:else} -->
-                            <!-- <p class="">
-                                    <SyncLoader color="#ff9500" />
-                                </p> -->
-                            <!-- {/if} -->
+                            <img
+                                src={concert.url}
+                                alt="poster"
+                                class="rounded-lg max-h-0 opacity-0"
+                                loading="eager"
+                                on:load={handleImageLoad}
+                            />
+                        {/if}
+                        {#if isImageLoaded === theConcerts.length}
+                            <img
+                                src={concert.url}
+                                alt="poster"
+                                class="rounded-lg max-h-96"
+                                loading="eager"
+                            />
+                        {:else}
+                            <p class="">
+                                <SyncLoader color="#ff9500" />
+                            </p>
                         {/if}
                     </div>
                 </Motion>
