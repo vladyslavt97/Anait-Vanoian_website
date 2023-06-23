@@ -3,7 +3,7 @@
 </script>
 
 <div
-    class="w-[80vw] absolute left-0 top-2 flex flex-row justify-evenly text-white overflow-hidden"
+    class="w-[80vw] absolute left-10 top-3 flex flex-row justify-start gap-6 text-white overflow-hidden md:text-xs lg:text-sm"
 >
     <Motion
         initial={{ opacity: 0, x: -20 }}

@@ -18,7 +18,7 @@
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh]">
-    <h1 class="pt-20 text-center font-sans font-bold">Welcome to Contacts</h1>
+    <h1 class="pt-20 text-center font-sans font-bold">Contacts</h1>
 
     <form
         class="flex flex-col justify-center h-[70vh] sm:h-[80vh] m-10 font-sans md:w-[400px] md:mx-auto"
