@@ -1,6 +1,12 @@
 <script>
     import { Motion } from "svelte-motion";
     import IoMdCloudDownload from "svelte-icons/io/IoMdCloudDownload.svelte";
+    import { theLanguage } from "../store/store";
+
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh]">
@@ -31,7 +37,13 @@
         </div>
     </Motion>
     <div>
-        <h1 class="text-center my-7">Biography</h1>
+        <h1 class="text-center my-7">
+            {#if currentLanguage === "e"}
+                Biography
+            {:else}
+                Biografie
+            {/if}
+        </h1>
         <Motion
             initial={{ opacity: 0, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}

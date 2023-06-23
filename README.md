@@ -10,3 +10,8 @@
 
 ## to push new /updated schema
 npx prisma db push
+
+
+
+## NEW
+add language switch
