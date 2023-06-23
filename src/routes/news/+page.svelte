@@ -5,11 +5,11 @@
     <div
         class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 md:w-96 flex justify-center items-center flex-col"
     >
-        <h2 class="">Подяка</h2>
+        <h2 class="text-center">Подяка</h2>
         <img
             src="/подяка.jpg"
             alt="подяка"
-            class="p-10 md:h-80 object-contain"
+            class="pb-5 pt-3 px-2 md:h-80 object-contain"
         />
     </div>
 
@@ -23,7 +23,7 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="video1"
-            class="p-10 md:h-80 object-contain"
+            class="pb-5 pt-3 px-2 md:h-80 w-full"
         />
     </div>
 
@@ -34,7 +34,7 @@
         <img
             src="/certificate.jpg"
             alt="подяка"
-            class="p-10 md:h-80 object-contain"
+            class="pb-5 pt-3 px-2 md:h-80 object-contain"
         />
     </div>
 </div>
