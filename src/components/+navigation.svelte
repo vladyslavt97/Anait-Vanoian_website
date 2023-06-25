@@ -1,8 +1,12 @@
 <script>
     import { theNavigation } from "../store/store";
     import { Motion } from "svelte-motion";
-    import LanguageSwitch from "./+languageswitch.svelte";
+    import { theLanguage } from "../store/store";
 
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
     let navigationState = false;
     theNavigation.subscribe((value) => {
         navigationState = value;
@@ -32,9 +36,13 @@
                 transition={{ duration: 1.2 }}
                 let:motion
             >
-                <a use:motion href="/" on:click={toggleTheNavigation}
-                    >Biography</a
-                >
+                <a use:motion href="/">
+                    {#if currentLanguage === "e"}
+                        Biography
+                    {:else}
+                        Biografie
+                    {/if}
+                </a>
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}
@@ -42,9 +50,13 @@
                 transition={{ duration: 1, delay: 0.2 }}
                 let:motion
             >
-                <a use:motion href="/news" on:click={toggleTheNavigation}
-                    >News</a
-                >
+                <a use:motion href="/news">
+                    {#if currentLanguage === "e"}
+                        News
+                    {:else}
+                        Nachrichten
+                    {/if}
+                </a>
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}
@@ -52,9 +64,13 @@
                 transition={{ duration: 1, delay: 0.4 }}
                 let:motion
             >
-                <a use:motion href="/schedule" on:click={toggleTheNavigation}
-                    >Schedule</a
-                >
+                <a use:motion href="/schedule">
+                    {#if currentLanguage === "e"}
+                        Schedule
+                    {:else}
+                        Zeitplan
+                    {/if}
+                </a>
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}
@@ -62,9 +78,13 @@
                 transition={{ duration: 1, delay: 0.6 }}
                 let:motion
             >
-                <a use:motion href="/gallery" on:click={toggleTheNavigation}
-                    >Gallery</a
-                >
+                <a use:motion href="/gallery">
+                    {#if currentLanguage === "e"}
+                        Gallery
+                    {:else}
+                        Galerie
+                    {/if}
+                </a>
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}
@@ -72,9 +92,13 @@
                 transition={{ duration: 1, delay: 0.8 }}
                 let:motion
             >
-                <a use:motion href="/videos" on:click={toggleTheNavigation}
-                    >Videos</a
-                >
+                <a use:motion href="/videos"
+                    >{#if currentLanguage === "e"}
+                        Videos
+                    {:else}
+                        Videos
+                    {/if}
+                </a>
             </Motion>
             <Motion
                 initial={{ opacity: 0, x: -20 }}
@@ -82,9 +106,13 @@
                 transition={{ duration: 1, delay: 1 }}
                 let:motion
             >
-                <a use:motion href="/contacts" on:click={toggleTheNavigation}
-                    >Contacts</a
-                >
+                <a use:motion href="/contacts"
+                    >{#if currentLanguage === "e"}
+                        Contacts
+                    {:else}
+                        Kontakte
+                    {/if}
+                </a>
             </Motion>
         </div>
     </Motion>
