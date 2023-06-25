@@ -1,6 +1,5 @@
 <script>
     import { theLanguage } from "../store/store";
-
     const setLanguage = (/** @type {string} */ lan) => {
         theLanguage.update((value) => (value = lan));
     };
