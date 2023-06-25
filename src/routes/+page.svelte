@@ -69,14 +69,26 @@
     </div>
 
     <div class="flex justify-center pb-20 sm:pb-10">
-        <a
-            href="/CV_Anait_Vanoian.pdf"
-            download
-            class="flex flex-row items-center gap-4"
-            >Download CV
-            <div class="w-10">
-                <IoMdCloudDownload />
-            </div>
-        </a>
+        {#if currentLanguage === "e"}
+            <a
+                href="/Anait_CV _ENG.pdf"
+                download
+                class="flex flex-row items-center gap-4"
+                >Download CV
+                <div class="w-10">
+                    <IoMdCloudDownload />
+                </div>
+            </a>
+        {:else}
+            <a
+                href="/CV_Anait_Vanoian.pdf"
+                download
+                class="flex flex-row items-center gap-4"
+                >Lebenslauf herunterladen
+                <div class="w-10">
+                    <IoMdCloudDownload />
+                </div>
+            </a>
+        {/if}
     </div>
 </div>
