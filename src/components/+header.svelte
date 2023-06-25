@@ -16,7 +16,10 @@ justify-between items-center px-3 fixed top-0 z-50"
 >
     <div class="md:hidden">
         <Navigation />
-        <Burger />
+        <div class="flex flex-row justify-center items-center gap-5">
+            <Burger />
+            <LanguageSwitch />
+        </div>
     </div>
     <div class="hidden md:block text-white">
         <LanguageSwitch />

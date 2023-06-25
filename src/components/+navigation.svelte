@@ -1,6 +1,7 @@
 <script>
     import { theNavigation } from "../store/store";
     import { Motion } from "svelte-motion";
+    import LanguageSwitch from "./+languageswitch.svelte";
 
     let navigationState = false;
     theNavigation.subscribe((value) => {
