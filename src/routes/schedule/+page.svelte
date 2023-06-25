@@ -2,7 +2,11 @@
     import { SyncLoader } from "svelte-loading-spinners";
     import { onMount } from "svelte";
     import { Motion } from "svelte-motion";
-
+    import { theLanguage } from "../../store/store";
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
     let theConcerts = [
         { date: "stillLoading", location: "", programme: "", url: "" },
     ];
@@ -35,7 +39,11 @@
             let:motion
         >
             <h1 use:motion class="font-bold text-center relative top-20">
-                Schedule
+                {#if currentLanguage === "e"}
+                    Schedule
+                {:else}
+                    Zeitplan
+                {/if}
             </h1>
         </Motion>
         <div class="relative top-16 mx-10">

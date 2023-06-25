@@ -1,4 +1,18 @@
-<h1 class="relative top-12 text-center">Welcome to News</h1>
+<script>
+    import { theLanguage } from "../../store/store";
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
+</script>
+
+<h1 class="relative top-12 text-center">
+    {#if currentLanguage === "e"}
+        News
+    {:else}
+        Nachrichten
+    {/if}
+</h1>
 <div
     class="p-16 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-5 flex-wrap md:flex-nowrap"
 >
