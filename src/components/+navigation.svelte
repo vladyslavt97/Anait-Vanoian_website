@@ -64,11 +64,11 @@
                 transition={{ duration: 1, delay: 0.4 }}
                 let:motion
             >
-                <a use:motion href="/schedule">
+                <a use:motion href="/concerts">
                     {#if currentLanguage === "e"}
-                        Schedule
+                        Concerts
                     {:else}
-                        Zeitplan
+                        Konzerte
                     {/if}
                 </a>
             </Motion>

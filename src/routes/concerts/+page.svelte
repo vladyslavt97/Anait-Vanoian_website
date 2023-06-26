@@ -40,9 +40,9 @@
         >
             <h1 use:motion class="font-bold text-center relative top-20">
                 {#if currentLanguage === "e"}
-                    Schedule
+                    Concerts
                 {:else}
-                    Zeitplan
+                    Konzerte
                 {/if}
             </h1>
         </Motion>

@@ -56,11 +56,15 @@
 
     Work experience: <br />
     • Concert Master at the Municipal Orchestra of Delmenhorst • Concert Master at
-    the Chamber Philharmonic Emsland • Section Leader at the Silk Road Symphony Orchestra,
-    Berlin • I Violin Tutti at “Neue Philharmonie”, Hamburg • I Violin Tutti at “Hansa
-    Philharmonie”, Hamburg • Deputy concert master at “Neue Philharmonie”, Berlin
-    • I Violin Tutti (temporary substitute) – Theater für Niedersachsen, Hildesheim
+    the Chamber Philharmonic Emsland<br />
+    • Section Leader at the Silk Road Symphony Orchestra, Berlin<br />
+    • Violin Tutti at “Neue Philharmonie”, Hamburg<br />
+    • I Violin Tutti at “Hansa Philharmonie”, Hamburg • Deputy concert master at
+    “Neue Philharmonie”, Berlin<br />
+    • I Violin Tutti (temporary substitute) – Theater für Niedersachsen, Hildesheim<br
+    />
     • I Violin Tutti (temporary substitute) – “Deutsches Filmorchester Babelsberg”,
-    Berlin • II Violin Tutti – Russian-German Music Academy under supervision of
-    Maestro Valery Gergiev, Berlin
+    Berlin<br />
+    • II Violin Tutti – Russian-German Music Academy under supervision of Maestro
+    Valery Gergiev, Berlin
 </p>
