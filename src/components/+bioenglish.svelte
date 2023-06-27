@@ -66,5 +66,5 @@
     • I Violin Tutti (temporary substitute) – “Deutsches Filmorchester Babelsberg”,
     Berlin<br />
     • II Violin Tutti – Russian-German Music Academy under supervision of Maestro
-    Valery Gergiev, Berlin
+    Valery Gergiev, Berlin<br /><br />
 </p>
