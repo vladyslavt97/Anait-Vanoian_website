@@ -23,7 +23,7 @@
 
         <a
             href="https://www.youtube.com/@anaitvanoian7094"
-            class="flex flex-row gap-2 pt-10"
+            class="flex flex-row gap-2 justify-center items-center pt-10 md:pt-0"
             >Watch more videos on <img
                 src="./youtube.png"
                 alt="youtube"

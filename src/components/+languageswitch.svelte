@@ -14,13 +14,13 @@
     <button
         on:click={() => setLanguage("g")}
         class={`px-2 py-1 md:p-0 border text-white hover:bg-gray-500 rounded text-center ${
-            currentLanguage === "e" ? "border-amber-100" : "border-orange-400"
+            currentLanguage === "e" ? "border-amber-100" : "border-orange-300"
         }`}>DE</button
     >
     <button
         on:click={() => setLanguage("e")}
         class={`px-2 py-1 md:p-0 text-white border hover:bg-gray-500 rounded text-center ${
-            currentLanguage === "g" ? "border-amber-100" : "border-orange-400"
+            currentLanguage === "g" ? "border-amber-100" : "border-orange-300"
         }`}>ENG</button
     >
 </div>
