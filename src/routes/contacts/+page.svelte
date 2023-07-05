@@ -97,4 +97,11 @@
             {/if}
         </button>
     </form>
+
+    <h5 class="text-xs font-serif text-center py-10">
+        The website is made by <a
+            href="https://www.facebook.com/vladyslav.tsurkanenko"
+            class="italic text-blue-900">Vladyslav Tsurkanenko</a
+        >
+    </h5>
 </div>
