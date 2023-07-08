@@ -28,7 +28,7 @@ justify-between items-center px-3 fixed top-0 z-50"
 
     <a href="/" on:click={toggleTheNavigation}
         ><h2 class=" text-yellow-100 sm:mr-4 tracking-wider font-bold">
-            Anait &nbsp; Vanoian
+            Anait &nbsp;Vanoian
         </h2></a
     >
 </div>
