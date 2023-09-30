@@ -1,5 +1,7 @@
 <script>
+    // @ts-ignore
     import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
+    // @ts-ignore
     import IoIosText from "svelte-icons/io/IoIosText.svelte";
     import { theLanguage } from "../../store/store";
     let currentLanguage = "g";
