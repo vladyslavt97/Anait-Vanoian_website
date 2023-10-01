@@ -7,68 +7,55 @@
     // @ts-ignore
     import IoIosText from "svelte-icons/io/IoIosText.svelte";
     import { theLanguage } from "../../store/store";
-
-
+    import { onMount } from "svelte";
 
     let currentLanguage = "g";
     theLanguage.subscribe((value) => {
         currentLanguage = value;
     });
 
+    //fetching envs
+    let myObj = {};
+    onMount(async () => {
+        try {
+            const response = await fetch("/api/email");
+            if (response.ok) {
+                myObj = await response.json();
+            } else {
+                throw new Error("Failed to fetch data");
+            }
+        } catch (error) {
+            console.error("error", error);
+        }
+    });
+
+    //sending email and resetting the fields
     let emailState = "";
     let messageState = "";
     let messageSubject = "";
-    const serviceId = "service_teh2hfn";
-    // const serviceId = process.env.YOUR_SERVICE_ID;
-    const templateId = "template_4o0z5xi";
-    // const templateId = process.env.YOUR_TEMPLATE_ID;
-    const publicKey = "bfSGxGd2LfuJCFLwE";
-    // const publicKey = process.env.YOUR_PUBLIC_KEY;
-
-    console.log(
-        "the working one (direct variable)",
-        serviceId,
-        templateId,
-        publicKey
-    );
-    console.log(
-        "I have a question here: ",
-        process.env.YOUR_SERVICE_ID,
-        process.env.YOUR_TEMPLATE_ID,
-        process.env.YOUR_PUBLIC_KEY
-    );
-
-    // let originalString = process.env.YOUR_SERVICE_ID;
-    // let newString = originalString.replace("", "");
-    // console.log('new:'', newString);
 
     function sendEmail(e) {
-        // Access individual form field values by their names
-        emailjs.sendForm(serviceId, templateId, e.target, publicKey).then(
-            (result) => {
-                console.log("SUCCESS!", result.text);
-                emailState = "";
-                messageState = "";
-                messageSubject = "";
-            },
-            (error) => {
-                console.log("FAILED...", error.text);
-            }
-        );
+        emailjs
+            .sendForm(
+                myObj.YOUR_SERVICE_ID,
+                myObj.YOUR_TEMPLATE_ID,
+                e.target,
+                myObj.YOUR_PUBLIC_KEY
+            )
+            .then(
+                (result) => {
+                    console.log("SUCCESS!", result.text);
+                    emailState = "";
+                    messageState = "";
+                    messageSubject = "";
+                },
+                (error) => {
+                    console.log("FAILED...", error.text);
+                }
+            );
     }
 </script>
 
-<!-- <div class="min-h-screen sm:min-h-[98.5vh]">
-    <h1 class="pt-20 text-center font-sans font-bold">Contancts</h1>
-
-    <form on:submit|preventDefault={sendEmail}>
-        <input type="text" name="name" />
-        <input type="email" name="email" />
-        <textarea name="message" />
-        <input type="submit" value="Send" />
-    </form>
-</div> -->
-<!-- new -->
 <div class="min-h-screen sm:min-h-[98.5vh]">
     <h1 class="pt-20 text-center font-sans font-bold">
         {#if currentLanguage === "e"}

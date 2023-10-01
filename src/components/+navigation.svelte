@@ -106,7 +106,7 @@
                 transition={{ duration: 1, delay: 1 }}
                 let:motion
             >
-                <a use:motion href="/contacts"
+                <a use:motion href="/email"
                     >{#if currentLanguage === "e"}
                         Contacts
                     {:else}
