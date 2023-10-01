@@ -33,6 +33,7 @@
     let messageState = "";
     let messageSubject = "";
 
+    let sent = false;
     function sendEmail(e) {
         emailjs
             .sendForm(
@@ -43,10 +44,14 @@
             )
             .then(
                 (result) => {
+                    sent = true;
                     console.log("SUCCESS!", result.text);
                     emailState = "";
                     messageState = "";
                     messageSubject = "";
+                    setTimeout(() => {
+                        sent = false;
+                    }, 3000);
                 },
                 (error) => {
                     console.log("FAILED...", error.text);
@@ -63,7 +68,13 @@
             Kontakte
         {/if}
     </h1>
-
+    {#if !sent}
+        <div class="text-center mt-3">
+            <h1 class="rounded bg-green-300/10 text-green-800 text-center">
+                Your message was sent
+            </h1>
+        </div>
+    {/if}
     <form
         class="flex flex-col justify-center h-[70vh] sm:h-[80vh] m-10 font-sans md:w-[400px] md:mx-auto"
         on:submit|preventDefault={sendEmail}
