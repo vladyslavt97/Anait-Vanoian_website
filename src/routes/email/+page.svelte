@@ -1,6 +1,5 @@
 <script>
     // @ts-nocheck
-
     import emailjs from "@emailjs/browser";
     // @ts-ignore
     import IoIosMail from "svelte-icons/io/IoIosMail.svelte";
