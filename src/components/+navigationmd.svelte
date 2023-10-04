@@ -42,6 +42,20 @@
     <Motion
         initial={{ opacity: 0, x: -20 }}
         animate={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+        let:motion
+    >
+        <a use:motion href="/D.U.R.">
+            {#if currentLanguage === "e"}
+                D.U.R. Quartet
+            {:else}
+                D.U.R. Quartett
+            {/if}
+        </a>
+    </Motion>
+    <Motion
+        initial={{ opacity: 0, x: -20 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 1, delay: 0.4 }}
         let:motion
     >

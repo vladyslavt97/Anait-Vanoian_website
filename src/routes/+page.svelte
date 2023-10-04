@@ -22,18 +22,20 @@
             use:motion
             class="flex flex-row justify-around items-center py-4 pt-16"
         >
-            <a href="https://www.youtube.com/@anaitvanoian7094"
+            <a href="https://www.youtube.com/@anaitvanoian7094" target="_blank"
                 ><img src="./youtube.png" alt="youtube" width="30px" /></a
             >
-            <a href="https://www.facebook.com/anait.vanoyan"
+            <a href="https://www.facebook.com/anait.vanoyan" target="_blank"
                 ><img src="./facebook.png" alt="facebook" width="30px" /></a
             >
             <a
                 href="https://www.instagram.com/anaitvioline/?igshid=ZGUzMzM3NWJiOQ%3D%3D"
+                target="_blank"
                 ><img src="./instagram.png" alt="instagram" width="30px" /></a
             >
             <a
                 href="https://soundcloud.com/anaitvanoian/anait-vanoian-m-karminsky-the-jewish-prayer"
+                target="_blank"
                 ><img src="./soundcloud.png" alt="instagram" width="55px" /></a
             >
         </div>
