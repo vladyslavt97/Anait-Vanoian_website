@@ -22,7 +22,7 @@
             is the leader of the quartett...
         </p>
         <div class="w-[200px] md:w-40">
-            <img src="./quartet/Anait.jpg" alt="Anait" class={imageStyle} />
+            <img src="./anait.jpeg" alt="Anait" class={imageStyle} />
             <h2
                 class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
             >
@@ -34,7 +34,7 @@
     <!-- Vlad -->
     <div class="flex justify-center gap-2 mx-5 my-5">
         <div class="w-[200px] md:w-40">
-            <img src="./quartet/vlad.png" alt="Anait" class={imageStyle} />
+            <img src="./quartet/vlad.jpg" alt="Anait" class={imageStyle} />
             <h2
                 class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
             >
@@ -81,6 +81,18 @@
             Tobias Hoffmann<br />
             is a German cellist..
         </p>
+    </div>
+
+    <!-- Programme -->
+    <hr />
+    <div class="w-full">
+        <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
+    </div>
+
+    <!-- Media -->
+    <hr />
+    <div class="w-full">
+        <h2 class="text-center font-serif font-medium text-xl">Photos</h2>
     </div>
 
     <Motion
