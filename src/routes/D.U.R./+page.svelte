@@ -7,8 +7,11 @@
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5">
     <img
         src="./quartet/header.png"
+        width="200"
+        height="200"
         alt="Anait"
         class=" w-full object-cover rounded-br rounded-bl shadow-2xl shadow-black mt-10"
+        loading="eager"
     />
     <h1 class=" text-4xl text-black mt-5 text-center font-extrabold">
         D.U.R.<br />
