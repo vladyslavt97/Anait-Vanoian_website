@@ -17,6 +17,24 @@
     class="p-16 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-5 flex-wrap md:flex-nowrap"
 >
     <div
+        class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 md:w-96 flex justify-center items-center flex-col font-sans"
+    >
+        <h2 class="text-center font-bold">Workshop Musik</h2>
+        <p>11.11.2023 14.00 Uhr</p>
+        <p class="px-5 text-sm py-2">
+            Die Workshopsbeschreibung: Die Stilistik durch Musik.<br />
+            Moderatorin und Spielerin - Anait Vanoian<br />
+            Assistenten: Vladyslav Tsurkanenko - Violin<br />
+            Pavel Kuznetsov - Klavier<br />
+            Idee: Zeigen unterschiedliche Spielartweise von Barock bis Modern.
+            <br /><br />Es wird als Solo, Duo, Trio von uns gespielt. Und paar
+            Kindern werden auch teilnehmen.
+            <br /><br />Die Werke von Mozart, Bach, Beethoven, Handel,
+            Igudesmann, Schostakowitsch usw.
+        </p>
+    </div>
+
+    <div
         class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 md:w-96 flex justify-center items-center flex-col"
     >
         <h2 class="text-center">Подяка</h2>
