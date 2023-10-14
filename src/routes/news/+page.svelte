@@ -4,9 +4,12 @@
     theLanguage.subscribe((value) => {
         currentLanguage = value;
     });
+
+    const divsStyling =
+        "relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 min-w-96 flex justify-center items-center flex-col p-2";
 </script>
 
-<h1 class="relative top-12 text-center">
+<h1 class="relative top-14 text-center">
     {#if currentLanguage === "e"}
         News
     {:else}
@@ -14,11 +17,9 @@
     {/if}
 </h1>
 <div
-    class="p-16 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-5 flex-wrap md:flex-nowrap"
+    class="px-10 mt-20 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-6 flex-wrap md:flex-nowrap font-sans text-sm"
 >
-    <div
-        class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 md:w-96 flex justify-center items-center flex-col font-sans"
-    >
+    <div class={divsStyling}>
         <h2 class="text-center font-bold">Workshop Musik</h2>
         <p>11.11.2023 14.00 Uhr</p>
         <p class="px-5 text-sm py-2">
@@ -31,12 +32,38 @@
             Kindern werden auch teilnehmen.
             <br /><br />Die Werke von Mozart, Bach, Beethoven, Handel,
             Igudesmann, Schostakowitsch usw.
+            <a
+                href="https://www.musikschulebarnim.de/"
+                class="text-blue-500 italic underline"
+            >
+                Musikschule Barnim Bernau
+            </a>
         </p>
     </div>
 
-    <div
-        class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 md:w-96 flex justify-center items-center flex-col"
-    >
+    <div class={divsStyling}>
+        <h2 class="text-center">17 OKTOBER 2023 DIENSTAG 20.00 UHR</h2>
+        <p>
+            <a
+                href="https://www.konzerthaus.de/de/programm/berliner-konzert-chor/9681"
+                class="text-blue-500 italic underline"
+                >KONZERTHAUS GROSSER SAAL</a
+            >
+        </p>
+    </div>
+    <div class={divsStyling}>
+        <h2 class="text-center">Freitag - 13. Oktober 2023 - 19:30 Uhr</h2>
+        <p>
+            Veranstaltungsort<br />
+            <a
+                href="https://www.umkulturagenturpreussen.de/spielplan/detail-spielplan/konzerteihe-unterhaltung-1-konzert-schmuckstuecke/"
+                class="text-blue-500 italic underline"
+                >Prenzlau, Kultur- und Plenarsaal</a
+            >
+        </p>
+    </div>
+
+    <div class={divsStyling}>
         <h2 class="text-center">Подяка</h2>
         <img
             src="/подяка.jpg"
@@ -45,9 +72,7 @@
         />
     </div>
 
-    <div
-        class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 mt-4 md:mt-0 md:h-96 md:w-96 flex justify-center items-center flex-col"
-    >
+    <div class={divsStyling}>
         <h2 class="text-center">Höcherbuch mit der Musik</h2>
         <iframe
             src="https://www.youtube.com/embed/QOlgSJZgGlw"
@@ -59,9 +84,7 @@
         />
     </div>
 
-    <div
-        class="relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 mt-4 md:mt-0 md:h-96 md:w-96 flex justify-center items-center flex-col"
-    >
+    <div class={divsStyling}>
         <h2 class="text-center">Certificate</h2>
         <img
             src="/certificate.jpg"
