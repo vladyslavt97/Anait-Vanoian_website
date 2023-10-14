@@ -6,7 +6,7 @@
     });
 
     const divsStyling =
-        "relative rounded-2xl border drop-shadow-lg w-full lg:w-1/2 md:h-96 min-w-96 flex justify-center items-center flex-col p-2";
+        "relative rounded-2xl border drop-shadow-lg lg:w-1/3 max-w-96 flex justify-center items-center flex-col p-2";
 </script>
 
 <h1 class="relative top-14 text-center">
@@ -17,12 +17,12 @@
     {/if}
 </h1>
 <div
-    class="px-10 mt-20 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-6 flex-wrap md:flex-nowrap font-sans text-sm"
+    class="px-10 mt-20 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-6 flex-wrap font-sans text-sm"
 >
     <div class={divsStyling}>
         <h2 class="text-center font-bold">Workshop Musik</h2>
         <p>11.11.2023 14.00 Uhr</p>
-        <p class="px-5 text-sm py-2">
+        <p>
             Die Workshopsbeschreibung: Die Stilistik durch Musik.<br />
             Moderatorin und Spielerin - Anait Vanoian<br />
             Assistenten: Vladyslav Tsurkanenko - Violin<br />
@@ -42,19 +42,23 @@
     </div>
 
     <div class={divsStyling}>
-        <h2 class="text-center">17 OKTOBER 2023 DIENSTAG 20.00 UHR</h2>
+        <h2 class="text-center font-bold">
+            17 Oktober 2023 Dienstag 20.00 UHR
+        </h2>
         <p>
             <a
                 href="https://www.konzerthaus.de/de/programm/berliner-konzert-chor/9681"
                 class="text-blue-500 italic underline"
-                >KONZERTHAUS GROSSER SAAL</a
+                >Konzerthaus Grosser Saal</a
             >
         </p>
     </div>
     <div class={divsStyling}>
-        <h2 class="text-center">Freitag - 13. Oktober 2023 - 19:30 Uhr</h2>
+        <h2 class="text-center font-bold">
+            Freitag - 13. Oktober 2023 - 19:30 Uhr
+        </h2>
         <p>
-            Veranstaltungsort<br />
+            Veranstaltungsort:
             <a
                 href="https://www.umkulturagenturpreussen.de/spielplan/detail-spielplan/konzerteihe-unterhaltung-1-konzert-schmuckstuecke/"
                 class="text-blue-500 italic underline"
@@ -88,7 +92,7 @@
         <h2 class="text-center">Certificate</h2>
         <img
             src="/certificate.jpg"
-            alt="подяка"
+            alt="document"
             class="pb-5 pt-3 px-2 md:h-80 object-contain"
         />
     </div>
