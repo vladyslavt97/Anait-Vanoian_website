@@ -18,6 +18,45 @@
         <span class="font-sans font-extralight text-2xl">Berlin Quartett</span>
     </h1>
 
+    <div class="font-sans p-3">
+        <p>
+            Das D.U.R. Quartett ist ein klassisches Streichquartett, und wurde
+            in 2015 in Bremen gegründet. „D.U.R.“ steht für den fröhlichen
+            Dur-Akkord, symbolisiert aber auch eine Idee des Friedens und der
+            Kommunikation zwischen den Herkunftsländern der Mitglieder.
+        </p>
+
+        <h2 class="font-bold mt-5 text-lg">Geschichte</h2>
+        <p>
+            Durch die Initiative von Anait Vanoian fanden sich im August 2015
+            vier junge professionelle Musiker zu einem Streichquartett zusammen,
+            um an den internationalen Konzertarbeitswochen in Goslar
+            teilzunehmen. Nach diesem wegweisenden Meisterkurs bei Prof. Oliver
+            Wille und aufgrund von positiver Publikumsresonanz beschlossen die
+            Masterstudierenden, das D.U.R. Quartett (Deutschland, Ukraine,
+            Russland) zu gründen. Das Quartett wurde an der Hochschule für
+            Künste Bremen von Thomas Klug begleitet und bekam weitere Anregungen
+            durch einen Meisterkurs vom Curtis Institute of Music (USA), und
+            durch Martin Funda von Armida-Quartett. Des Weiteren studieren sie
+            seit Sommersemester 2017 an der Hochschule für Musik Hannover bei
+            Prof. Oliver Wille, Kuss Quartett einen Kammermusikmaster.<br /><br
+            />
+
+            * Von 2016 bis 2018 hatten die die Möglichkeit vier Instrumente des
+            berühmten italienischen Geigenbauers Alessandro Ciciliati zu spielen
+            und zusammen mit der „Violin Assets“ Firma kooperieren.<br /><br />
+
+            * Die Urkunde hat Mitglieder des DUR Quartetts im November 2017 am
+            4. Brigitte-Kempen-Wettbewerb des Fördervereins der Musikhochschule
+            in Aachen für Studierende der HfMT Köln teilgenommen und wird mit
+            dem Zweiten Preis ausgezeichnet.<br /><br />
+
+            * Im September 2018 nehmen die in einen Wettbewerb – „XXIII Premio
+            Internazionale di Musica Gaetano Zinetti“ in Sanguinetto – Verona,
+            Italien teil.<br /><br />
+        </p>
+    </div>
+
     <!-- Anait -->
     <div class="flex justify-center gap-2 mx-5 my-5">
         <p class=" font-sans">
@@ -29,7 +68,7 @@
             <h2
                 class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
             >
-                Violin
+                Violin I
             </h2>
         </div>
     </div>
@@ -41,7 +80,7 @@
             <h2
                 class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
             >
-                Violin
+                Violin II
             </h2>
         </div>
         <p class=" font-sans">
