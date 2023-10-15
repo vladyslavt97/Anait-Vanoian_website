@@ -18,7 +18,7 @@
         <span class="font-sans font-extralight text-2xl">Berlin Quartett</span>
     </h1>
 
-    <div class="font-sans p-3">
+    <div class="font-sans px-3 md:px-20 lg:px-36">
         <p>
             Das D.U.R. Quartett ist ein klassisches Streichquartett, und wurde
             in 2015 in Bremen gegründet. „D.U.R.“ steht für den fröhlichen
