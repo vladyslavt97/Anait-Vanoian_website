@@ -68,7 +68,7 @@
             Kontakte
         {/if}
     </h1>
-    {#if !sent}
+    {#if sent}
         <div class="text-center mt-3">
             <h1 class="rounded bg-green-300/10 text-green-800 text-center">
                 Your message was sent
