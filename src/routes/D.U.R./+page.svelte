@@ -2,6 +2,9 @@
     import { Motion } from "svelte-motion";
     const imageStyle =
         "w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black";
+
+    const musiciansDivs =
+        "flex justify-center md:flex-col gap-2 mx-5 my-5 md:items-center";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5">
@@ -57,72 +60,78 @@
         </p>
     </div>
 
-    <!-- Anait -->
-    <div class="flex justify-center gap-2 mx-5 my-5">
-        <p class=" font-sans">
-            Anait Vanoian<br />
-            is the leader of the quartett...
-        </p>
-        <div class="w-[200px] md:w-40">
-            <img src="./anait.jpeg" alt="Anait" class={imageStyle} />
-            <h2
-                class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-            >
-                Violin I
-            </h2>
+    <div class="md:flex md:flex-row md:justify-center md:items-center">
+        <!-- Anait -->
+        <div class={musiciansDivs}>
+            <p class=" font-sans">
+                Anait Vanoian<br />
+                is the leader of the quartett...
+            </p>
+            <div class="w-[200px] md:w-40">
+                <img src="./anait.jpeg" alt="Anait" class={imageStyle} />
+                <h2
+                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                >
+                    Violin I
+                </h2>
+            </div>
         </div>
-    </div>
 
-    <!-- Vlad -->
-    <div class="flex justify-center gap-2 mx-5 my-5">
-        <div class="w-[200px] md:w-40">
-            <img src="./quartet/vlad.jpg" alt="Anait" class={imageStyle} />
-            <h2
-                class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-            >
-                Violin II
-            </h2>
+        <!-- Vlad -->
+        <div class={musiciansDivs}>
+            <div class="w-[200px] md:w-40">
+                <img src="./quartet/vlad.jpg" alt="Anait" class={imageStyle} />
+                <h2
+                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                >
+                    Violin II
+                </h2>
+            </div>
+            <p class=" font-sans">
+                Vladyslav Tsurkanenko<br />
+                is a Ukrainian-Bulgarian violinist...
+            </p>
         </div>
-        <p class=" font-sans">
-            Vladyslav Tsurkanenko<br />
-            is a Ukrainian-Bulgarian violinist...
-        </p>
-    </div>
 
-    <!-- Anastasia -->
-    <div class="flex justify-center gap-2 mx-5 my-5">
-        <p class=" font-sans">
-            Anastasia Kuleva<br />
-            is a Ukrainian violist..
-        </p>
-        <div class=" w-[200px] md:w-40">
-            <img
-                src="./quartet/Anastasia.jpg"
-                alt="Anastasia"
-                class={imageStyle}
-            />
-            <h2
-                class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-            >
-                Viola
-            </h2>
+        <!-- Anastasia -->
+        <div class={musiciansDivs}>
+            <p class=" font-sans">
+                Anastasia Kuleva<br />
+                is a Ukrainian violist..
+            </p>
+            <div class=" w-[200px] md:w-40">
+                <img
+                    src="./quartet/Anastasia.jpg"
+                    alt="Anastasia"
+                    class={imageStyle}
+                />
+                <h2
+                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                >
+                    Viola
+                </h2>
+            </div>
         </div>
-    </div>
 
-    <!-- Tobias -->
-    <div class="flex justify-center gap-2 mx-5 mb-10 my-5">
-        <div class="w-[200px] md:w-40">
-            <img src="./quartet/Tobias.jpeg" alt="Tobias" class={imageStyle} />
-            <h2
-                class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-            >
-                Cello
-            </h2>
+        <!-- Tobias -->
+        <div class={musiciansDivs}>
+            <div class="w-[200px] md:w-40">
+                <img
+                    src="./quartet/Tobias.jpeg"
+                    alt="Tobias"
+                    class={imageStyle}
+                />
+                <h2
+                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                >
+                    Cello
+                </h2>
+            </div>
+            <p class=" font-sans">
+                Tobias Hoffmann<br />
+                is a German cellist..
+            </p>
         </div>
-        <p class=" font-sans">
-            Tobias Hoffmann<br />
-            is a German cellist..
-        </p>
     </div>
 
     <!-- Programme -->
