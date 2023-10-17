@@ -23,6 +23,22 @@
         <h2 class="text-center font-bold">Workshop Musik</h2>
         <p>11.11.2023 14.00 Uhr</p>
         <p>
+            Fr 20.10.2023 20:00-21:45 Uhr | Großes Haus<br />
+            <br />
+            So 22.10.2023 19:00-20:45 Uhr | Großes Haus<br />
+
+            <a
+                href="https://www.staatstheater-cottbus.de/programm/philharmonisches-konzert/2-philharmonisches-konzert-spielzeit-23-24/"
+                class="text-blue-500 italic underline"
+            >
+                Staatstheater Cottbus
+            </a>
+        </p>
+    </div>
+    <div class={divsStyling}>
+        <h2 class="text-center font-bold">Workshop Musik</h2>
+        <p>11.11.2023 14.00 Uhr</p>
+        <p>
             Die Workshopsbeschreibung: Die Stilistik durch Musik.<br />
             Moderatorin und Spielerin - Anait Vanoian<br />
             Assistenten: Vladyslav Tsurkanenko - Violin<br />
