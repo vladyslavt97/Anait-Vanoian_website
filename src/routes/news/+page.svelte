@@ -20,8 +20,6 @@
     class="px-10 mt-20 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-6 flex-wrap font-sans text-sm"
 >
     <div class={divsStyling}>
-        <h2 class="text-center font-bold">Workshop Musik</h2>
-        <p>11.11.2023 14.00 Uhr</p>
         <p>
             Fr 20.10.2023 20:00-21:45 Uhr | Großes Haus<br />
             <br />
