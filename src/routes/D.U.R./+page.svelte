@@ -161,10 +161,26 @@
         </div> -->
     </div>
 
-    <!-- Programme -->
+    <!-- Engagements -->
     <hr />
     <div class="w-full">
         <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
+
+        <div class="px-10">
+            <h1>29.01.2023</h1>
+            <a
+                href="http://das-gut.org/programm-upcoming.html"
+                target="_blank"
+                class="text-blue-500 italic">Location</a
+            >
+            <div class="text-sm">
+                G.F.Haydn – String Quartet ''Sunrise'' B Major - 1. Satz<br />
+                A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
+                E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
+                A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2. und
+                3. Sätzen<br />
+            </div>
+        </div>
     </div>
 
     <!-- Media -->
