@@ -1,8 +1,11 @@
 <script>
     import { Motion } from "svelte-motion";
+    import quartet_artists from "../../libs/quartet_artists.json";
+
     const imageStyle =
         "w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black";
 
+    const dynamicId = "Katie_Hunt";
     const musiciansDivs =
         "flex justify-center md:flex-col gap-2 mx-5 my-5 md:items-center";
 </script>
@@ -62,7 +65,30 @@
 
     <div class="md:flex md:flex-row md:justify-center md:items-center">
         <!-- Anait -->
-        <div class={musiciansDivs}>
+        {#each quartet_artists as artist}
+            <div class={musiciansDivs}>
+                <p class=" font-sans">
+                    {artist.shortBio}
+                    <a
+                        class="text-blue-800 italic"
+                        href={`/D.U.R./${artist.name}`}>read more</a
+                    >
+                </p>
+                <div class="w-[200px] md:w-40">
+                    <img
+                        src={artist.image}
+                        alt={artist.name}
+                        class={imageStyle}
+                    />
+                    <h2
+                        class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                    >
+                        {artist.role}
+                    </h2>
+                </div>
+            </div>
+        {/each}
+        <!-- <div class={musiciansDivs}>
             <p class=" font-sans">
                 Anait Vanoian<br />
                 is the leader of the quartett...
@@ -75,10 +101,10 @@
                     Violin I
                 </h2>
             </div>
-        </div>
+        </div> -->
 
         <!-- Vlad -->
-        <div class={musiciansDivs}>
+        <!-- <div class={musiciansDivs}>
             <div class="w-[200px] md:w-40">
                 <img src="./quartet/vlad.jpg" alt="Anait" class={imageStyle} />
                 <h2
@@ -91,30 +117,31 @@
                 Vladyslav Tsurkanenko<br />
                 is a Ukrainian-Bulgarian violinist...
             </p>
-        </div>
+        </div> -->
 
-        <!-- Anastasia -->
-        <div class={musiciansDivs}>
+        <!-- Katie -->
+        <!-- <div class={musiciansDivs}>
             <p class=" font-sans">
-                Anastasia Kuleva<br />
-                is a Ukrainian violist..
+                Katie Hunt ist eine Konzertbratschistin aus den Vereinigten
+                Staaten von Amerika. Sie begann in jungen Jahren mit dem Geige
+                zu spielen, und mit 18 Jahren zog Katie nach Chicago, wo sie
+                ihren Bachelor- und Master-Abschluss in Bratsche machte... <a
+                    class="text-blue-800 italic"
+                    href={`/D.U.R./${dynamicId}`}>read more</a
+                >
             </p>
             <div class=" w-[200px] md:w-40">
-                <img
-                    src="./quartet/Anastasia.jpg"
-                    alt="Anastasia"
-                    class={imageStyle}
-                />
+                <img src="./quartet/Katie.jpg" alt="Katie" class={imageStyle} />
                 <h2
                     class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
                 >
                     Viola
                 </h2>
             </div>
-        </div>
+        </div> -->
 
         <!-- Tobias -->
-        <div class={musiciansDivs}>
+        <!-- <div class={musiciansDivs}>
             <div class="w-[200px] md:w-40">
                 <img
                     src="./quartet/Tobias.jpeg"
@@ -131,7 +158,7 @@
                 Tobias Hoffmann<br />
                 is a German cellist..
             </p>
-        </div>
+        </div> -->
     </div>
 
     <!-- Programme -->
