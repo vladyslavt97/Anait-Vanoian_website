@@ -1,16 +1,31 @@
 [
     {
-        "name":"Anait Vanoian",
+        "name":"Anait_Vanoian",
         "shortBio": "Anait Vanoian is the leader of the quartett...",
-        "longBio": "Anait Vanoian is the leader of the quartett long...",
+        "longBio": "long bio Anait",
         "image": "/quartet/anait.jpeg",
         "role": "Violin I"
     },
     {
+        "name":"Vladyslav_Tsurkanenko",
+        "shortBio": "Vladyslav Tsurkanenko is a Ukrainian-Bulgarian violinist...",
+        "longBio": "long bio Vlad",
+        "image": "./quartet/vlad.jpg",
+        "role": "Violin II"
+    },
+    {
         "name":"Katie_Hunt",
-        "shortBio": "Anait Vanoian is the leader of the quartett...",
+        "shortBio": "Katie Hunt ist eine Konzertbratschistin aus den Vereinigten Staaten von Amerika.",
         "longBio": "Katie Hunt ist eine Konzertbratschistin aus den Vereinigten Staaten von Amerika. Sie begann in jungen Jahren mit dem Geige zu spielen, und mit 18 Jahren zog Katie nach Chicago, wo sie ihren Bachelor- und Master-Abschluss in Bratsche machte. Sie studierte bei Rami Solomonow (Chicago Chamber Musicians) und Li-Kuo Chang (stellvertretender Solobratscher des Chicago Symphony Orchestra), der ihr nicht nur ein einflussreicher Lehrer, sondern auch ein Mentor fürs Leben wurde.  In 2014, nach ihrem Abschluss an der DePaul University, zog Katie nach Berlin, um ihren Traum zu verwirklichen, ihr Studium bei einem Bratschisten ihres Lieblingsorchesters, den Berliner Philharmonikern, fortzusetzen.  In Berlin fangt Katie ihr Studium bei Matthew Hunter (Berliner Philharmoniker) an und kurz danach gewann ein Praktikum bei den Brandenburger Symphonikern. Einige Jahre später vertiefte Katie ihre Studien bei Felix Schwartz (Solobratscher der Belriner Staatskapelle) und began mit Orchestern in ganz Deutschland zu spielen.  Sie hat ein Jahr lang Zeitvertrag bei den Brandenburger Symphonikern und spielt dort weiterhin regelmäßig als Aushilfs-Bratschistin sowie mit anderen renommierten Orchestern, darunter Anhaltische Philharmonie Dessau, Brandenburgisches Staatsorchester Frankfurt,  Staatsorchester Cottbus und jeden Frühling bei dem Zakhar Bron Festival Orchestra Interlaken Classics.Katie’s Konzerttourneen haben sie durch Nordamerika, Europa, Japan, China, Südkorea, Taiwan und Dubai geführt, sogar auch nach Nigeria Afrika, um dort humanitäre Musikprojekte zu leiten.",
         "image": "/quartet/Katie.jpg",
         "role": "Viola"
+    },
+    {
+        "name":"Tobias_Hoffmann",
+        "shortBio": "Tobias Hoffmann is a German cellist..",
+        "longBio": "long bio Tobias",
+        "image": "./quartet/Tobias.jpeg",
+        "role": "Cello"
     }
+
 ]

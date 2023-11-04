@@ -1,18 +1,11 @@
 <script>
     import { Motion } from "svelte-motion";
     import quartet_artists from "../../libs/quartet_artists.json";
-
-    const imageStyle =
-        "w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black";
-
-    const dynamicId = "Katie_Hunt";
-    const musiciansDivs =
-        "flex justify-center md:flex-col gap-2 mx-5 my-5 md:items-center";
 </script>
 
-<div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5">
+<div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
     <img
-        src="./quartet/header.png"
+        src="./quartet/top.jpg"
         width="200"
         height="200"
         alt="Anait"
@@ -21,7 +14,7 @@
     />
     <h1 class=" text-4xl text-black mt-5 text-center font-extrabold">
         D.U.R.<br />
-        <span class="font-sans font-extralight text-2xl">Berlin Quartett</span>
+        <span class="font-sans font-extralight text-2xl">String Quartett</span>
     </h1>
 
     <div class="font-sans px-3 md:px-20 lg:px-36">
@@ -65,20 +58,28 @@
 
     <div class="md:flex md:flex-row md:justify-center md:items-center">
         <!-- Anait -->
-        {#each quartet_artists as artist}
-            <div class={musiciansDivs}>
-                <p class=" font-sans">
+        {#each quartet_artists as artist, index}
+            <div
+                class="grid grid-cols-2 md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center"
+            >
+                <p class="font-sans mx-2 text-wrap">
                     {artist.shortBio}
                     <a
                         class="text-blue-800 italic"
-                        href={`/D.U.R./${artist.name}`}>read more</a
+                        href={`/D.U.R./${artist.name}`}
                     >
+                        read more
+                    </a>
                 </p>
-                <div class="w-[200px] md:w-40">
+                <div
+                    class={`"w-[200px] md:w-40" ${
+                        index % 2 === 0 && "order-first"
+                    }`}
+                >
                     <img
                         src={artist.image}
                         alt={artist.name}
-                        class={imageStyle}
+                        class="w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black"
                     />
                     <h2
                         class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
@@ -88,77 +89,6 @@
                 </div>
             </div>
         {/each}
-        <!-- <div class={musiciansDivs}>
-            <p class=" font-sans">
-                Anait Vanoian<br />
-                is the leader of the quartett...
-            </p>
-            <div class="w-[200px] md:w-40">
-                <img src="./anait.jpeg" alt="Anait" class={imageStyle} />
-                <h2
-                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-                >
-                    Violin I
-                </h2>
-            </div>
-        </div> -->
-
-        <!-- Vlad -->
-        <!-- <div class={musiciansDivs}>
-            <div class="w-[200px] md:w-40">
-                <img src="./quartet/vlad.jpg" alt="Anait" class={imageStyle} />
-                <h2
-                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-                >
-                    Violin II
-                </h2>
-            </div>
-            <p class=" font-sans">
-                Vladyslav Tsurkanenko<br />
-                is a Ukrainian-Bulgarian violinist...
-            </p>
-        </div> -->
-
-        <!-- Katie -->
-        <!-- <div class={musiciansDivs}>
-            <p class=" font-sans">
-                Katie Hunt ist eine Konzertbratschistin aus den Vereinigten
-                Staaten von Amerika. Sie begann in jungen Jahren mit dem Geige
-                zu spielen, und mit 18 Jahren zog Katie nach Chicago, wo sie
-                ihren Bachelor- und Master-Abschluss in Bratsche machte... <a
-                    class="text-blue-800 italic"
-                    href={`/D.U.R./${dynamicId}`}>read more</a
-                >
-            </p>
-            <div class=" w-[200px] md:w-40">
-                <img src="./quartet/Katie.jpg" alt="Katie" class={imageStyle} />
-                <h2
-                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-                >
-                    Viola
-                </h2>
-            </div>
-        </div> -->
-
-        <!-- Tobias -->
-        <!-- <div class={musiciansDivs}>
-            <div class="w-[200px] md:w-40">
-                <img
-                    src="./quartet/Tobias.jpeg"
-                    alt="Tobias"
-                    class={imageStyle}
-                />
-                <h2
-                    class="bg-yellow-500 rounded-br rounded-bl text-center text-white"
-                >
-                    Cello
-                </h2>
-            </div>
-            <p class=" font-sans">
-                Tobias Hoffmann<br />
-                is a German cellist..
-            </p>
-        </div> -->
     </div>
 
     <!-- Engagements -->
@@ -166,14 +96,14 @@
     <div class="w-full">
         <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
 
-        <div class="px-10">
-            <h1>29.01.2023</h1>
+        <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
+            <h1>29.10.2023</h1>
             <a
                 href="http://das-gut.org/programm-upcoming.html"
                 target="_blank"
                 class="text-blue-500 italic">Location</a
             >
-            <div class="text-sm">
+            <div class="text-xs">
                 G.F.Haydn – String Quartet ''Sunrise'' B Major - 1. Satz<br />
                 A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
                 E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
@@ -187,6 +117,7 @@
     <hr />
     <div class="w-full">
         <h2 class="text-center font-serif font-medium text-xl">Photos</h2>
+        <h3 class="text-center">comming soon...</h3>
     </div>
 
     <Motion
