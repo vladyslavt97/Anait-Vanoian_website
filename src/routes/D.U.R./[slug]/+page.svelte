@@ -1,7 +1,6 @@
 <script>
     import quartet_artists from "../../../libs/quartet_artists.json";
     import { page } from "$app/stores";
-    // import IoArrowBackCircle from "svelte-icons-pack/ai/IoArrowBackCircle";
 
     const path = $page.params.slug;
     let currentArtist = { name: "", shortBio: "", longBio: "", image: "" };
@@ -13,9 +12,8 @@
     });
 </script>
 
-<a class="absolute top-10" href="/D.U.R.">
-    <!-- <IoArrowBackCircle/> -->
-    Go back
+<a class="absolute top-12 left-2" href="/D.U.R.">
+    <img src="/backarrow.png" alt="backarrow" width="30" />
 </a>
 <div class="font-sans flex flex-col items-center">
     <h1 class="text-center mt-[100px] mb-5 text-lg font-bold">
