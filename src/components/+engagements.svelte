@@ -9,15 +9,27 @@
             >Künstlerhof Alt - Lietzov 12,10587 Berlin
         </a>
         <div class="text-xs">
-            F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz<br />
-            Ph.Glass – String Quartet Nr.5 - 4. Satz D. Klebanov - String<br />
-            Quartet Nr.9 - 1. Satz - ukrainischer Komponist, die berühmte Thema Щедрик
-            - Folks Weihnachtslied<br />
-            G.F.Haydn – String Quartet 'Sunrise' B Major - 1. Satz<br />
-            A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
-            E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
-            A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2. und 3.
-            Sätzen<br />
+            <p class="pb-2">
+                F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz
+            </p>
+            <p class="pb-2">Ph.Glass – String Quartet Nr.5 - 4. Satz</p>
+            <p class="pb-2">
+                D. Klebanov - String Quartet Nr.4 - 1. Satz - ukrainischer
+                Komponist, die berühmte Thema Щедрик - Folks Weihnachtslied
+            </p>
+            <p class="pb-2">
+                G.F.Haydn – String Quartet 'Sunrise' B Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                E.Grieg – String Quartet in G minor, Op.27 - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2.
+                und 3. Sätzen
+            </p>
         </div>
 
         <br />
@@ -28,15 +40,27 @@
     <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
         <h1>30.11.2023 um 19:00</h1>
         <div class="text-xs">
-            F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz<br />
-            Ph.Glass – String Quartet Nr.5 - 4. Satz D. Klebanov - String<br />
-            Quartet Nr.9 - 1. Satz - ukrainischer Komponist, die berühmte Thema Щедрик
-            - Folks Weihnachtslied<br />
-            G.F.Haydn – String Quartet 'Sunrise' B Major - 1. Satz<br />
-            A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
-            E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
-            A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2. und 3.
-            Sätzen<br />
+            <p class="pb-2">
+                F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz
+            </p>
+            <p class="pb-2">Ph.Glass – String Quartet Nr.5 - 4. Satz</p>
+            <p class="pb-2">
+                D. Klebanov - String Quartet Nr.4 - 1. Satz - ukrainischer
+                Komponist, die berühmte Thema Щедрик - Folks Weihnachtslied
+            </p>
+            <p class="pb-2">
+                G.F.Haydn – String Quartet 'Sunrise' B Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                E.Grieg – String Quartet in G minor, Op.27 - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2.
+                und 3. Sätzen
+            </p>
         </div>
 
         <br />
@@ -52,11 +76,19 @@
             class="text-blue-500 italic">Location</a
         >
         <div class="text-xs">
-            G.F.Haydn – String Quartet ''Sunrise'' B Major - 1. Satz<br />
-            A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
-            E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
-            A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2. und 3.
-            Sätzen<br />
+            <p class="pb-2">
+                G.F.Haydn – String Quartet ''Sunrise'' B Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz
+            </p>
+            <p class="pb-2">
+                E.Grieg – String Quartet in G minor, Op.27 - 1. Satz
+            </p>
+            <p class="pb-2">
+                A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2.
+                und 3. Sätzen
+            </p>
         </div>
     </div>
 </div>
