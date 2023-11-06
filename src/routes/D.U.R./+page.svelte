@@ -1,6 +1,7 @@
 <script>
     import { Motion } from "svelte-motion";
     import quartet_artists from "../../libs/quartet_artists.json";
+    import Engagements from "../../components/+engagements.svelte";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
@@ -14,7 +15,7 @@
     />
     <h1 class=" text-4xl text-black mt-5 text-center font-extrabold">
         D.U.R.<br />
-        <span class="font-sans font-extralight text-2xl">String Quartett</span>
+        <span class="font-sans font-extralight text-2xl">Streichquartett</span>
     </h1>
 
     <div class="font-sans px-3 md:px-20 lg:px-36">
@@ -25,7 +26,7 @@
             Kommunikation zwischen den Herkunftsländern der Mitglieder.
         </p>
 
-        <h2 class="font-bold mt-5 text-lg">Geschichte</h2>
+        <br />
         <p>
             Durch die Initiative von Anait Vanoian fanden sich im August 2015
             vier junge professionelle Musiker zu einem Streichquartett zusammen,
@@ -93,31 +94,15 @@
 
     <!-- Engagements -->
     <hr />
-    <div class="w-full">
-        <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
-
-        <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
-            <h1>29.10.2023</h1>
-            <a
-                href="http://das-gut.org/programm-upcoming.html"
-                target="_blank"
-                class="text-blue-500 italic">Location</a
-            >
-            <div class="text-xs">
-                G.F.Haydn – String Quartet ''Sunrise'' B Major - 1. Satz<br />
-                A.Borodin – String Quartet Nr. 2 in D Major - 1. Satz<br />
-                E.Grieg – String Quartet in G minor, Op.27 - 1. Satz<br />
-                A.Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2. und
-                3. Sätzen<br />
-            </div>
-        </div>
-    </div>
+    <Engagements />
 
     <!-- Media -->
     <hr />
-    <div class="w-full">
-        <h2 class="text-center font-serif font-medium text-xl">Photos</h2>
-        <h3 class="text-center">comming soon...</h3>
+    <h2 class="text-center font-serif font-medium text-xl">Photos</h2>
+    <div class="w-full flex flex-col gap-5">
+        <img src="./quartetGallery/1.jpeg" alt="" class="rounded mx-10" />
+        <img src="./quartetGallery/2.jpeg" alt="" class="rounded mx-10" />
+        <img src="./quartetGallery/3.jpeg" alt="" class="rounded mx-10" />
     </div>
 
     <Motion
@@ -136,9 +121,7 @@
             <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank"
                 ><img src="./facebook.png" alt="facebook" width="30px" /></a
             >
-            <h4 class="text-sm font-sans italic">
-                dasd.u.r.quartett@gmail.com
-            </h4>
+            <h4 class="text-sm font-sans italic">dur.quartet@gmail.com</h4>
         </div>
     </Motion>
 </div>
