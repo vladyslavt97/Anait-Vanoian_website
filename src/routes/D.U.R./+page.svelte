@@ -65,12 +65,18 @@
             >
                 <p class="font-sans mx-2 text-wrap">
                     {artist.shortBio}
-                    <a
-                        class="text-blue-800 italic"
-                        href={`/D.U.R./${artist.name}`}
-                    >
-                        read more
-                    </a>
+                    {#if artist.name === "Anait_Vanoian"}
+                        <a class="text-blue-800 italic" href={`/`}>
+                            read more
+                        </a>
+                    {:else}
+                        <a
+                            class="text-blue-800 italic"
+                            href={`/D.U.R./${artist.name}`}
+                        >
+                            read more
+                        </a>
+                    {/if}
                 </p>
                 <div
                     class={`"w-[200px] md:w-40" ${
