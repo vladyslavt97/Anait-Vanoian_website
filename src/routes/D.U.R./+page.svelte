@@ -65,7 +65,13 @@
         <!-- Anait -->
         {#each quartet_artists as artist, index}
             <div
-                class="grid grid-cols-2 sm:place-items-center md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center"
+                class={`grid grid-cols-2 sm:place-items-center md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center
+                ${
+                    index % 2 === 0
+                        ? "bg-gradient-to-t from-gray-200 via-orange-400/10 to-gray-800/50 rounded-lg md:bg-none"
+                        : "order-first"
+                }
+                `}
             >
                 <p class="font-sans mx-2 text-wrap">
                     {artist.shortBio}
@@ -86,7 +92,7 @@
                     <img
                         src={artist.image}
                         alt={artist.name}
-                        class="w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black"
+                        class="w-[200px] md:w-40 h-48 object-cover object-top rounded-tr rounded-tl shadow-2xl shadow-black"
                     />
                     <h2
                         class=" md:w-40 bg-yellow-500 rounded-br rounded-bl text-center text-white"
