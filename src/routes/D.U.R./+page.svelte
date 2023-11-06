@@ -89,7 +89,7 @@
                         class="w-[200px] md:w-40 h-48 object-cover rounded-tr rounded-tl shadow-2xl shadow-black"
                     />
                     <h2
-                        class="w-[200px] md:w-40 bg-yellow-500 rounded-br rounded-bl text-center text-white"
+                        class=" md:w-40 bg-yellow-500 rounded-br rounded-bl text-center text-white"
                     >
                         {artist.role}
                     </h2>
