@@ -2,6 +2,7 @@
     import { Motion } from "svelte-motion";
     import quartet_artists from "../../libs/quartet_artists.json";
     import Engagements from "../../components/+engagements.svelte";
+    import { copy } from "svelte-copy";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
@@ -127,7 +128,14 @@
             <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank"
                 ><img src="./facebook.png" alt="facebook" width="30px" /></a
             >
-            <h4 class="text-sm font-sans italic">dur.quartet@gmail.com</h4>
+            <div class="text-sm font-sans italic flex justify-center gap-2">
+                <h4 use:copy={"dur.quartet@gmail.com"}>
+                    dur.quartet@gmail.com
+                </h4>
+                <button use:copy={"dur.quartet@gmail.com"}
+                    ><img src="/copy.png" width="20" />
+                </button>
+            </div>
         </div>
     </Motion>
 </div>
