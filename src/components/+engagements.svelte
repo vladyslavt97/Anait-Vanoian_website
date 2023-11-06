@@ -33,7 +33,13 @@
         </div>
 
         <br />
-        Tickets 20€ (Ermäßigt 10€)
+        <p class="text-center">Tickets 20€ (Ermäßigt 10€)</p>
+        <img
+            src="/poster3.12.jpg"
+            alt="poster 3.12.2023"
+            class="rounded-lg mx-auto"
+            width="200"
+        />
     </div>
 </div>
 <div class="w-full">
