@@ -70,8 +70,8 @@
                 class={`grid grid-cols-2 sm:place-items-center md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center
                 ${
                     index % 2 === 0
-                        ? "bg-gradient-to-t from-gray-200 via-orange-400/10 to-gray-800/50 rounded-lg md:bg-none"
-                        : "order-first"
+                        ? "bg-gradient-to-t from-gray-200 via-orange-200/10 to-orange-800/10 rounded-lg md:bg-none"
+                        : "bg-none"
                 }
                 `}
             >
@@ -125,7 +125,9 @@
             use:motion
             class="flex flex-row justify-around items-center py-4 pt-16"
         >
-            <a href="https://www.youtube.com/@anaitvanoian7094" target="_blank"
+            <a
+                href="https://www.youtube.com/channel/UC_5Ggn_4tyUS-udJMihuX4g"
+                target="_blank"
                 ><img src="./youtube.png" alt="youtube" width="30px" /></a
             >
             <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank"
