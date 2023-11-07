@@ -3,6 +3,7 @@
     import quartet_artists from "../../libs/quartet_artists.json";
     import Engagements from "../../components/+engagements.svelte";
     import { copy } from "svelte-copy";
+    import VideosDur from "../../components/+videosDur.svelte";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
@@ -116,6 +117,8 @@
         <img src="./quartetGallery/2.jpeg" alt="" class="rounded mx-10" />
         <img src="./quartetGallery/3.jpeg" alt="" class="rounded mx-10" />
     </div>
+
+    <VideosDur/>
 
     <Motion
         initial={{ opacity: 0 }}
