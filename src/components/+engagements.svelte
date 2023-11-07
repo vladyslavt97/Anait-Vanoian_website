@@ -1,3 +1,4 @@
+<hr />
 <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
 <div class="w-full">
     <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
