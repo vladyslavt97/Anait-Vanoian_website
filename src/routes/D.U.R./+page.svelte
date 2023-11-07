@@ -1,11 +1,11 @@
 <script>
     import { Motion } from "svelte-motion";
-    import Engagements from "../../components/+engagements.svelte";
+    import Engagements from "../../components/DUR/+engagements.svelte";
     import { copy } from "svelte-copy";
-    import VideosDur from "../../components/+videosDur.svelte";
-    import GalleryDur from "../../components/+galleryDur.svelte";
-    import DurArtist from "../../components/+durArtist.svelte";
-    import DurHistory from "../../components/+durHistory.svelte";
+    import VideosDur from "../../components/DUR/+videosDur.svelte";
+    import GalleryDur from "../../components/DUR/+galleryDur.svelte";
+    import DurArtist from "../../components/DUR/+durArtist.svelte";
+    import DurHistory from "../../components/DUR/+durHistory.svelte";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">

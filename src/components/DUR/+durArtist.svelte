@@ -1,5 +1,5 @@
 <script>
-    import quartet_artists from "../libs/quartet_artists.json";
+    import quartet_artists from "../../libs/quartet_artists.json";
 </script>
 
 <div class="md:flex md:flex-row md:justify-center md:items-center">

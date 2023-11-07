@@ -1,5 +1,5 @@
 <script>
-    import VideosDur from "../libs/durVideos.json";
+    import VideosDur from "../../libs/durVideos.json";
 </script>
 
 <hr />
