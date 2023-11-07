@@ -4,7 +4,7 @@
 
 <hr />
 <h2 class="text-center font-serif font-medium text-xl">Videos</h2>
-<div class="w-full flex flex-col md:flex-row gap-5">
+<div class="w-full flex flex-col md:flex-row gap-5 flex-wrap">
     {#each VideosDur as video}
         <iframe
             src={`https://www.youtube.com/embed/${video.url}`}

@@ -4,6 +4,7 @@
     import Engagements from "../../components/+engagements.svelte";
     import { copy } from "svelte-copy";
     import VideosDur from "../../components/+videosDur.svelte";
+    import GalleryDur from "../../components/+galleryDur.svelte";
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
@@ -110,16 +111,10 @@
     <Engagements />
 
     <!-- Media -->
-    <hr />
-    <h2 class="text-center font-serif font-medium text-xl">Photos</h2>
-    <div class="w-full flex flex-col gap-5">
-        <img src="./quartetGallery/1.jpeg" alt="" class="rounded mx-10" />
-        <img src="./quartetGallery/2.jpeg" alt="" class="rounded mx-10" />
-        <img src="./quartetGallery/3.jpeg" alt="" class="rounded mx-10" />
-    </div>
+    <GalleryDur />
+    <VideosDur />
 
-    <VideosDur/>
-
+    <!-- Contacts -->
     <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -141,7 +136,7 @@
                     dur.quartet@gmail.com
                 </h4>
                 <button use:copy={"dur.quartet@gmail.com"}
-                    ><img src="/copy.png" width="20" />
+                    ><img src="/copy.png" width="20" alt="copy" />
                 </button>
             </div>
         </div>
