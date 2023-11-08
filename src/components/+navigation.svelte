@@ -64,7 +64,7 @@
                 transition={{ duration: 1, delay: 0.3 }}
                 let:motion
             >
-                <a use:motion href="/D.U.R.">
+                <a use:motion href="/D.U.R.Quartett">
                     {#if currentLanguage === "e"}
                         D.U.R. Quartet
                     {:else}

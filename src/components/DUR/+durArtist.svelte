@@ -20,7 +20,7 @@
                 {:else}
                     <a
                         class="text-blue-800 italic"
-                        href={`/D.U.R./${artist.name}`}
+                        href={`/D.U.R.Quartett/${artist.name}`}
                     >
                         read more
                     </a>

@@ -12,7 +12,7 @@
     });
 </script>
 
-<a class="absolute top-12 left-2" href="/D.U.R.">
+<a class="absolute top-12 left-2" href="/D.U.R.Quartett">
     <img src="/backarrow.png" alt="backarrow" width="30" />
 </a>
 <div class="font-sans flex flex-col items-center">
