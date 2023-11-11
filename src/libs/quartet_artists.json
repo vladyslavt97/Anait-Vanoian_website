@@ -1,13 +1,13 @@
 [
     {
-        "name":"Anait_Vanoian",
+        "name": "Anait_Vanoian",
         "shortBio": "Anait Vanoian wurde 1991 in Izmail, Ukraine, geboren. Mit 6 Jahren nahm sie den ersten Geigenunterricht.Von 1998 bis 2005 war sie Schülerin von...",
         "longBio": "Anait Vanoian wurde 1991 in Izmail, Ukraine, geboren. Mit 6 Jahren nahm sie den ersten Geigenunterricht.Von 1998 bis 2005 war sie Schülerin von T. Spodinetz an der Schule für Künste in Kramatorsk, Ukraine.",
         "image": "/quartet/musicians/Anait.jpeg",
         "role": "Violin I"
     },
     {
-        "name":"Vladyslav_Tsurkanenko",
+        "name": "Vladyslav_Tsurkanenko",
         "shortBio": "Vladyslav Tsurkanenko ist ein Ukrainisch-bulgarischer Geiger. Ehemalige Schülerin von Tatyana Spodynets, Yaroslava Rivnyak...",
         "longBio": "Vladyslav Tsurkanenko - ist ein Ukrainer - Bulgarischer Geiger, sein musikalischen Weg mit 3 Jahren angefangen hat, bei einer musikalische Familie erzogen. Seine erste Lehrerin und Tante - Tatyana Spodinets hat ersten Musikunterrichtstunden gegeben, als klein Kind, Vladyslav hat seinen berühmter Onkel - Maxim Rysanov gefolgt, als sehr jüngeren Geiger hat vielen Preisen bei Wettbewerben genommen.",
         "longBioold": "Vladyslav Tsurkanenko ist ein Ukrainisch-bulgarischer Geiger. Ehemalige Schülerin von Tatyana Spodynets, Yaroslava Rivnyak und Marina Keselman. Er besuchte das Staatliche Lysenko-Musiklyzeum in Kiew und das Tschaikowski-Akademische Musikkolleg. Vladyslav ist Gewinner des Internationalen Vorzel-Wettbewerbs (2011) und des Blue Bird (2009). Vladyslav war an Musikprojekten in ganz Deutschland beteiligt und spielte kürzlich in folgenden Orchestern: Detmolder Symphonieorchester, Neue Philharmonie, Hamburger Festspielorchester, Berliner Symphoniker, Festspielphilharmonie Westfalen.",
@@ -15,18 +15,17 @@
         "role": "Violin II"
     },
     {
-        "name":"Katie_Hunt",
+        "name": "Katie_Hunt",
         "shortBio": "Katie Hunt ist eine Konzertbratschistin aus den Vereinigten Staaten von Amerika. Sie begann in jungen Jahren mit dem Geige zu spielen, und mit 18 Jahren...",
-        "longBio": "Katie Hunt ist eine Konzertbratschistin aus den Vereinigten Staaten von Amerika. Sie begann in jungen Jahren mit dem Geige zu spielen, und mit 18 Jahren zog Katie nach Chicago, wo sie ihren Bachelor- und Master-Abschluss in Bratsche machte. Sie studierte bei Rami Solomonow (Chicago Chamber Musicians) und Li-Kuo Chang (stellvertretender Solobratscher des Chicago Symphony Orchestra), der ihr nicht nur ein einflussreicher Lehrer, sondern auch ein Mentor fürs Leben wurde.  In 2014, nach ihrem Abschluss an der DePaul University, zog Katie nach Berlin, um ihren Traum zu verwirklichen, ihr Studium bei einem Bratschisten ihres Lieblingsorchesters, den Berliner Philharmonikern, fortzusetzen.  In Berlin fangt Katie ihr Studium bei Matthew Hunter (Berliner Philharmoniker) an und kurz danach gewann ein Praktikum bei den Brandenburger Symphonikern. Einige Jahre später vertiefte Katie ihre Studien bei Felix Schwartz (Solobratscher der Belriner Staatskapelle) und began mit Orchestern in ganz Deutschland zu spielen.  Sie hat ein Jahr lang Zeitvertrag bei den Brandenburger Symphonikern und spielt dort weiterhin regelmäßig als Aushilfs-Bratschistin sowie mit anderen renommierten Orchestern, darunter Anhaltische Philharmonie Dessau, Brandenburgisches Staatsorchester Frankfurt,  Staatsorchester Cottbus und jeden Frühling bei dem Zakhar Bron Festival Orchestra Interlaken Classics.Katie’s Konzerttourneen haben sie durch Nordamerika, Europa, Japan, China, Südkorea, Taiwan und Dubai geführt, sogar auch nach Nigeria Afrika, um dort humanitäre Musikprojekte zu leiten.",
+        "longBio": "Katie Hunt ist eine Konzertbratschistin aus den Vereinigten Staaten von Amerika. Sie spielte in jungen Jahren begeistert Geige, bis sie mit 18 Jahre nach Chicago zog und dort ihren Bachelor- und Master-Abschluss in Bratsche machte. Sie studierte bei Rami Solomonow (Chicago Chamber Musicians) und Li-Kuo Chang (stellvertretender Solobratscher des Chicago Symphony Orchestra), der ihr nicht nur ein einflussreicher Lehrer, sondern auch ein Mentor fürs Leben wurde. In 2014, nach ihrem Abschluss an der DePaul University, zog Katie nach Berlin, um ihren Traum von einem Studium bei einem Bratschisten der Berliner Philharmonikern zu verwirklichen. In Berlin angekommen, startete Katie ihr Studium bei Matthew Hunter (Berliner Philharmoniker) und gewann dazu eine Praktikumsstelle bei den Brandenburger Symphonikern. Einige Jahre später vertiefte Katie ihr Studium bei Felix Schwartz (Solobratscher der Belriner Staatskapelle) und began mit Orchestern in ganz Deutschland zu spielen. Des Weiteren hatte sie ein Jahres-Zeitvertrag bei den Brandenburger Symphonikern und spielt dort, wie auch mit anderen renommierten Orchestern, darunter Anhaltische Philharmonie Dessau, Brandenburgisches Staatsorchester Frankfurt,  Staatsorchester Cottbus und jährlich bei dem Zakhar Bron Festival Orchestra Interlaken Classics, weiterhin regelmäßig als Aushilfs-Bratschistin. Katie’s Konzerttourneen haben sie durch Nordamerika, Europa, Japan, China, Südkorea, Taiwan und Dubai geführt und darüber hinaus leitet sie in Nigeria humanitäre Musikprojekte.",
         "image": "/quartet/musicians/Katie.jpg",
         "role": "Viola"
     },
     {
-        "name":"Tobias_Hoffmann",
+        "name": "Tobias_Hoffmann",
         "shortBio": "Tobias Hoffmann wurde am 11.06.1989 in Münchberg/Bayern geboren. Er begann mit dem Cellospiel im Alter von 6 Jahren nach der Suzuki...",
         "longBio": "Tobias Hoffmann wurde 1989 in Münchberg/Bayern geboren. Seinen Bachelor schloss er mit Bestnote bei Prof. Julius Berger in Augsburg ab und absolvierte sein Masterstudium  bei Johannes Krebs an der HfK in Bremen und einen weiteren Kammermusikmaster mit dem D.U.R. Quartett in Hannover bei Prof. Oliver Wille. Er besuchte Meisterkurse u.a. bei Arto Noras, Lluis Claret, Wolfgang Boettcher, Conradin Brotbek, Julius Berger, sowie beim Henschel und dem Appolon Musagete Quartett. Er war Solocellist in der „Baltic Youth Sea Philharmonic“ unter Kurt Masur, wie auch bei den Thüringer Symphonikern. Er spielte als Praktikant, Aushilfe oder mit einem Zeitvertrag bei dem Philharmonischem Orchester Heidelberg, der Bayerischen Kammerphilharmonie, den Bremer Philharmonikern, dem Philharmonischen Orchester Cottbus und den Hamburger Symphonikern. Mit dem Celloensemble 'Cello Passionato' spielte er schon auf bedeutenden Festivals, wie dem Kronberger Cello Festival und den Weingartener Tage für neue Musik. Darüber hinaus war er Solist beim „Usedomer Musik Festival“. Schon mit 11 Jahren trat er solistisch mit den Hofer Symphonikern in Erscheinung, spielt regelmäßig als Solist mit den Berliner Residenz Orchester und gab 2018 sein Debüt  im Gasteig mit dem Kammerorchester die ZARGE in München. Er gewann den Johann-Andreas-Stein-Wettbewerbs der Universität Augsburg, sowie einen Förderpreis des Hochschulwettbewerbs der HfK Bremen. Zur Zeit lebt er als freischaffender Cellist und energetischer Körperpsychotherapeut bei Eberswalde.",
         "image": "/quartet/musicians/Tobias.jpg",
         "role": "Cello"
     }
-
 ]
