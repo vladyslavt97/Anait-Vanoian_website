@@ -1,6 +1,6 @@
 <hr />
 <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
-<div class="flex">
+<div class="md:flex">
     <div class="w-full">
         <!-- concert3 -->
         <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2 flex flex-col gap-2 items-start">
@@ -51,7 +51,7 @@
     </div>
 
     <!-- concert2 -->
-    <div class="w-full">
+    <!-- <div class="w-full">
         <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
             <h1>30.11.2023 um 19:00</h1>
             <div class="text-xs">
@@ -81,7 +81,7 @@
             <br />
             Spende ab 10€
         </div>
-    </div>
+    </div> -->
     <!-- concert1 -->
     <div class="w-full">
         <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
