@@ -36,7 +36,7 @@
                     </p>
                 </div>
             </div>
-            <div class="flex flex-col justify-center">
+            <div class="flex flex-col justify-center items-center w-full">
                 <br />
                 <p class="text-center">Tickets 20€ (Ermäßigt 10€)</p>
                 <img
