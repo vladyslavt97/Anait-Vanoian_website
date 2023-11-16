@@ -1,3 +1,7 @@
+<script>
+    import { copy } from "svelte-copy";
+</script>
+
 <hr />
 <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
 <div class="md:flex">
@@ -12,7 +16,12 @@
                     class="text-blue-500 italic"
                     >FEUERLEIN GEIGENAKADEMIE
                 </a>
-                <h2 class="italic">Künstlerhof Alt - Lietzov 12,10587 Berlin</h2>
+                <div class="flex gap-2">
+                    <h2 class="italic">Künstlerhof Alt - Lietzov 12,10587 Berlin</h2>
+                    <div use:copy={"Künstlerhof Alt - Lietzov 12,10587 Berlin"}
+                        ><img src="/copy.png" width="18" alt="copy" />
+                    </div>
+                </div>
                 <div class="text-xs">
                     <p class="pb-2">
                         F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz
