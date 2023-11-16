@@ -10,8 +10,9 @@
                     href="https://www.feuerlein-geigenakademie.de/"
                     target="_blank"
                     class="text-blue-500 italic"
-                    >Künstlerhof Alt - Lietzov 12,10587 Berlin
+                    >FEUERLEIN GEIGENAKADEMIE
                 </a>
+                <h2 class="italic">Künstlerhof Alt - Lietzov 12,10587 Berlin</h2>
                 <div class="text-xs">
                     <p class="pb-2">
                         F.Mendelssohn – String Quartet in A minor,Op.13 - 1. Satz
