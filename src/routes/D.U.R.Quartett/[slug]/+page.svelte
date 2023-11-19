@@ -12,17 +12,19 @@
     });
 </script>
 
-<a class="absolute top-12 left-2" href="/D.U.R.Quartett">
-    <img src="/backarrow.png" alt="backarrow" width="30" />
-</a>
-<div class="font-sans flex flex-col items-center">
-    <h1 class="text-center mt-[100px] mb-5 text-lg font-bold">
-        {currentArtist.name}
-    </h1>
-    <img
-        src={currentArtist.image}
-        alt={currentArtist.name}
-        class="w-52 rounded-lg shadow-lg"
-    />
-    <p class="px-4 py-10">{currentArtist.longBio}</p>
+<div class="min-h-screen">
+    <a class="absolute top-12 left-2" href="/D.U.R.Quartett">
+        <img src="/backarrow.png" alt="backarrow" width="30" />
+    </a>
+    <div class="font-sans flex flex-col items-center">
+        <h1 class="text-center mt-[100px] mb-5 text-lg font-bold">
+            {currentArtist.name}
+        </h1>
+        <img
+            src={currentArtist.image}
+            alt={currentArtist.name}
+            class="w-52 rounded-lg shadow-lg"
+        />
+        <p class="px-4 py-10">{currentArtist.longBio}</p>
+    </div>
 </div>
