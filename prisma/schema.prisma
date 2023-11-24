@@ -24,3 +24,9 @@ model News {
   link        String?
   description String?
 }
+
+model Emails {
+  id          String  @id @default(auto()) @map("_id") @db.ObjectId
+  email        String?
+  date      DateTime
+}

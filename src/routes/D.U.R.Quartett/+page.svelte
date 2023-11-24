@@ -6,6 +6,33 @@
     import GalleryDur from "../../components/DUR/+galleryDur.svelte";
     import DurArtist from "../../components/DUR/+durArtist.svelte";
     import DurHistory from "../../components/DUR/+durHistory.svelte";
+
+    let emailState = "";
+    const sendEmail = ()=>{
+        fetch("/api/dursubs", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({email: emailState}),
+        })
+        .then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error("Failed to fetch data");
+            }
+        })
+        .then(responseData => {
+            // Handle the successful response data here
+            console.log("Response data:", responseData);
+            emailState = ""
+        })
+        .catch(error => {
+            emailState = ""
+            console.error("Error:", error);
+        });
+    }
 </script>
 
 <div class="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
@@ -60,4 +87,18 @@
             </div>
         </div>
     </Motion>
+    <div class="w-full h-32 bg-gray-600 rounded-tr-lg rounded-tl-lg flex justify-center items-center flex-col text-white">
+        <div class="flex flex-row mb-3">
+            <h1>Get notified about our events:</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
+        </div>
+        <div class="flex flex-row">
+            <input
+                type="email"
+                bind:value={emailState}
+                class="text-black rounded-lg"
+                placeholder="Your email"
+            />
+            <button on:click={sendEmail} class="bg-green-400 text-gray-700 rounded-lg px-1 hover:bg-green-300 hover:text-black">Subscribe</button>
+        </div>
+    </div>
 </div>
