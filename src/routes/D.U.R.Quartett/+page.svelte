@@ -7,8 +7,13 @@
     import DurArtist from "../../components/DUR/+durArtist.svelte";
     import DurHistory from "../../components/DUR/+durHistory.svelte";
 
+    let sent = false;
     let emailState = "";
     const sendEmail = ()=>{
+        sent = true;
+        setTimeout(()=>{
+            sent = false;
+        },5000)
         fetch("/api/dursubs", {
         method: "POST",
         headers: {
@@ -88,17 +93,21 @@
         </div>
     </Motion>
     <div class="w-full h-32 bg-gray-600 rounded-tr-lg rounded-tl-lg flex justify-center items-center flex-col text-white">
-        <div class="flex flex-row mb-3">
-            <h1>Get notified about our events:</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
-        </div>
-        <div class="flex flex-row">
-            <input
-                type="email"
-                bind:value={emailState}
-                class="text-black rounded-lg"
-                placeholder="Your email"
-            />
-            <button on:click={sendEmail} class="bg-green-400 text-gray-700 rounded-lg px-1 hover:bg-green-300 hover:text-black">Subscribe</button>
-        </div>
+        {#if sent}
+            <h1>Thank you for signing up!</h1>
+        {:else}
+            <div class="flex flex-row mb-3">
+                <h1>Get notified about our events:</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
+            </div>
+            <div class="flex flex-row">
+                <input
+                    type="email"
+                    bind:value={emailState}
+                    class="text-black rounded-lg"
+                    placeholder="Your email"
+                />
+                <button on:click={sendEmail} class="bg-green-400 text-gray-700 rounded-lg px-1 hover:bg-green-300 hover:text-black">Subscribe</button>
+            </div>
+        {/if}
     </div>
 </div>
