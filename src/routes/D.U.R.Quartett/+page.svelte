@@ -7,6 +7,13 @@
     import DurArtist from "../../components/DUR/+durArtist.svelte";
     import DurHistory from "../../components/DUR/+durHistory.svelte";
 
+    let coppying = false;
+    const coppied = () => {
+        coppying = true;
+        setTimeout(()=>{
+            coppying = false;
+        }, 4000)
+    }
     let sent = false;
     let emailState = "";
     const sendEmail = ()=>{
@@ -83,12 +90,16 @@
                 ><img src="./facebook.png" alt="facebook" width="30px" /></a
             >
             <div class="text-sm font-sans italic flex justify-center gap-2">
-                <h4 use:copy={"dur.quartet@gmail.com"}>
-                    dur.quartet@gmail.com
-                </h4>
-                <button use:copy={"dur.quartet@gmail.com"}
-                    ><img src="/copy.png" width="20" alt="copy" />
-                </button>
+                {#if coppying}
+                    <h1>Coppied!</h1>
+                {:else}
+                    <h4 use:copy={"dur.quartet@gmail.com"}>
+                        dur.quartet@gmail.com
+                    </h4>
+                    <button use:copy={"dur.quartet@gmail.com"} on:click={coppied}
+                        ><img src="/copy.png" width="20" alt="copy"/>
+                    </button>
+                {/if}
             </div>
         </div>
     </Motion>
