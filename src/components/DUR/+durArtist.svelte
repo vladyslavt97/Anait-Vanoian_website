@@ -8,8 +8,8 @@
             class={`grid grid-cols-2 sm:place-items-center md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center
                 ${
                     index % 2 === 0
-                        ? "bg-gradient-to-t from-gray-200 via-orange-200/10 to-orange-800/10 rounded-lg md:bg-none"
-                        : "bg-none"
+                        ? " bg-gray-200 rounded-xl shadow-lg"
+                        : " bg-slate-100 rounded-xl shadow-lg"
                 }
                 `}
         >
