@@ -1,15 +1,32 @@
 <script>
     import { copy } from "svelte-copy";
+    import { theLanguage } from "../../store/store";
+
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
 </script>
 
 <hr />
-<h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
+<h2 class="text-center font-serif font-medium text-xl">
+    {#if currentLanguage === "e"}
+        Engagements
+    {:else}
+        Konzerte
+    {/if}
+</h2>
 <div class="md:flex md:px-20 lg:px-36">
     <div class="w-full">
         <!-- concert2 -->
         <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2 flex flex-col md:flex-row justify-center gap-2 items-start">
             <div>
-                <h1>3.12.2023 um 18.00</h1>
+                <h1>3.12.2023 {#if currentLanguage === "e"}
+                                at
+                                {:else}
+                                    um
+                                {/if} 18.00
+                </h1>
                 <a
                     href="https://www.feuerlein-geigenakademie.de/"
                     target="_blank"

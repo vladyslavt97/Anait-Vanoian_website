@@ -6,7 +6,12 @@
     import GalleryDur from "../../components/DUR/+galleryDur.svelte";
     import DurArtist from "../../components/DUR/+durArtist.svelte";
     import DurHistory from "../../components/DUR/+durHistory.svelte";
+    import { theLanguage } from "../../store/store";
 
+    let currentLanguage = "g";
+    theLanguage.subscribe((value) => {
+        currentLanguage = value;
+    });
     let coppying = false;
     const coppied = () => {
         coppying = true;
@@ -56,7 +61,11 @@
     />
     <h1 class=" text-4xl text-black mt-5 sm:mt-16 text-center font-extrabold">
         D.U.R.<br />
-        <span class="font-sans font-extralight text-2xl">Streichquartett</span>
+        <span class="font-sans font-extralight text-2xl">{#if currentLanguage === "e"}
+            String Quartet
+        {:else}
+            Streichquartett
+        {/if}</span>
     </h1>
 
     <DurHistory />
@@ -92,7 +101,11 @@
         </div>
         <div class="text-sm font-sans italic flex justify-center gap-2">
             {#if coppying}
-                <h1>Coppied!</h1>
+                <h1>{#if currentLanguage === "e"}
+                    Coppied!
+                {:else}
+                    Kopiert!
+                {/if}</h1>
             {:else}
                 <h4 use:copy={"dur.quartet@gmail.com"}>
                     dur.quartet@gmail.com
@@ -105,10 +118,18 @@
     </Motion>
     <div class="w-full h-32 bg-gray-600 rounded-tr-lg rounded-tl-lg flex justify-center items-center flex-col text-white">
         {#if sent}
-            <h1>Thank you for signing up!</h1>
+            <h1>{#if currentLanguage === "e"}
+            Thank you for signing up!
+        {:else}
+            Danke fürs Anmelden!
+        {/if}</h1>
         {:else}
             <div class="flex flex-row mb-3">
-                <h1>Get notified about our events:</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
+                <h1>{#if currentLanguage === "e"}
+            Get notified about our events:
+        {:else}
+            Lassen Sie sich über unsere Veranstaltungen informieren:
+        {/if}</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
             </div>
             <div class="flex flex-row">
                 <input
@@ -117,7 +138,12 @@
                     class="text-black rounded-lg"
                     placeholder="Your email"
                 />
-                <button on:click={sendEmail} class="bg-green-400 text-gray-700 rounded-lg px-1 hover:bg-green-300 hover:text-black">Subscribe</button>
+                <button on:click={sendEmail} class="bg-green-400 text-gray-700 rounded-lg px-1 hover:bg-green-300 hover:text-black">{#if currentLanguage === "e"}
+                    Subscribe
+                {:else}
+                    Abonnieren
+                {/if}
+            </button>
             </div>
         {/if}
     </div>
