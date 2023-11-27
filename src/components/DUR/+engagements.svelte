@@ -4,7 +4,7 @@
 
 <hr />
 <h2 class="text-center font-serif font-medium text-xl">Engagements</h2>
-<div class="md:flex">
+<div class="md:flex md:px-20 lg:px-36">
     <div class="w-full">
         <!-- concert2 -->
         <div class="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2 flex flex-col md:flex-row justify-center gap-2 items-start">

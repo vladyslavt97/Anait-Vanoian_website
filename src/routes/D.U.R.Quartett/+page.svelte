@@ -89,18 +89,18 @@
             <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank"
                 ><img src="./facebook.png" alt="facebook" width="30px" /></a
             >
-            <div class="text-sm font-sans italic flex justify-center gap-2">
-                {#if coppying}
-                    <h1>Coppied!</h1>
-                {:else}
-                    <h4 use:copy={"dur.quartet@gmail.com"}>
-                        dur.quartet@gmail.com
-                    </h4>
-                    <button use:copy={"dur.quartet@gmail.com"} on:click={coppied}
-                        ><img src="/copy.png" width="20" alt="copy"/>
-                    </button>
-                {/if}
-            </div>
+        </div>
+        <div class="text-sm font-sans italic flex justify-center gap-2">
+            {#if coppying}
+                <h1>Coppied!</h1>
+            {:else}
+                <h4 use:copy={"dur.quartet@gmail.com"}>
+                    dur.quartet@gmail.com
+                </h4>
+                <button use:copy={"dur.quartet@gmail.com"} on:click={coppied}
+                    ><img src="/copy.png" width="20" alt="copy"/>
+                </button>
+            {/if}
         </div>
     </Motion>
     <div class="w-full h-32 bg-gray-600 rounded-tr-lg rounded-tl-lg flex justify-center items-center flex-col text-white">

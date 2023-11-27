@@ -2,7 +2,7 @@
     import quartet_artists from "../../libs/quartet_artists.json";
 </script>
 
-<div class="md:flex md:flex-row md:justify-center md:items-center">
+<div class="md:flex md:flex-row md:justify-center md:items-center md:px-20 lg:px-36">
     {#each quartet_artists as artist, index}
         <div
             class={`grid grid-cols-2 sm:place-items-center md:justify-center md:flex md:flex-col md:gap-2 mx-5 my-5 md:items-center
