@@ -49,9 +49,9 @@
             {/if}
         </h1>
         <Motion
-            initial={{ opacity: 0, scale: 0.9 }}
+            initial={{ opacity: 0.8, scale: 0.9 }}
             animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 3, delay: 0.2 }}
+            transition={{ duration: 2, delay: 0.2 }}
             let:motion
         >
             <img
@@ -60,6 +60,7 @@
                 alt="somename"
                 class=" drop-shadow-2xl rounded float-left ml-5 mr-3 sm:ml-16 lg:ml-44 lg:mr-6 opacity-0 transition-opacity duration-3000 md:w-[300px]"
                 width="170px"
+                loading="eager"
             />
         </Motion>
 
