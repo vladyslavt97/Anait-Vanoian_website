@@ -59,7 +59,15 @@
         class=" w-full object-cover rounded-br rounded-bl shadow-2xl shadow-black mt-10 sm:hidden"
         loading="eager"
     />
-    <h1 class=" text-4xl text-black mt-5 sm:mt-16 text-center font-extrabold">
+    <Motion
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2 }}
+        let:motion
+    >
+        <h1
+        use:motion
+        class=" text-4xl text-black mt-5 sm:mt-16 text-center font-extrabold">
         D.U.R.<br />
         <span class="font-sans font-extralight text-2xl">{#if currentLanguage === "e"}
             String Quartet
@@ -67,6 +75,7 @@
             Streichquartett
         {/if}</span>
     </h1>
+    </Motion>
 
     <DurHistory />
 
