@@ -124,12 +124,12 @@
             Danke fürs Anmelden!
         {/if}</h1>
         {:else}
-            <div class="flex flex-row mb-3">
+            <div class="flex flex-row mb-3 px-2">
                 <h1>{#if currentLanguage === "e"}
             Get notified about our events:
         {:else}
             Lassen Sie sich über unsere Veranstaltungen informieren:
-        {/if}</h1><img src="/mail.png" alt="mail" class=" w-8 ml-3">
+        {/if}</h1><img src="/mail.png" alt="mail" class=" w-6 ml-3 object-contain">
             </div>
             <div class="flex flex-row">
                 <input
