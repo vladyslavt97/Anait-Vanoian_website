@@ -100,7 +100,7 @@
             class="flex flex-row justify-around items-center py-4 pt-16"
         >
             <a
-                href="https://www.youtube.com/channel/UC_5Ggn_4tyUS-udJMihuX4g"
+                href="https://youtube.com/@D.U.R.Quartet"
                 target="_blank"
                 ><img src="./youtube.png" alt="youtube" width="30px" /></a
             >
