@@ -1,10 +1,22 @@
 <script>
+    import { browser } from "$app/environment";
     import { theLanguage } from "../store/store";
+    let browserLanguage = "en-GB";
+    if(browser){
+        browserLanguage = window.navigator.language;
+    }
     const setLanguage = (/** @type {string} */ lan) => {
         theLanguage.update((value) => (value = lan));
     };
 
     let currentLanguage = "g";
+    if(browserLanguage.includes("en")){
+      currentLanguage = "e";
+      theLanguage.update((value) => (value = "e"));
+    } else {
+      currentLanguage = 'g';
+      theLanguage.update((value) => (value = "g"));
+    }
     theLanguage.subscribe((value) => {
         currentLanguage = value;
     });

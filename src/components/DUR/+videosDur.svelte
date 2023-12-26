@@ -12,7 +12,7 @@
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
             title="video1"
-            class="md:w-96 md:h-64 rounded mx-auto"
+            class="md:w-96 md:h-64 rounded-xl mx-auto shadow-2xl"
         />
     {/each}
 </div>
