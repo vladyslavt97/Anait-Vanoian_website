@@ -68,7 +68,7 @@
         <h1
         use:motion
         class=" text-4xl text-black mt-5 sm:mt-16 text-center font-extrabold">
-        D.U.R.<br />
+        <span class="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">D.U.R.</span><br />
         <span class="font-sans font-extralight text-2xl">{#if currentLanguage === "e"}
             String Quartet
         {:else}
@@ -133,12 +133,15 @@
             Danke fürs Anmelden!
         {/if}</h1>
         {:else}
-            <div class="flex flex-row mb-3 px-2">
-                <h1>{#if currentLanguage === "e"}
-            Get notified about our events:
-        {:else}
-            Lassen Sie sich über unsere Veranstaltungen informieren:
-        {/if}</h1><img src="/mail.png" alt="mail" class=" w-6 ml-3 object-contain">
+            <div class="flex flex-row mb-3 px-2 text-center">
+                <h1>
+                    {#if currentLanguage === "e"}
+                        Get notified about our events:
+                    {:else}
+                        Lassen Sie sich über unsere Veranstaltungen informieren:
+                    {/if}
+                </h1>
+                <img src="/mail.png" alt="mail" class=" w-6 ml-3 object-contain">
             </div>
             <div class="flex flex-row">
                 <input
