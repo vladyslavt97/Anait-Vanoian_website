@@ -12,7 +12,7 @@
 
 <div
     class=" w-screen bg-[#3a3a3a] flex flex-row h-10
-justify-between items-center px-3 fixed top-0 z-50"
+justify-between items-center px-3 fixed top-0 z-50 shadow-2xl"
 >
     <div class="lg:hidden">
         <Navigation />
