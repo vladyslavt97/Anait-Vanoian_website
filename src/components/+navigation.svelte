@@ -64,7 +64,7 @@
                 transition={{ duration: 1, delay: 0.3 }}
                 let:motion
             >
-                <a use:motion href="/D.U.R.Quartett">
+                <a use:motion href="/D.U.R.Quartett" class="bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text font-extrabold text-lg font-serif">
                     {#if currentLanguage === "e"}
                         D.U.R. Quartet
                     {:else}

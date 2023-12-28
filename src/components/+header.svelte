@@ -14,14 +14,14 @@
     class=" w-screen bg-[#3a3a3a] flex flex-row h-10
 justify-between items-center px-3 fixed top-0 z-50"
 >
-    <div class="md:hidden">
+    <div class="lg:hidden">
         <Navigation />
         <div class="flex flex-row justify-center items-center gap-5">
             <Burger />
             <LanguageSwitch />
         </div>
     </div>
-    <div class="hidden md:block text-white">
+    <div class="hidden lg:block text-white">
         <LanguageSwitch />
         <NavigationMd />
     </div>
