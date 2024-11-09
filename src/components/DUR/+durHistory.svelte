@@ -17,13 +17,11 @@
         <p>{#if currentLanguage === "e"}
             The D.U.R. Quartet is a classical string quartet, and was
             founded in Bremen in 2015. “D.U.R.” stands for the happy one
-            Major chord, but also symbolizes an idea of peace and the
-            Communication between members’ countries of origin.
+            Major chord.
         {:else}
             Das D.U.R. Quartett ist ein klassisches Streichquartett, und wurde
             in 2015 in Bremen gegründet. „D.U.R.“ steht für den fröhlichen
-            Dur-Akkord, symbolisiert aber auch eine Idee des Friedens und der
-            Kommunikation zwischen den Herkunftsländern der Mitglieder.
+            Dur-Akkord.
         {/if}
         </p>
         <br />
@@ -33,8 +31,7 @@
              to take part in the international concert work weeks in Goslar
              to participate. After this groundbreaking masterclass with Prof. Oliver
              The decision was made based on the will and positive response from the audience
-             Master's students, the D.U.R. Quartet (Germany, Ukraine,
-             Russia). The quartet was born at the University of Applied Sciences
+             Master's students, the D.U.R. Quartet. The quartet was born at the University of Applied Sciences
              Arts Bremen was accompanied by Thomas Klug and received further suggestions
              through a master class from the Curtis Institute of Music (USA), and
              by Martin Funda from Armida Quartet. Furthermore, they study
@@ -46,8 +43,7 @@
             um an den internationalen Konzertarbeitswochen in Goslar
             teilzunehmen. Nach diesem wegweisenden Meisterkurs bei Prof. Oliver
             Wille und aufgrund von positiver Publikumsresonanz beschlossen die
-            Masterstudierenden, das D.U.R. Quartett (Deutschland, Ukraine,
-            Russland) zu gründen. Das Quartett wurde an der Hochschule für
+            Masterstudierenden, das D.U.R. Quartett zu gründen. Das Quartett wurde an der Hochschule für
             Künste Bremen von Thomas Klug begleitet und bekam weitere Anregungen
             durch einen Meisterkurs vom Curtis Institute of Music (USA), und
             durch Martin Funda von Armida-Quartett. Des Weiteren studieren sie
