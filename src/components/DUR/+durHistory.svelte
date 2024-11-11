@@ -1,6 +1,7 @@
 <script>
     import { theLanguage } from "../../store/store";
     let currentLanguage = "g";
+    
     theLanguage.subscribe((value) => {
         currentLanguage = value;
     });
