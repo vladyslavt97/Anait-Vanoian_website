@@ -48,7 +48,7 @@
                 {/if}
             </h1>
         </Motion>
-        <div class="relative top-16 mx-10">
+        <div class="relative top-16 mx-10 w-full px-10 max-w-[500px]">
             {#each theConcerts as concert}
                 <Motion
                     initial={{ opacity: 0 }}
@@ -72,7 +72,7 @@
                             {/if}
                         {/each}
                         <br />
-                        {#if concert.url}
+                        <!-- {#if concert.url}
                             <Motion
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
@@ -87,7 +87,7 @@
                                     loading="eager"
                                 />
                             </Motion>
-                        {/if}
+                        {/if} -->
                     </div>
                 </Motion>
             {/each}
