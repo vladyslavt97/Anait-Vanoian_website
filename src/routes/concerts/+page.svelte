@@ -1,27 +1,29 @@
 <script>
     import { SyncLoader } from "svelte-loading-spinners";
-    import { onMount } from "svelte";
+    // import { onMount } from "svelte";
     import { Motion } from "svelte-motion";
     import { theLanguage } from "../../store/store";
+    import theConcerts from "../../libs/concerts.json";
     let currentLanguage = "g";
     theLanguage.subscribe((value) => {
         currentLanguage = value;
     });
-    let theConcerts = [
-        { date: "stillLoading", location: "", programme: "", url: "" },
-    ];
-    onMount(async () => {
-        try {
-            const response = await fetch("/api/getconcerts");
-            if (response.ok) {
-                theConcerts = await response.json();
-            } else {
-                throw new Error("Failed to fetch data");
-            }
-        } catch (error) {
-            console.error("error", error);
-        }
-    });
+    // let theConcerts = [
+    //     { date: "stillLoading", location: "", programme: "", url: "" },
+    // ];
+
+    // onMount(async () => {
+    //     try {
+    //         const response = await fetch("/api/getconcerts");
+    //         if (response.ok) {
+    //             theConcerts = await response.json();
+    //         } else {
+    //             throw new Error("Failed to fetch data");
+    //         }
+    //     } catch (error) {
+    //         console.error("error", error);
+    //     }
+    // });
 </script>
 
 <div

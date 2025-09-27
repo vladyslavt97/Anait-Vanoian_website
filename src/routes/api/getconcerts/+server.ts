@@ -5,7 +5,7 @@ import { PrismaClient } from '@prisma/client';
 const prisma = new PrismaClient();
 
 /** @type {import('./$types').RequestHandler} */
-export async function GET({ request }) {
+export async function GET({ }) {
     
 
     try {
