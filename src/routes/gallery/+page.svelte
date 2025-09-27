@@ -3,12 +3,13 @@
     import { theLanguage } from "../../store/store";
 
     const images = [
-        { id: 0, attribution: "anait", imgurl: "/anait1.jpg" },
-        { id: 2, attribution: "anait", imgurl: "/anait.jpeg" },
-        { id: 2, attribution: "anait", imgurl: "/anait3.jpg" },
-        { id: 2, attribution: "anait", imgurl: "/anait4.jpg" },
-        { id: 1, attribution: "anait", imgurl: "/anait2.jpg" },
-        { id: 2, attribution: "anait", imgurl: "/anait5.jpg" },
+        { id: 0, attribution: "anait", imgurl: "/gallery/anait1.jpg" },
+        { id: 1, attribution: "anait", imgurl: "/gallery/anait2.jpg" },
+        { id: 2, attribution: "anait", imgurl: "/gallery/anait3.jpg" },
+        { id: 3, attribution: "anait", imgurl: "/gallery/anait4.jpg" },
+        { id: 4, attribution: "anait", imgurl: "/gallery/anait2.jpg" },
+        { id: 5, attribution: "anait", imgurl: "/gallery/anait5.jpg" },
+        { id: 6, attribution: "anait", imgurl: "/gallery/anait6.jpg" },
     ];
     let showThumbs = false;
     let showCaptions = false;
