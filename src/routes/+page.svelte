@@ -40,6 +40,24 @@
             >
         </div>
     </Motion>
+    <Motion
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 2, delay: 1 }}
+        let:motion
+    >
+        <div
+            use:motion
+            class="flex flex-row justify-around items-center py-4 animate-pulse italic"
+        >
+        <a
+            href="https://ampl.ink/Y9G3o"
+            target="_blank"
+            class="text-xs"
+            >🎵 Listen to Anait Tiana – Die Büchse Der Pandora</a
+        >
+        </div>
+    </Motion>
     <div>
         <h1 class="text-center my-7">
             {#if currentLanguage === "e"}
