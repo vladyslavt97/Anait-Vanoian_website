@@ -1,70 +1,37 @@
 <p class="px-5 font-sans pb-10 sm:mx-10 lg:mx-40 text-sm leading-6">
-    <span class="italic font-bold">Anait Vanoian</span> was born in 1991 in
-    Izmail, Ukraine.<br />At the age of 6 she took her first violin lessons.<br
-    />
-    From 1998 until 2005 she was a student of T. Spodinetz at the School of Art ins
-    Kramatorsk, Ukraine.<br />
-    From 2005 until 2008 she visited the special music school with professor S. Evdokimov
-    as a teacher. <br /> Afterwards, she visited the National University of Arts
-    in Charkiv from 2008 until 2012 where she graduated with a bachelor’s degree
-    with distinction.<br /><br />
-    After resettling to Germany in 2013, Anait visited the Brahms Academy of Music
-    in Hamburg with Professor T. Mikaelyan as a teacher. <br /><br />
+    <span class="italic font-bold">Anait Vanoian</span> was born in 1991 in Izmail, Ukraine. At the age of six she received her first violin lessons.<br />
+    From 1998 to 2005 she studied with T. Spodinetz at the School of Arts in Kramatorsk. From 2005 to 2008 she attended the Special Music School in Kharkiv, studying with Professor S. Evdokimov. Her bachelor’s studies at the National University of Arts in Kharkiv (2008–2012) she completed with distinction (“Red Diploma”).<br /><br />
 
-    From 2014 until 2017 she studied in a master’s programme at the University
-    of the Arts, Bremen, Germany with Katrin Scholz as instructor. <br /><br />
+    After moving to Germany, she continued her studies in 2013 at the Brahms Conservatory in Hamburg with Professor T. Mikaelyan.<br /><br />
+    From 2014 to 2017 she completed her master’s degree at the University of the Arts in Bremen with Professor Katrin Scholz. From 2017 she pursued further studies at the University of Music, Drama and Media in Hanover with Professor Oliver Wille (Kuss Quartet).<br /><br />
 
-    From 2017 on, she also studied at the University for Music, Theatre and
-    Media in Hannover, Germany with Professor Oliver Wille (Kuss-Quartett) as
-    instructor.
-    <br /><br />
+    Anait has won numerous competition prizes, including:<br />
+    • <span class="italic">“Bluebird of Happiness”</span>, Simferopol, Ukraine (3rd Prize, 2002)<br />
+    • <span class="italic">“Silver String Music Competition”</span>, Kramatorsk (1st Prize, 2004)<br />
+    • <span class="italic">International String Quartet Competition</span>, Radom, Poland (3rd Prize, 2011, with the Nocturnum Quartet)<br />
+    • <span class="italic">4th Brigitte Kempen Competition</span>, Aachen (2nd Prize, 2017)<br />
+    • <span class="italic">XXIII Premio Internazionale di Musica Gaetano Zinetti</span> (92/100 points, 2018)<br />
+    • <span class="italic">Medici International Music Competition</span>, London (3rd Prize, 2021)<br /><br />
 
-    Anait won several prizes at International competitions, such as:<br />
-    • “Bluebird of Happiness” in Simferopol, Ukraine (3rd prize, 2002) <br />
-    • “Silver String Music Competition” in Kramatorsk, Ukraine (1st prize, 2004)
-    <br />
-    • International String Quartet Competition in Radom, Poland (3rd prize, 2011)
-    together with the Nocturnum-Quartet <br />
-    • 4th Brigitte Kempen Competition of the Sponsoring Association of the Music
-    College, Aachen, Germany for students at theCologne University of Music (2nd
-    prize, 2017) <br />
-    • XXIII Premio Internazionale di Musica Gaetano Zinetti (92 points out of 100,
-    2018) <br /><br /><br />
+    She has performed at numerous festivals. For over five years she was a member of the Richard Wagner Society in Kharkiv and participated as a scholarship holder at the Bayreuth Festival, where she presented a contemporary composition together with composer Denys Bocharov. From August 8 to 20, 2014, she was active as first violin at the Vilalte Music Festival in Corsavy, France, performing in ensembles from trio to sextet.<br /><br />
 
-    She also participated in several festivals:<br />
-    • As a scholarship holder of the Richard Wagner Society of Charkiv, she participated
-    at the Bayreuth Festival, Germany where she presented a contemporary composition
-    of Denys Bocharov.<br />
-    • From 8.-20.8.2014 she played at the Vilalte Music Festival in Corsavy, France
-    as first violin in several different groups, such as trios, quartets, and sextets.
-    <br /><br />
-    Anait participated in a plethora of master courses of leading violinists where
-    she played with violinists such as Vladimir Astrachanzev, Aleksey Koshvanets,
-    Natalya Boyarskaya, Anatoly Bazhenov, Maxim Rusanov and Thomas Brandis. Further
-    courses included playing with Markus Placci and Burkhard Maiss. She also visited
-    a master course with the “Aizuri” quartet from the USA and the first violin of
-    the “Armida” quartet, Martin Funda, from Berlin. <br /><br />
+    She has also performed with renowned conductors and soloists including Marcus Bosch, Tim Henty, Valery Gergiev, Bem Palmer, Denis Matsuev, among others. Her appearances have taken her to prestigious concert halls such as the Berlin Philharmonie, Gewandhaus Leipzig, Gasteig Munich, Elbphilharmonie Hamburg, Uber Arena Berlin, Barclays Arena Hamburg, and Zenith Arena Paris.<br /><br />
 
-    From August 2015 on, Anait is the first violin of the D.U.R. Quartet in
-    Bremen, Germany. Anait and her colleagues are given instruments by the
-    famous Italian violin maker Alessandro Cicillati through the company “Violin
-    Assets”.<br /><br /> From October 2019 on, she began working as deputy
-    concert master at the “Neue Philharmonie”, Berlin. For her dedication, Anait
-    received scholarships from the German Programme for gifted students
-    (Deutschlandstipendium) from 2014 until 2015. Furthermore, she received a
-    scholarship from the Richard Wagner Society of Charkiv. <br /><br />
+    From 2014 to 2015 she was a recipient of the Deutschlandstipendium. She has participated in numerous masterclasses with Wladimir Astrachanzew, Aleksej Koshvanets, Natalja Boyarskaya, Anatoly Bazhenov, Maxim Rusanov, and Thomas Brandis. Later she also worked with Markus Placci, Burghard Maiß, the Aizuri Quartet (USA), as well as Martin Funda (Armida Quartet, Berlin). Since 2015 she has been the first violinist of the D.U.R. Quartet Bremen, which performs on instruments made by Italian violin maker Alessandro Ciciliati (Violin Assets).<br /><br />
 
-    Work experience: <br />
-    • Concert Master at the Municipal Orchestra of Delmenhorst • Concert Master at
-    the Chamber Philharmonic Emsland<br />
-    • Section Leader at the Silk Road Symphony Orchestra, Berlin<br />
-    • Violin Tutti at “Neue Philharmonie”, Hamburg<br />
-    • I Violin Tutti at “Hansa Philharmonie”, Hamburg • Deputy concert master at
-    “Neue Philharmonie”, Berlin<br />
-    • I Violin Tutti (temporary substitute) – Theater für Niedersachsen, Hildesheim<br
-    />
-    • I Violin Tutti (temporary substitute) – “Deutsches Filmorchester Babelsberg”,
-    Berlin<br />
-    • II Violin Tutti – Russian-German Music Academy under supervision of Maestro
-    Valery Gergiev, Berlin<br /><br />
+    From October 2019 until 2022, Anait served as deputy concertmaster/concertmaster of the “Neue Philharmonie Berlin.”<br />
+    Selected professional experience:<br />
+    • Concertmaster – Municipal Orchestra of Delmenhorst<br />
+    • Concertmaster – Chamber Philharmonic Emsland<br />
+    • Section Leader – Silk Road Symphony Orchestra, Berlin<br />
+    • I Violin Tutti – Neue Philharmonie Hamburg<br />
+    • I Violin Tutti – Hansa Philharmonie Hamburg<br />
+    • Deputy Concertmaster – Neue Philharmonie Berlin<br />
+    • I Violin Tutti (substitute) – Theater für Niedersachsen, Hildesheim<br />
+    • I Violin Tutti (substitute) – Deutsches Filmorchester Babelsberg, Berlin<br />
+    • II Violin Tutti – Russian-German Music Academy, Berlin under Maestro Valery Gergiev<br />
+    • Deputy Concertmaster – Brandenburg Concert Orchestra Eberswalde (fixed-term contract)<br />
+    • Deputy Concertmaster (substitute) – Staatstheater Cottbus<br />
+    • I Violin Tutti (substitute) – Volkstheater Rostock<br />
+    • I Violin Tutti (substitute) – Brandenburger Theater<br />
 </p>
