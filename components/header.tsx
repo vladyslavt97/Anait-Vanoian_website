@@ -3,12 +3,12 @@
 import Link from "next/link";
 import Burger from "./burger";
 import Navigation from "./navigation";
-// import NavigationMd from "./navigationmd";
+import NavigationMd from "./navigationmd";
 import LanguageSwitch from "./languageswitch";
 import { useNavigation } from "../libs/zustand"; // adjust path if needed
 
 export default function Header() {
-  const { isOpen, toggle, close } = useNavigation();
+  const { close } = useNavigation();
 
   return (
     <div className="w-screen bg-[#3a3a3a] flex flex-row h-10 justify-between items-center px-3 fixed top-0 z-50 shadow-2xl">
@@ -24,7 +24,7 @@ export default function Header() {
       {/* Desktop */}
       <div className="hidden lg:block text-white">
         <LanguageSwitch />
-        {/* <NavigationMd /> */}
+        <NavigationMd />
       </div>
 
       {/* Brand */}
