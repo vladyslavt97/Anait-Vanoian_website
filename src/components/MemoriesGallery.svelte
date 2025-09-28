@@ -2,7 +2,6 @@
   const images = [
     { src: "/gallery2/m1.jpg", alt: "Gallery image 1", position: "center" },
     { src: "/gallery2/m2.jpg", alt: "Gallery image 2", position: "center" },
-    // { src: "/gallery2/m3.jpg", alt: "Gallery image 3", position: "top" },
     { src: "/gallery2/m4.jpg", alt: "Gallery image 4", position: "top" },
     { src: "/gallery2/m5.jpg", alt: "Gallery image 5", position: "top" },
     { src: "/gallery2/m6.jpg", alt: "Gallery image 6", position: "top" },
