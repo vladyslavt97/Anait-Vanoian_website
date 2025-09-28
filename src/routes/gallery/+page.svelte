@@ -1,6 +1,7 @@
 <script>
     import { Carousel } from "flowbite-svelte";
     import { theLanguage } from "../../store/store";
+  import MemoriesGallery from "../../components/MemoriesGallery.svelte";
 
     const images = [
         { id: 0, attribution: "anait", imgurl: "/gallery/anait1.jpg" },
@@ -23,7 +24,7 @@
 <div
     class="p-10 min-h-screen sm:min-h-[98.5vh] flex flex-col justify-center items-center"
 >
-    <h1 class="absolute top-20 font-sans font-bold">
+    <h1 class="font-sans font-bold my-5">
         {#if currentLanguage === "e"}
             Gallery
         {:else}
@@ -34,11 +35,13 @@
         <Carousel {images} {showCaptions} {showThumbs} duration={3000} />
     </div>
     <button
-        class="rounded-full px-2 py-1 bg-gradient-to-r from-yellow-100 via-yellow-150 to-yellow-200 absolute bottom-20 font-mono"
+        class="rounded-full px-2 py-1 bg-gradient-to-r from-yellow-100 via-yellow-150 to-yellow-200 font-mono mt-5"
         >{#if currentLanguage === "e"}
             Download images here
         {:else}
             Laden Sie hier Bilder herunter
         {/if}
     </button>
+
+    <MemoriesGallery />
 </div>
