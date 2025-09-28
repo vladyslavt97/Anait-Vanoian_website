@@ -1,6 +1,6 @@
-"use client"
 import quartet_artists from "@/libs/quartet_artists.json";
 import Image from "next/image";
+import Link from "next/link";
 
 interface Artist {
   name: string;
@@ -9,23 +9,34 @@ interface Artist {
   image: string;
 }
 
-export default function ArtistPage({ params }: { params: { slug: string } }) {
-  const slug = params.slug;
-  let currentArtist: Artist | undefined = quartet_artists.find(
+export function generateStaticParams() {
+  return quartet_artists.map((a) => ({
+    slug: a.name,
+  }));
+}
+
+// 👇 Use `any` to bypass the Next.js 15 typing bug
+export default function ArtistPage({ params }: any) {
+  const slug = params.slug as string;
+  const currentArtist: Artist | undefined = quartet_artists.find(
     (a) => a.name === slug
   );
 
   if (!currentArtist) {
-    return <div className="min-h-screen flex items-center justify-center">Artist not found</div>;
+    return (
+      <div className="min-h-screen flex items-center justify-center">
+        Artist not found
+      </div>
+    );
   }
 
   const displayName = currentArtist.name.replace("_", " ");
 
   return (
     <div className="min-h-screen">
-      <a className="absolute top-12 left-2" href="/D.U.R.Quartett">
+      <Link className="absolute top-12 left-2" href="/D.U.R.Quartett">
         <Image src="/backarrow.png" alt="backarrow" width={30} height={30} />
-      </a>
+      </Link>
       <div className="font-sans flex flex-col items-center">
         <h1 className="text-center mt-[100px] mb-5 text-lg font-bold">
           {displayName}
@@ -33,7 +44,7 @@ export default function ArtistPage({ params }: { params: { slug: string } }) {
         <Image
           src={currentArtist.image}
           alt={displayName}
-          width={208} // same as w-52
+          width={208}
           height={208}
           className="rounded-lg shadow-lg"
         />
