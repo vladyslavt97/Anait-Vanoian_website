@@ -5,6 +5,23 @@ import { SyncLoader } from "react-spinners";
 import { useLanguage } from "@/libs/zustand";
 import concerts from "@/libs/concerts.json";
 
+interface SubConcert {
+  number: number;
+  name: string;
+  dates: string[];
+}
+
+interface Concert {
+  title: string;
+  date?: string;
+  dates?: string[];
+  location?: string;
+  programme?: string[];
+  conductor?: string;
+  concerts?: SubConcert[];
+  url?: string;
+}
+
 export default function ConcertsPage() {
   const currentLanguage = useLanguage((state) => state.currentLanguage);
 
@@ -28,7 +45,7 @@ export default function ConcertsPage() {
       </motion.h1>
 
       <div className="relative top-16 mx-10 w-full px-10 max-w-[600px]">
-        {concerts.map((concert, idx) => (
+        {concerts.map((concert: Concert, idx: number) => (
           <motion.div
             key={idx}
             initial={{ opacity: 0 }}
@@ -47,7 +64,7 @@ export default function ConcertsPage() {
             {/* Multiple Dates */}
             {concert.dates && (
               <ul className="text-sm">
-                {concert.dates.map((d: string, i: number) => (
+                {concert.dates.map((d, i) => (
                   <li key={i}>{d}</li>
                 ))}
               </ul>
@@ -62,8 +79,8 @@ export default function ConcertsPage() {
             {concert.programme && (
               <ul className="text-sm">
                 {concert.programme
-                  .filter((item: string) => item && item.trim() !== "")
-                  .map((item: string, i: number) => (
+                  .filter((item) => item && item.trim() !== "")
+                  .map((item, i) => (
                     <li key={i}>{item}</li>
                   ))}
               </ul>
@@ -79,13 +96,13 @@ export default function ConcertsPage() {
             {/* Sub-concerts */}
             {concert.concerts && (
               <div className="mt-3 w-full">
-                {concert.concerts.map((sub: any, i: number) => (
+                {concert.concerts.map((sub: SubConcert, i) => (
                   <div key={i} className="border-t pt-2 mt-2">
                     <p className="font-semibold">
                       {sub.number}. {sub.name}
                     </p>
                     <ul className="text-sm">
-                      {sub.dates.map((d: string, j: number) => (
+                      {sub.dates.map((d, j) => (
                         <li key={j}>{d}</li>
                       ))}
                     </ul>
