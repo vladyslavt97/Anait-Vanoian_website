@@ -1,21 +1,80 @@
 [
   {
-    "id": "647e50a6f0092b80f996d715",
+    "title": "Kleider machen Leute",
+    "composer": "Alexander Zemlinsky",
+    "location": "Staatstheater Cottbus – Großes Haus",
+    "premiere": "25.01.2025",
+    "dates": [
+      "01.03.2026 19:00–21:30",
+      "22.03.2026 16:00–18:30",
+      "31.03.2026 19:30–22:00",
+      "19.04.2026 19:00–21:30",
+      "21.05.2026 19:30–22:00",
+      "14.06.2026 19:00–21:30"
+    ],
+    "conductor": "Alexander Merzyn",
+    "url": "https://www.staatstheater-cottbus.de/de/programm/repertoire/artikel-kleider_machen_leute.html"
+  },
+  {
+    "title": "Philharmonische Konzerte 25/26",
+    "location": "Staatstheater Cottbus – Großes Haus",
+    "url": "https://www.staatstheater-cottbus.de/de/programm/konzerte-25-26/artikel-philharmonische-konzerte.html",
+    "concerts": [
+      {
+        "number": 1,
+        "name": "Helden und Legenden",
+        "dates": ["28.09.2025 19:00–21:00"]
+      },
+      {
+        "number": 2,
+        "name": "Ins Licht",
+        "dates": ["24.10.2025 20:00–22:00", "26.10.2025 19:00–21:00"]
+      },
+      {
+        "number": 3,
+        "name": "Vergänglichkeit",
+        "dates": ["21.11.2025 20:00", "23.11.2025 19:00"]
+      },
+      {
+        "number": 4,
+        "name": "Aus der Reihe getanzt",
+        "dates": ["09.01.2026 20:00", "11.01.2026 19:00"]
+      },
+      {
+        "number": 5,
+        "name": "Wunschkonzert",
+        "dates": ["13.02.2026 20:00", "15.02.2026 19:00"]
+      },
+      {
+        "number": 6,
+        "name": "Fantastische Welten",
+        "dates": ["13.03.2026 20:00", "15.03.2026 19:00"]
+      },
+      {
+        "number": 7,
+        "name": "Sprühende Funken",
+        "dates": ["10.04.2026 20:00", "12.04.2026 19:00"]
+      },
+      {
+        "number": 8,
+        "name": "Rausch der Sinne",
+        "dates": ["08.05.2026 20:00", "10.05.2026 19:00"]
+      }
+    ]
+  },
+  {
+    "title": "Konzert",
     "date": "14.06.2023",
     "location": "Märchenvilla Eberswalde",
     "programme": [
       "F. Schubert - Klavier Trio N 2",
       "S. Rachmaninov - Trio élégiaque No. 2"
-    ],
-    "url": "https://npechxvoqfwdsvkljinx.supabase.co/storage/v1/object/public/images/2023-06-14_Lehrerkonzert.jpg"
+    ]
   },
   {
-    "id": "647e52dc864b7d6fab5106ea",
+    "title": "Konzert",
     "date": "7.07.2023",
     "location": "Dorfkirche Cöthen",
-    "programme": [
-      ""
-    ],
-    "url": "https://npechxvoqfwdsvkljinx.supabase.co/storage/v1/object/public/images/2023-06-05%2023.25.14.jpg"
+    "programme": []
   }
 ]
