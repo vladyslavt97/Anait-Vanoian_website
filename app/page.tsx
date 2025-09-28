@@ -5,11 +5,10 @@ import BioEnglish from "@/components/bioenglish";
 import BioDeutsch from "@/components/biodeutsch";
 import Image from "next/image";
 import Link from "next/link";
-// import { useLanguage } from "@/libs/zustand"; // 👈 import store
+import { useLanguage } from "@/libs/zustand"; // 👈 import store
 
 export default function BiographyPage() {
-  // const { currentLanguage, setLanguage } = useLanguage(); // 👈 get state from zustand
-const currentLanguage = "e"
+  const { currentLanguage } = useLanguage(); // 👈 get state from zustand
   return (
     <div className="min-h-screen sm:min-h-[98.5vh]">
       {/* Social Links */}
