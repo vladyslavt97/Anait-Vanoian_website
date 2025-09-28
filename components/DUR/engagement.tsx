@@ -13,10 +13,7 @@ export default function PastEngagements() {
       <hr />
       <h2 className="text-center font-serif font-medium text-xl">
         {currentLanguage === "e" ? "Past Engagements" : "Vergangene Konzerte"}
-        <button
-          onClick={() => setShowMore((prev) => !prev)}
-          className="ml-2"
-        >
+        <button onClick={() => setShowMore((prev) => !prev)} className="ml-2">
           {showMore ? "↓" : "→"}
         </button>
       </h2>
@@ -41,7 +38,6 @@ export default function PastEngagements() {
                   <h2 className="italic">
                     Künstlerhof Alt - Lietzov 12, 10587 Berlin
                   </h2>
-                  {/* Copy button */}
                   <button
                     onClick={() =>
                       navigator.clipboard.writeText(
@@ -49,12 +45,7 @@ export default function PastEngagements() {
                       )
                     }
                   >
-                    <Image
-                      src="/copy.png"
-                      width={18}
-                      height={18}
-                      alt="copy"
-                    />
+                    <Image src="/copy.png" width={18} height={18} alt="copy" />
                   </button>
                 </div>
                 <div className="text-xs">
@@ -69,7 +60,7 @@ export default function PastEngagements() {
                     composer, famous theme Щедрик (folk Christmas song)
                   </p>
                   <p className="pb-2">
-                    G. F. Haydn – String Quartet 'Sunrise' B Major - 1. Satz
+                    G. F. Haydn – String Quartet &apos;Sunrise&apos; B Major - 1. Satz
                   </p>
                   <p className="pb-2">
                     A. Borodin – String Quartet Nr. 2 in D Major - 1. Satz
@@ -78,8 +69,7 @@ export default function PastEngagements() {
                     E. Grieg – String Quartet in G minor, Op.27 - 1. Satz
                   </p>
                   <p className="pb-2">
-                    A. Dvorak – String Quartet Nr.12, Op.96 'American Quartet' -
-                    2. und 3. Sätzen
+                    A. Dvorak – String Quartet Nr.12, Op.96 &apos;American Quartet&apos; - 2. und 3. Sätzen
                   </p>
                 </div>
               </div>
@@ -108,7 +98,7 @@ export default function PastEngagements() {
               </Link>
               <div className="text-xs">
                 <p className="pb-2">
-                  G. F. Haydn – String Quartet 'Sunrise' B Major - 1. Satz
+                  G. F. Haydn – String Quartet &apos;Sunrise&apos; B Major - 1. Satz
                 </p>
                 <p className="pb-2">
                   A. Borodin – String Quartet Nr. 2 in D Major - 1. Satz
@@ -117,8 +107,7 @@ export default function PastEngagements() {
                   E. Grieg – String Quartet in G minor, Op.27 - 1. Satz
                 </p>
                 <p className="pb-2">
-                  A. Dvorak – String Quartet Nr.12, Op.96 'American Quartet' - 2.
-                  und 3. Sätzen
+                  A. Dvorak – String Quartet Nr.12, Op.96 &apos;American Quartet&apos; - 2. und 3. Sätzen
                 </p>
               </div>
             </div>
