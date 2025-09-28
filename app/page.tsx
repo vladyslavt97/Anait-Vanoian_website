@@ -3,6 +3,7 @@
 import { IoMdCloudDownload } from "react-icons/io";
 import BioEnglish from "@/components/bioenglish";
 import BioDeutsch from "@/components/biodeutsch";
+import Image from "next/image";
 // import { useLanguage } from "@/libs/zustand"; // 👈 import store
 
 export default function BiographyPage() {
@@ -13,22 +14,22 @@ const currentLanguage = "e"
       {/* Social Links */}
       <div className="flex flex-row justify-around items-center py-4 pt-16">
         <a href="https://www.youtube.com/@anaitvanoian7094" target="_blank">
-          <img src="/youtube.png" alt="youtube" width={30} />
+          <Image src="/youtube.png" alt="youtube" width={30} />
         </a>
         <a href="https://www.facebook.com/anait.vanoyan" target="_blank">
-          <img src="/facebook.png" alt="facebook" width={30} />
+          <Image src="/facebook.png" alt="facebook" width={30} />
         </a>
         <a
           href="https://www.instagram.com/anaitvioline/?igshid=ZGUzMzM3NWJiOQ%3D%3D"
           target="_blank"
         >
-          <img src="/instagram.png" alt="instagram" width={30} />
+          <Image src="/instagram.png" alt="instagram" width={30} />
         </a>
         <a
           href="https://soundcloud.com/anaitvanoian/anait-vanoian-m-karminsky-the-jewish-prayer"
           target="_blank"
         >
-          <img src="/soundcloud.png" alt="soundcloud" width={55} />
+          <Image src="/soundcloud.png" alt="soundcloud" width={55} />
         </a>
       </div>
 
@@ -45,7 +46,7 @@ const currentLanguage = "e"
           {currentLanguage === "e" ? "Biography" : "Biografie"}
         </h1>
 
-        <img
+        <Image
           src="/anait4.jpg"
           alt="Anait Vanoian"
           className="drop-shadow-2xl rounded float-left ml-5 mr-3 sm:ml-16 lg:ml-44 lg:mr-6 opacity-100 transition-opacity duration-1000 md:w-[300px]"

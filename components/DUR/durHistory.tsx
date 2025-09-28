@@ -2,7 +2,6 @@
 
 import Image from "next/image";
 import { useLanguage } from "@/libs/zustand";
-
 export default function QuartetPage() {
   const { currentLanguage } = useLanguage();
 

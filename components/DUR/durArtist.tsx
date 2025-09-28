@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 import quartet_artists from "@/libs/quartet_artists.json";
 
 export default function QuartetArtists() {
@@ -33,7 +33,7 @@ export default function QuartetArtists() {
 
           {/* Image + role */}
           <div className={`w-40 ${index % 2 === 0 ? "order-first" : ""}`}>
-            <img
+            <Image
               src={artist.image}
               alt={artist.name}
               className="w-[200px] md:w-40 h-48 object-cover object-top rounded-tr rounded-tl shadow-2xl shadow-black"

@@ -1,5 +1,5 @@
 "use client";
-
+import Image from "next/image";
 type ImageType = {
   src: string;
   alt: string;
@@ -55,7 +55,7 @@ export default function Gallery() {
   return (
     <div className="p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
       {images.map((image, index) => (
-        <img
+        <Image
           key={index}
           src={image.src}
           alt={image.alt}

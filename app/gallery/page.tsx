@@ -2,6 +2,7 @@
 
 import { Carousel } from "react-responsive-carousel";
 import { useLanguage} from "../../libs/zustand";
+import Image from "next/image";
 import MemoriesGallery from "@/components/memorriesgallery";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 export default function GalleryPage() {
@@ -36,7 +37,7 @@ export default function GalleryPage() {
         >
         {images.map((img) => (
             <div key={img.id} className="w-full aspect-[3/4] flex justify-center items-center">
-            <img
+            <Image
                 src={img.imgurl}
                 alt={img.attribution}
                 className="w-full h-full object-cover rounded-lg shadow-md"

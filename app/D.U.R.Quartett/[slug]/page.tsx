@@ -1,7 +1,6 @@
 import quartet_artists from "@/libs/quartet_artists.json";
 import Image from "next/image";
 import Link from "next/link";
-
 interface Artist {
   name: string;
   shortBio: string;

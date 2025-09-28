@@ -1,3 +1,4 @@
+import Image from "next/image";
 export default function VideosPage() {
   return (
     <div className="sm:min-h-[98.5vh] min-h-screen">
@@ -28,7 +29,7 @@ export default function VideosPage() {
           className="flex flex-row gap-2 justify-center items-center py-10 md:pt-0"
         >
           Watch more videos on
-          <img src="/youtube.png" alt="youtube" width="30" />
+          <Image src="/youtube.png" alt="youtube" width="30" />
         </a>
       </div>
     </div>

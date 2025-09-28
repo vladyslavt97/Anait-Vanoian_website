@@ -3,7 +3,7 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
 import { useLanguage } from "@/libs/zustand";
-
+import Image from "next/image";
 import DurHistory from "@/components/DUR/durHistory";
 import DurArtist from "@/components/DUR/durArtist";
 import Engagements from "@/components/DUR/engagement";
@@ -50,7 +50,7 @@ export default function DURPage() {
   return (
     <div className="min-h-screen sm:min-h-[98.5vh] flex flex-col gap-5 font-sans">
       {/* Mobile header image */}
-      <img
+      <Image
         src="/quartet/top.jpg"
         alt="Anait"
         className="w-full object-cover rounded-br rounded-bl shadow-2xl shadow-black mt-10 sm:hidden"
@@ -93,10 +93,10 @@ export default function DURPage() {
       >
         <div className="flex flex-row justify-around items-center py-4 pt-16">
           <a href="https://youtube.com/@D.U.R.Quartet" target="_blank">
-            <img src="/youtube.png" alt="youtube" width={30} />
+            <Image src="/youtube.png" alt="youtube" width={30} />
           </a>
           <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank">
-            <img src="/facebook.png" alt="facebook" width={30} />
+            <Image src="/facebook.png" alt="facebook" width={30} />
           </a>
         </div>
 
@@ -107,7 +107,7 @@ export default function DURPage() {
             <>
               <h4>dur.quartet@gmail.com</h4>
               <button onClick={handleCopy}>
-                <img src="/copy.png" width={20} alt="copy" />
+                <Image src="/copy.png" width={20} alt="copy" />
               </button>
             </>
           )}
@@ -130,7 +130,7 @@ export default function DURPage() {
                   ? "Get notified about our events:"
                   : "Lassen Sie sich über unsere Veranstaltungen informieren:"}
               </h1>
-              <img src="/mail.png" alt="mail" className="w-6 ml-3 object-contain" />
+              <Image src="/mail.png" alt="mail" className="w-6 ml-3 object-contain" />
             </div>
             <div className="flex flex-row">
               <input
