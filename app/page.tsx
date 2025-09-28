@@ -84,18 +84,6 @@ const currentLanguage = "e"
           </Link>
         )}
       </div>
-
-      {/* Toggle Language Button (optional) */}
-      <div className="flex justify-center">
-        <button
-          // onClick={() =>
-          //   setLanguage(currentLanguage === "e" ? "g" : "e")
-          // }
-          className="mt-5 px-4 py-2 rounded bg-gray-200 dark:bg-gray-700"
-        >
-          {currentLanguage === "e" ? "Switch to German" : "Switch to English"}
-        </button>
-      </div>
     </div>
   );
 }
