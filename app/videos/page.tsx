@@ -1,4 +1,6 @@
 import Image from "next/image";
+import Link from "next/link";
+
 export default function VideosPage() {
   return (
     <div className="sm:min-h-[98.5vh] min-h-screen">
@@ -22,7 +24,7 @@ export default function VideosPage() {
           className="md:w-96 md:h-64 w-full h-60"
         />
 
-        <a
+        <Link
           href="https://www.youtube.com/@anaitvanoian7094"
           target="_blank"
           rel="noopener noreferrer"
@@ -30,7 +32,7 @@ export default function VideosPage() {
         >
           Watch more videos on
           <Image src="/youtube.png" alt="youtube" width="30" />
-        </a>
+        </Link>
       </div>
     </div>
   );

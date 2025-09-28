@@ -1,6 +1,7 @@
 "use client";
 import Image from "next/image";
 import quartet_artists from "@/libs/quartet_artists.json";
+import Link from "next/link";
 
 export default function QuartetArtists() {
   return (
@@ -18,16 +19,16 @@ export default function QuartetArtists() {
           <p className="font-sans mx-2 text-wrap">
             {artist.shortBio}{" "}
             {artist.name === "Anait_Vanoian" ? (
-              <a className="text-blue-800 italic" href={`/`}>
+              <Link className="text-blue-800 italic" href={`/`}>
                 read more
-              </a>
+              </Link>
             ) : (
-              <a
+              <Link
                 className="text-blue-800 italic"
                 href={`/D.U.R.Quartett/${artist.name}`}
               >
                 read more
-              </a>
+              </Link>
             )}
           </p>
 

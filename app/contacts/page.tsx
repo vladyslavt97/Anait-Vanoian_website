@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useLanguage } from "@/libs/zustand";
 import { IoIosMail, IoIosText } from "react-icons/io";
+import Link from "next/link";
 
 export default function ContactsPage() {
   const currentLanguage = useLanguage((state) => state.currentLanguage);
@@ -99,12 +100,12 @@ export default function ContactsPage() {
 
       <h5 className="text-xs font-serif text-center py-10">
         The website is made by{" "}
-        <a
+        <Link
           href="https://www.facebook.com/vladyslav.tsurkanenko"
           className="italic text-blue-900"
         >
           Vladyslav Tsurkanenko
-        </a>
+        </Link>
       </h5>
     </div>
   );

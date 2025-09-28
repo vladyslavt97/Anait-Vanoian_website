@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { SyncLoader } from "react-spinners";
 import { useLanguage } from "@/libs/zustand";
 import concerts from "@/libs/concerts.json";
+import Link from "next/link";
 
 interface SubConcert {
   number: number;
@@ -113,14 +114,14 @@ export default function ConcertsPage() {
 
             {/* Link */}
             {concert.url && (
-              <a
+              <Link
                 href={concert.url}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="mt-2 text-blue-600 underline"
               >
                 More info
-              </a>
+              </Link>
             )}
           </motion.div>
         ))}

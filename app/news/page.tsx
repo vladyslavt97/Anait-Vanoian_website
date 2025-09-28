@@ -2,6 +2,7 @@
 
 import { useLanguage } from "../../libs/zustand";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function NewsPage() {
   const currentLanguage = useLanguage((state) => state.currentLanguage);
@@ -24,14 +25,14 @@ export default function NewsPage() {
             <br />
             So 22.10.2023 19:00–20:45 Uhr | Großes Haus
             <br />
-            <a
+            <Link
               href="https://www.staatstheater-cottbus.de/programm/philharmonisches-konzert/2-philharmonisches-konzert-spielzeit-23-24/"
               className="text-blue-500 italic underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Staatstheater Cottbus
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -58,14 +59,14 @@ export default function NewsPage() {
             Werke von Mozart, Bach, Beethoven, Händel, Igudesmann,
             Schostakowitsch usw.
             <br />
-            <a
+            <Link
               href="https://www.musikschulebarnim.de/"
               className="text-blue-500 italic underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Musikschule Barnim Bernau
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -75,14 +76,14 @@ export default function NewsPage() {
             17 Oktober 2023 Dienstag 20.00 UHR
           </h2>
           <p>
-            <a
+            <Link
               href="https://www.konzerthaus.de/de/programm/berliner-konzert-chor/9681"
               className="text-blue-500 italic underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Konzerthaus Grosser Saal
-            </a>
+            </Link>
           </p>
         </div>
 
@@ -93,14 +94,14 @@ export default function NewsPage() {
           </h2>
           <p>
             Veranstaltungsort:{" "}
-            <a
+            <Link
               href="https://www.umkulturagenturpreussen.de/spielplan/detail-spielplan/konzerteihe-unterhaltung-1-konzert-schmuckstuecke/"
               className="text-blue-500 italic underline"
               target="_blank"
               rel="noopener noreferrer"
             >
               Prenzlau, Kultur- und Plenarsaal
-            </a>
+            </Link>
           </p>
         </div>
 

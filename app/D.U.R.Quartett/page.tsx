@@ -9,6 +9,7 @@ import DurArtist from "@/components/DUR/durArtist";
 import Engagements from "@/components/DUR/engagement";
 import GalleryDur from "@/components/DUR/galleryDur";
 import VideosDur from "@/components/DUR/videosDur";
+import Link from "next/link";
 
 export default function DURPage() {
   const { currentLanguage } = useLanguage();
@@ -92,12 +93,12 @@ export default function DURPage() {
         className="flex flex-col items-center"
       >
         <div className="flex flex-row justify-around items-center py-4 pt-16">
-          <a href="https://youtube.com/@D.U.R.Quartet" target="_blank">
+          <Link href="https://youtube.com/@D.U.R.Quartet" target="_blank">
             <Image src="/youtube.png" alt="youtube" width={30} />
-          </a>
-          <a href="https://www.facebook.com/D.U.R.Quartett" target="_blank">
+          </Link>
+          <Link href="https://www.facebook.com/D.U.R.Quartett" target="_blank">
             <Image src="/facebook.png" alt="facebook" width={30} />
-          </a>
+          </Link>
         </div>
 
         <div className="text-sm font-sans italic flex justify-center gap-2">

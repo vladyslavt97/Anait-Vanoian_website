@@ -2,6 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useLanguage } from "@/libs/zustand";
+import Link from "next/link";
 
 export default function PastEngagements() {
   const { currentLanguage } = useLanguage();
@@ -29,13 +30,13 @@ export default function PastEngagements() {
                 <h1>
                   3.12.2023 {currentLanguage === "e" ? "at" : "um"} 18.00
                 </h1>
-                <a
+                <Link
                   href="https://www.feuerlein-geigenakademie.de/"
                   target="_blank"
                   className="text-blue-500 italic normal-case"
                 >
                   Feuerlein Geigenakademie
-                </a>
+                </Link>
                 <div className="flex gap-2">
                   <h2 className="italic">
                     Künstlerhof Alt - Lietzov 12, 10587 Berlin
@@ -98,13 +99,13 @@ export default function PastEngagements() {
             {/* --- Concert 29.10.2023 --- */}
             <div className="shadow-lg rounded border-2 border-yellow-500/20 p-2 m-2">
               <h1>29.10.2023</h1>
-              <a
+              <Link
                 href="http://das-gut.org/programm-upcoming.html"
                 target="_blank"
                 className="text-blue-500 italic"
               >
                 Location
-              </a>
+              </Link>
               <div className="text-xs">
                 <p className="pb-2">
                   G. F. Haydn – String Quartet 'Sunrise' B Major - 1. Satz
