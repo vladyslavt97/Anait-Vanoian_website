@@ -1,3 +1,4 @@
+"use client"
 import quartet_artists from "@/libs/quartet_artists.json";
 import Image from "next/image";
 
