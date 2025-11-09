@@ -16,6 +16,28 @@
     "url": "https://www.staatstheater-cottbus.de/de/programm/repertoire/artikel-kleider_machen_leute.html"
   },
   {
+    "title": "Trio Kontraste",
+    "date": "05.12.2025 | 17:00–18:30",
+    "location": "Brunnenstraße 9, 16225 Eberswalde",
+    "programme": [
+      "D. Schostakowitsch — Klaviertrio Nr. 2",
+      "A. Piazzolla — Die vier Jahreszeiten"
+    ],
+    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
+    "url": "https://arctostrio.com"
+  },
+  {
+    "title": "Trio Kontraste",
+    "date": "03.12.2025",
+    "location": "Waldorf Cottbus",
+    "programme": [
+      "D. Schostakowitsch — Klaviertrio Nr. 2",
+      "A. Piazzolla — Die vier Jahreszeiten"
+    ],
+    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
+    "url": "https://www.waldorf-cottbus.de/ueber-uns/ergaenzend/kontakt-ansprechpartner"
+  },
+  {
     "title": "Philharmonische Konzerte 25/26",
     "location": "Staatstheater Cottbus – Großes Haus",
     "url": "https://www.staatstheater-cottbus.de/de/programm/konzerte-25-26/artikel-philharmonische-konzerte.html",
@@ -64,39 +86,17 @@
   },
   {
     "title": "Konzert",
+    "date": "7.07.2023",
+    "location": "Dorfkirche Cöthen",
+    "programme": []
+  },
+  {
+    "title": "Konzert",
     "date": "14.06.2023",
     "location": "Märchenvilla Eberswalde",
     "programme": [
       "F. Schubert - Klavier Trio N 2",
       "S. Rachmaninov - Trio élégiaque No. 2"
     ]
-  },
-  {
-    "title": "Konzert",
-    "date": "7.07.2023",
-    "location": "Dorfkirche Cöthen",
-    "programme": []
-  },
-  {
-    "title": "Trio Kontraste",
-    "date": "03.12.2025",
-    "location": "Waldorf Cottbus",
-    "programme": [
-      "D. Schostakowitsch — Klaviertrio Nr. 2",
-      "A. Piazzolla — Die vier Jahreszeiten"
-    ],
-    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
-    "url": "https://www.waldorf-cottbus.de/ueber-uns/ergaenzend/kontakt-ansprechpartner"
-  },
-  {
-    "title": "Trio Kontraste",
-    "date": "05.12.2025 | 17:00–18:30",
-    "location": "Brunnenstraße 9, 16225 Eberswalde, Deutschland",
-    "programme": [
-      "D. Schostakowitsch — Klaviertrio Nr. 2",
-      "A. Piazzolla — Die vier Jahreszeiten"
-    ],
-    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
-    "url": "https://arctostrio.com"
   }
 ]
