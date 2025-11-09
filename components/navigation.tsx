@@ -27,16 +27,12 @@ export default function NavigationOverlay() {
 
   return (
     <motion.nav
-      initial={{ width: 0 }}
-      animate={{ width: "100vw" }}
-      transition={{ duration: 1 }}
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.6 }}
       role="navigation"
       aria-label="Primary"
       className="fixed inset-x-0 top-0 z-40 flex h-screen w-screen flex-col items-center justify-around overflow-hidden bg-slate-950/95 pb-28 pt-[96px] text-white backdrop-blur-2xl md:pt-[112px]"
-      onClick={toggle}
-      onKeyDown={(e) => {
-        if (e.key === "Enter" || e.key === " ") toggle();
-      }}
     >
       <motion.button
         type="button"
@@ -66,6 +62,7 @@ export default function NavigationOverlay() {
                 ? "bg-gradient-to-r from-blue-500 via-teal-400 to-indigo-400 bg-clip-text text-lg font-semibold uppercase tracking-[0.35em] text-transparent"
                 : "text-lg uppercase tracking-[0.35em] text-white/80 transition hover:text-white"
             }
+            onClick={toggle}
           >
             {currentLanguage === "e" ? link.en : link.de}
           </Link>
