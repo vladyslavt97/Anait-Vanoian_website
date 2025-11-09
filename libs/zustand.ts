@@ -8,18 +8,10 @@ interface LanguageState {
   setLanguage: (lan: Language) => void;
 }
 
-export const useLanguage = create<LanguageState>((set:any) => {
-  // Default to "g" (German), then override on client
-  let initial: Language = "g";
-  if (typeof window !== "undefined") {
-    initial = window.navigator.language.includes("en") ? "e" : "g";
-  }
-
-  return {
-    currentLanguage: initial,
-    setLanguage: (lan:Language) => set({ currentLanguage: lan }),
-  };
-});
+export const useLanguage = create<LanguageState>((set) => ({
+  currentLanguage: "g",
+  setLanguage: (lan: Language) => set({ currentLanguage: lan }),
+}));
 
 interface NavigationState {
   isOpen: boolean;

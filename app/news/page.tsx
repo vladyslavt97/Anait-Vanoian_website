@@ -1,147 +1,136 @@
 "use client";
 
-import { useLanguage } from "../../libs/zustand";
+import { useMemo } from "react";
+import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
+import { useLanguage } from "@/libs/zustand";
+import newsData from "@/data/news.json";
+
+type Language = "e" | "g";
+
+type LocalizedFields = {
+  date?: string;
+  title?: string;
+  description?: string;
+  linkLabel?: string;
+};
+
+type MediaAsset = {
+  type: "image" | "video";
+  src: string;
+  alt?: string;
+  title?: string;
+};
+
+type FallbackNewsItem = {
+  id: string;
+  translations: Record<Language, LocalizedFields>;
+  link?: string;
+  media?: MediaAsset;
+};
+
+type DisplayNewsItem = {
+  id: string;
+  date?: string;
+  title?: string;
+  description?: string;
+  link?: { href: string; label?: string } | null;
+  media?: MediaAsset;
+};
+
+const newsEntries = newsData as FallbackNewsItem[];
 
 export default function NewsPage() {
-  const currentLanguage = useLanguage((state) => state.currentLanguage);
-
-  const divsStyling =
-    "relative rounded-2xl border drop-shadow-lg lg:w-1/3 max-w-96 flex justify-center items-center flex-col p-2";
+  const { currentLanguage } = useLanguage();
+  const localizedNews = useMemo<DisplayNewsItem[]>(() => {
+    return newsEntries.map((item) => ({
+      id: item.id,
+      date: item.translations[currentLanguage as Language]?.date,
+      title:
+        item.translations[currentLanguage as Language]?.title ??
+        item.translations.g?.title,
+      description: item.translations[currentLanguage as Language]?.description,
+      link: item.link
+        ? {
+            href: item.link,
+            label:
+              item.translations[currentLanguage as Language]?.linkLabel ??
+              item.translations.g?.linkLabel,
+          }
+        : null,
+      media: item.media,
+    }));
+  }, [currentLanguage]);
 
   return (
-    <div>
-      <h1 className="relative top-14 text-center">
-        {currentLanguage === "e" ? "News" : "Nachrichten"}
-      </h1>
-
-      <div className="px-10 mt-20 min-h-screen sm:min-h-[98.5vh] flex items-center justify-center gap-6 flex-wrap font-sans text-sm">
-        {/* Concerts */}
-        <div className={divsStyling}>
-          <p>
-            Fr 20.10.2023 20:00–21:45 Uhr | Großes Haus
-            <br />
-            <br />
-            So 22.10.2023 19:00–20:45 Uhr | Großes Haus
-            <br />
-            <Link
-              href="https://www.staatstheater-cottbus.de/programm/philharmonisches-konzert/2-philharmonisches-konzert-spielzeit-23-24/"
-              className="text-blue-500 italic underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Staatstheater Cottbus
-            </Link>
-          </p>
-        </div>
-
-        {/* Workshop */}
-        <div className={divsStyling}>
-          <h2 className="text-center font-bold">Workshop Musik</h2>
-          <p>11.11.2023 14.00 Uhr</p>
-          <p>
-            Die Workshopsbeschreibung: Die Stilistik durch Musik.
-            <br />
-            Moderatorin und Spielerin – Anait Vanoian
-            <br />
-            Assistenten: Vladyslav Tsurkanenko – Violin
-            <br />
-            Pavel Kuznetsov – Klavier
-            <br />
-            Idee: Zeigen unterschiedliche Spielartweise von Barock bis Modern.
-            <br />
-            <br />
-            Es wird als Solo, Duo, Trio von uns gespielt. Und paar Kindern
-            werden auch teilnehmen.
-            <br />
-            <br />
-            Werke von Mozart, Bach, Beethoven, Händel, Igudesmann,
-            Schostakowitsch usw.
-            <br />
-            <Link
-              href="https://www.musikschulebarnim.de/"
-              className="text-blue-500 italic underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Musikschule Barnim Bernau
-            </Link>
-          </p>
-        </div>
-
-        {/* Konzerthaus */}
-        <div className={divsStyling}>
-          <h2 className="text-center font-bold">
-            17 Oktober 2023 Dienstag 20.00 UHR
-          </h2>
-          <p>
-            <Link
-              href="https://www.konzerthaus.de/de/programm/berliner-konzert-chor/9681"
-              className="text-blue-500 italic underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Konzerthaus Grosser Saal
-            </Link>
-          </p>
-        </div>
-
-        {/* Prenzlau Konzert */}
-        <div className={divsStyling}>
-          <h2 className="text-center font-bold">
-            Freitag – 13. Oktober 2023 – 19:30 Uhr
-          </h2>
-          <p>
-            Veranstaltungsort:{" "}
-            <Link
-              href="https://www.umkulturagenturpreussen.de/spielplan/detail-spielplan/konzerteihe-unterhaltung-1-konzert-schmuckstuecke/"
-              className="text-blue-500 italic underline"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Prenzlau, Kultur- und Plenarsaal
-            </Link>
-          </p>
-        </div>
-
-        {/* Подяка */}
-        <div className={divsStyling}>
-          <h2 className="text-center">Подяка</h2>
-          <Image
-            src="/подяка.jpg"
-            alt="подяка"
-            className="pb-5 pt-3 px-2 md:h-80 object-contain"
-            width={400}
-            height={400}
-          />
-        </div>
-
-        {/* Höcherbuch Video */}
-        <div className={divsStyling}>
-          <h2 className="text-center">Höcherbuch mit der Musik</h2>
-          <iframe
-            src="https://www.youtube.com/embed/QOlgSJZgGlw"
-            frameBorder="0"
-            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-            title="video1"
-            className="pb-5 pt-3 px-2 md:h-80 w-full"
-          />
-        </div>
-
-        {/* Certificate */}
-        <div className={divsStyling}>
-          <h2 className="text-center">Certificate</h2>
-          <Image
-            src="/certificate.jpg"
-            alt="document"
-            className="pb-5 pt-3 px-2 md:h-80 object-contain"
-            width={400}
-            height={400}
-          />
-        </div>
+    <section className="min-h-screen px-5 pt-24 pb-16 sm:min-h-[98.5vh]">
+      <div className="mx-auto max-w-6xl text-center">
+        <p className="text-[0.65rem] uppercase tracking-[0.4em] text-white/60">
+          {currentLanguage === "e" ? "Latest" : "Aktuell"}
+        </p>
+        <h1 className="pt-4">
+          {currentLanguage === "e" ? "News" : "Nachrichten"}
+        </h1>
       </div>
-    </div>
+
+      <div className="mx-auto mt-12 grid max-w-6xl gap-6 md:grid-cols-2 xl:grid-cols-3">
+        {localizedNews.map((item, index) => (
+          <motion.article
+            key={item.id}
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: index * 0.05 }}
+            className="frosted-panel flex h-full flex-col gap-4 p-6 text-left"
+          >
+            {item.date && (
+              <p className="text-[0.6rem] uppercase tracking-[0.4em] text-white/50">
+                {item.date}
+              </p>
+            )}
+            <h2 className="text-base font-semibold tracking-[0.1em]">
+              {item.title ??
+                (currentLanguage === "e" ? "Concert update" : "Konzert-Update")}
+            </h2>
+            {item.description && (
+              <p className="text-sm text-white/80">{item.description}</p>
+            )}
+
+            {item.media?.type === "image" && (
+              <Image
+                src={item.media.src}
+                alt={item.media.alt ?? "news media"}
+                width={600}
+                height={400}
+                className="w-full rounded-2xl object-contain"
+              />
+            )}
+
+            {item.media?.type === "video" && (
+              <div className="aspect-video w-full">
+                <iframe
+                  src={item.media.src}
+                  className="h-full w-full rounded-2xl"
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                  title={item.media.title ?? "news video"}
+                />
+              </div>
+            )}
+
+            {item.link?.href && (
+              <Link
+                className="text-xs uppercase tracking-[0.35em] text-amber-200 transition hover:text-amber-100"
+                href={item.link.href}
+                target="_blank"
+              >
+                {item.link.label ??
+                  (currentLanguage === "e" ? "Learn more" : "Mehr erfahren")}
+              </Link>
+            )}
+          </motion.article>
+        ))}
+      </div>
+    </section>
   );
 }

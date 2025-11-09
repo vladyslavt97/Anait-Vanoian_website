@@ -1,25 +1,28 @@
-// components/LanguageSwitch.tsx
 "use client";
 
-import { useLanguage } from "../libs/zustand";
+import { useLanguage } from "@/libs/zustand";
 
 export default function LanguageSwitch() {
   const { currentLanguage, setLanguage } = useLanguage();
 
   return (
-    <div className="flex md:flex-col text-xs font-bold gap-2 md:gap-0.5 z-50">
+    <div className="flex items-center gap-1 rounded-full border border-white/15 bg-white/5 p-1 text-[0.6rem] font-semibold uppercase tracking-[0.35em] text-white/70">
       <button
         onClick={() => setLanguage("g")}
-        className={`px-2 py-1 md:p-0 border text-white hover:bg-gray-500 rounded text-center ${
-          currentLanguage === "e" ? "border-amber-100" : "border-orange-300"
+        className={`rounded-full px-3 py-1 transition ${
+          currentLanguage === "g"
+            ? "bg-white text-slate-900 shadow-[0_10px_20px_rgba(15,23,42,0.25)]"
+            : "text-white/70 hover:text-white"
         }`}
       >
         DE
       </button>
       <button
         onClick={() => setLanguage("e")}
-        className={`px-2 py-1 md:p-0 border text-white hover:bg-gray-500 rounded text-center ${
-          currentLanguage === "g" ? "border-amber-100" : "border-orange-300"
+        className={`rounded-full px-3 py-1 transition ${
+          currentLanguage === "e"
+            ? "bg-white text-slate-900 shadow-[0_10px_20px_rgba(15,23,42,0.25)]"
+            : "text-white/70 hover:text-white"
         }`}
       >
         ENG

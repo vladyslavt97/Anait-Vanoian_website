@@ -1,0 +1,122 @@
+[
+  {
+    "id": "cottbus",
+    "translations": {
+      "e": {
+        "date": "20–22 Oct 2023",
+        "title": "Philharmonic Concerts | Cottbus",
+        "description": "Friday 20 October 20:00–21:45 (Großes Haus) and Sunday 22 October 19:00–20:45. A programme celebrating orchestral color and lyricism.",
+        "linkLabel": "Staatstheater Cottbus"
+      },
+      "g": {
+        "date": "20.–22. Oktober 2023",
+        "title": "Philharmonische Konzerte | Cottbus",
+        "description": "Fr 20.10.2023 20:00–21:45 Uhr | Großes Haus · So 22.10.2023 19:00–20:45 Uhr | Großes Haus. Ein Programm voller orchestraler Farben.",
+        "linkLabel": "Staatstheater Cottbus"
+      }
+    },
+    "link": "https://www.staatstheater-cottbus.de/programm/philharmonisches-konzert/2-philharmonisches-konzert-spielzeit-23-24/"
+  },
+  {
+    "id": "workshop",
+    "translations": {
+      "e": {
+        "date": "11 Nov 2023",
+        "title": "Workshop: The Language of Style",
+        "description": "Moderator and performer: Anait Vanoian · Assistants: Vladyslav Tsurkanenko (violin) & Pavel Kuznetsov (piano). Exploring playing techniques from Baroque to modern repertoire with solo, duo, and trio formations.",
+        "linkLabel": "Musikschule Barnim Bernau"
+      },
+      "g": {
+        "date": "11. November 2023",
+        "title": "Workshop: Die Stilistik durch Musik",
+        "description": "Moderatorin & Spielerin: Anait Vanoian · Assistenten: Vladyslav Tsurkanenko (Violine) & Pavel Kuznetsov (Klavier). Spielarten von Barock bis Modern in Solo-, Duo- und Trio-Besetzungen.",
+        "linkLabel": "Musikschule Barnim Bernau"
+      }
+    },
+    "link": "https://www.musikschulebarnim.de/"
+  },
+  {
+    "id": "konzerthaus",
+    "translations": {
+      "e": {
+        "date": "17 Oct 2023",
+        "title": "Concert at Konzerthaus Berlin",
+        "description": "Guest appearance with the Berliner Konzert Chor inside the Grand Hall of Konzerthaus Berlin.",
+        "linkLabel": "Programme details"
+      },
+      "g": {
+        "date": "17. Oktober 2023",
+        "title": "Konzert im Konzerthaus Berlin",
+        "description": "Gastauftritt mit dem Berliner Konzert Chor im Großen Saal des Konzerthauses Berlin.",
+        "linkLabel": "Zum Programm"
+      }
+    },
+    "link": "https://www.konzerthaus.de/de/programm/berliner-konzert-chor/9681"
+  },
+  {
+    "id": "prenzlau",
+    "translations": {
+      "e": {
+        "date": "13 Oct 2023",
+        "title": "Concert in Prenzlau",
+        "description": "19:30 at Kultur- und Plenarsaal — part of the 'Schmuckstücke' concert series curated by UM Kulturagentur Preussen.",
+        "linkLabel": "Event information"
+      },
+      "g": {
+        "date": "13. Oktober 2023",
+        "title": "Konzert in Prenzlau",
+        "description": "19:30 Uhr im Kultur- und Plenarsaal · Teil der Konzertreihe »Schmuckstücke« der UM Kulturagentur Preussen.",
+        "linkLabel": "Weitere Infos"
+      }
+    },
+    "link": "https://www.umkulturagenturpreussen.de/spielplan/detail-spielplan/konzerteihe-unterhaltung-1-konzert-schmuckstuecke/"
+  },
+  {
+    "id": "gratitude",
+    "translations": {
+      "e": {
+        "title": "Certificate of Gratitude"
+      },
+      "g": {
+        "title": "Подяка"
+      }
+    },
+    "media": {
+      "type": "image",
+      "src": "/подяка.jpg",
+      "alt": "подяка"
+    }
+  },
+  {
+    "id": "audiobook",
+    "translations": {
+      "e": {
+        "title": "Audio Book With Music"
+      },
+      "g": {
+        "title": "Höcherbuch mit der Musik"
+      }
+    },
+    "media": {
+      "type": "video",
+      "src": "https://www.youtube.com/embed/QOlgSJZgGlw",
+      "title": "Höcherbuch mit der Musik"
+    }
+  },
+  {
+    "id": "certificate",
+    "translations": {
+      "e": {
+        "title": "Certificate"
+      },
+      "g": {
+        "title": "Zertifikat"
+      }
+    },
+    "media": {
+      "type": "image",
+      "src": "/certificate.jpg",
+      "alt": "certificate"
+    }
+  }
+]

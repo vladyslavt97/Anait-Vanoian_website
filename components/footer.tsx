@@ -1,8 +1,9 @@
-"use client"
+"use client";
+
 export default function Footer() {
   return (
-    <div className="bg-[#3a3a3a] text-white w-screen h-5 flex justify-center text-sm font-thin">
-      <h2>© 2023 Anait Vanoian • Violinist</h2>
-    </div>
+    <footer className="mt-14 w-full border-t border-white/10 bg-[#050505]/80 py-6 text-center text-[0.65rem] uppercase tracking-[0.35em] text-white/60 backdrop-blur-xl">
+      <p>© {new Date().getFullYear()} Anait Vanoian • Violinist</p>
+    </footer>
   );
 }
