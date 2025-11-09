@@ -1,10 +1,9 @@
 "use client";
 
-import { motion } from "framer-motion";
 import { useNavigation } from "@/libs/zustand";
 
 export default function Burger() {
-  const { isOpen, toggle } = useNavigation();
+  const { toggle } = useNavigation();
 
   const handleKeyDown = (e: React.KeyboardEvent<HTMLDivElement>) => {
     if (e.key === "Enter" || e.key === " ") {
@@ -15,32 +14,16 @@ export default function Burger() {
   return (
     <div>
       <div
-        className="flex flex-col gap-1 cursor-pointer"
+        className="flex cursor-pointer flex-col gap-1"
         onClick={toggle}
         onKeyDown={handleKeyDown}
-        tabIndex={0} // makes it keyboard focusable
+        tabIndex={0}
+        role="button"
+        aria-label="Open navigation menu"
       >
-        {/* Top line */}
-        <motion.div
-          animate={{
-            rotate: isOpen ? -45 : 0,
-            y: isOpen ? 6 : 0,
-          }}
-          className="w-5 h-[2px] bg-white rounded-lg"
-        />
-        {/* Middle line */}
-        <motion.div
-          animate={{ opacity: isOpen ? 0 : 1 }}
-          className="w-5 h-[2px] bg-white rounded-lg"
-        />
-        {/* Bottom line */}
-        <motion.div
-          animate={{
-            rotate: isOpen ? 45 : 0,
-            y: isOpen ? -6 : 0,
-          }}
-          className="w-5 h-[2px] bg-white rounded-lg"
-        />
+        <div className="h-[2px] w-5 rounded-lg bg-white" />
+        <div className="h-[2px] w-5 rounded-lg bg-white" />
+        <div className="h-[2px] w-5 rounded-lg bg-white" />
       </div>
     </div>
   );

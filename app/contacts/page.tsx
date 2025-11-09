@@ -105,7 +105,12 @@ export default function ContactsPage() {
 
       <p className="pt-12 text-center text-[0.65rem] uppercase tracking-[0.35em]">
         {currentLanguage === "e" ? "Website by" : "Webseite von"}{" "}
-        <Link href="https://www.facebook.com/vladyslav.tsurkanenko" className="text-amber-200">
+        <Link
+          href="https://www.facebook.com/vladyslav.tsurkanenko"
+          className="text-amber-200"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           Vladyslav Tsurkanenko
         </Link>
       </p>
