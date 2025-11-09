@@ -32,12 +32,26 @@ export default function NavigationOverlay() {
       transition={{ duration: 1 }}
       role="navigation"
       aria-label="Primary"
-      className="fixed left-0 right-0 top-[64px] z-40 flex h-[calc(100vh-64px)] w-screen flex-col items-center justify-around overflow-hidden bg-slate-950/95 pb-28 text-white backdrop-blur-2xl md:top-[72px] md:h-[calc(100vh-72px)]"
+      className="fixed inset-x-0 top-0 z-40 flex h-screen w-screen flex-col items-center justify-around overflow-hidden bg-slate-950/95 pb-28 pt-[96px] text-white backdrop-blur-2xl md:pt-[112px]"
       onClick={toggle}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") toggle();
       }}
     >
+      <motion.button
+        type="button"
+        aria-label="Close navigation menu"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.6, delay: 1 }}
+        className="absolute right-6 top-6 flex h-10 w-10 items-center justify-center rounded-full border border-white/20 text-lg text-white/60 transition hover:text-white"
+        onClick={(event) => {
+          event.stopPropagation();
+          toggle();
+        }}
+      >
+        ×
+      </motion.button>
       {links.map((link, i) => (
         <motion.div
           key={link.href}
