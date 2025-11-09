@@ -76,5 +76,27 @@
     "date": "7.07.2023",
     "location": "Dorfkirche Cöthen",
     "programme": []
+  },
+  {
+    "title": "Trio Kontraste",
+    "date": "03.12.2025",
+    "location": "Waldorf Cottbus",
+    "programme": [
+      "D. Schostakowitsch — Klaviertrio Nr. 2",
+      "A. Piazzolla — Die vier Jahreszeiten"
+    ],
+    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
+    "url": "https://www.waldorf-cottbus.de/ueber-uns/ergaenzend/kontakt-ansprechpartner"
+  },
+  {
+    "title": "Trio Kontraste",
+    "date": "05.12.2025 | 17:00–18:30",
+    "location": "Brunnenstraße 9, 16225 Eberswalde, Deutschland",
+    "programme": [
+      "D. Schostakowitsch — Klaviertrio Nr. 2",
+      "A. Piazzolla — Die vier Jahreszeiten"
+    ],
+    "conductor": "Pavel Kuznetsov, Anait Vanoian, Tobias Hoffmann",
+    "url": "https://arctostrio.com"
   }
 ]
