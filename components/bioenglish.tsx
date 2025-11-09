@@ -71,7 +71,7 @@ export default function BioEnglish() {
       </p>
       <section className="space-y-2">
         <h3 className="text-[0.65rem] uppercase tracking-[0.35em] text-white/50">
-          Selected professional experience
+          Professional experience
         </h3>
         <ul className="space-y-1 text-slate-100/90">
           <li className="list-none">• Concertmaster – Municipal Orchestra of Delmenhorst</li>

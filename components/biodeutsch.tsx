@@ -72,7 +72,7 @@ export default function BioDeutsch() {
       </p>
       <section className="space-y-2">
         <h3 className="text-[0.65rem] uppercase tracking-[0.35em] text-white/50">
-          Berufserfahrung (Auswahl)
+          Berufserfahrung
         </h3>
         <ul className="space-y-1 text-slate-100/90">
           <li className="list-none">• Konzertmeisterin – Städtisches Orchester Delmenhorst</li>
