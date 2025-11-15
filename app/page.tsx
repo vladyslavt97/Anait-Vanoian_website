@@ -2,45 +2,90 @@
 
 import { motion } from "framer-motion";
 import { IoMdCloudDownload } from "react-icons/io";
+import { SiApplemusic, SiSpotify } from "react-icons/si";
 import Image from "next/image";
 import Link from "next/link";
 import BioEnglish from "@/components/bioenglish";
 import BioDeutsch from "@/components/biodeutsch";
 import { useLanguage } from "@/libs/zustand";
+import type { ReactNode } from "react";
 
 type Language = "e" | "g";
 
 type SocialLink = {
     href: string;
-    icon: string;
+    icon: ReactNode;
     label: string;
-    width: number;
 };
 
 const socialLinks: SocialLink[] = [
     {
         href: "https://www.youtube.com/@anaitvanoian7094",
-        icon: "/youtube.png",
+        icon: (
+            <Image
+                src="/youtube.png"
+                alt="YouTube"
+                width={22}
+                height={22}
+            />
+        ),
         label: "YouTube",
-        width: 22,
     },
     {
         href: "https://www.facebook.com/anait.vanoyan",
-        icon: "/facebook.png",
+        icon: (
+            <Image
+                src="/facebook.png"
+                alt="Facebook"
+                width={22}
+                height={22}
+            />
+        ),
         label: "Facebook",
-        width: 22,
     },
     {
         href: "https://www.instagram.com/anaitvioline/?igshid=ZGUzMzM3NWJiOQ%3D%3D",
-        icon: "/instagram.png",
+        icon: (
+            <Image
+                src="/instagram.png"
+                alt="Instagram"
+                width={20}
+                height={20}
+            />
+        ),
         label: "Instagram",
-        width: 20,
     },
     {
         href: "https://soundcloud.com/anaitvanoian/anait-vanoian-m-karminsky-the-jewish-prayer",
-        icon: "/soundcloud.png",
+        icon: (
+            <Image
+                src="/soundcloud.png"
+                alt="SoundCloud"
+                width={32}
+                height={32}
+            />
+        ),
         label: "SoundCloud",
-        width: 32,
+    },
+    {
+        href: "https://music.apple.com/de/artist/anait-tiana/1829156024",
+        icon: (
+            <SiApplemusic
+                className="h-6 w-6 text-white"
+                aria-hidden="true"
+            />
+        ),
+        label: "Apple Music",
+    },
+    {
+        href: "https://open.spotify.com/artist/1DIQOEw8aRNV2uTKmdJh24?si=rgrGKjK5R7yKKQD5DDB8gw",
+        icon: (
+            <SiSpotify
+                className="h-6 w-6 text-[#1DB954]"
+                aria-hidden="true"
+            />
+        ),
+        label: "Spotify",
     },
 ];
 
@@ -93,14 +138,10 @@ export default function BiographyPage() {
                                         className="social-tile"
                                         href={social.href}
                                         target="_blank"
+                                        rel="noreferrer noopener"
                                         aria-label={social.label}
                                     >
-                                        <Image
-                                            src={social.icon}
-                                            alt={social.label}
-                                            width={social.width}
-                                            height={social.width}
-                                        />
+                                        {social.icon}
                                     </Link>
                                 ))}
                             </div>
