@@ -1,6 +1,6 @@
 // app/layout.tsx
 import type { Metadata } from "next";
-import { Inter, Playfair_Display } from "next/font/google";
+import { Great_Vibes, Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 
 // Import your converted React components
@@ -19,6 +19,12 @@ const playfair = Playfair_Display({
   weight: ["500", "600"],
 });
 
+const greatVibes = Great_Vibes({
+  variable: "--font-signature",
+  subsets: ["latin"],
+  weight: "400",
+});
+
 export const metadata: Metadata = {
   title: "Anait Vanoian",
   description: "Official website of Anait Vanoian",
@@ -31,9 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${inter.variable} ${playfair.variable} antialiased`}
-      >
+      <body className={`${inter.variable} ${playfair.variable} ${greatVibes.variable} antialiased`}>
         <LanguageDetector />
         {/* ✅ Your Svelte <Header /> becomes a React <Header /> */}
         <Header />

@@ -18,6 +18,12 @@ body {
   overflow-x: hidden;
 }
 
+.signature-logo {
+  font-family: var(--font-signature), "Great Vibes", cursive;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+}
+
 h1,
 h2,
 h3 {

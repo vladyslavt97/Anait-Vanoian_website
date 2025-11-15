@@ -16,7 +16,7 @@ export default function Header() {
         <Link
           href="/"
           onClick={close}
-          className="text-xs font-semibold uppercase tracking-[0.45em] text-white"
+          className="signature-logo text-2xl leading-tight text-white sm:text-3xl"
         >
           Anait&nbsp;Vanoian
         </Link>
